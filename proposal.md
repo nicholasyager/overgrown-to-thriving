@@ -57,15 +57,13 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 
 ---
 
-# We start our journey
-
----
-
 # Survey your garden
 
 1. What are your core entities?
 2. What are your exposures?
-3. Are there any obvious architectural issues?
+3. How are your data consumers using your models?
+4. Are there any obvious architectural issues?
+5. Are there any anti-patterns being used?
 
 ---
 
@@ -74,11 +72,21 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 1. Remove deprecated or otherwise unused models
 2. Consolidate duplicate models
 
-![bg right 80%](https://hips.hearstapps.com/hmg-prod/images/hankscorpioflamethrower-1528493255.gif)
+---
+
+<!-- _footer: ''  -->
+
+![bg 75%](https://hips.hearstapps.com/hmg-prod/images/hankscorpioflamethrower-1528493255.gif)
 
 ---
 
+<!-- _class: lead -->
+
 # Renewal pruning
+
+---
+
+![bg 70%](https://bugwoodcloud.org/images/1536x1024/5377064.jpg)
 
 <!--
 Gradual removal of unproductive branches to allow a plant to spend its resources growing healthy branches.
@@ -86,15 +94,40 @@ Gradual removal of unproductive branches to allow a plant to spend its resources
 
 ---
 
+# Renewal pruning
+
+<!--
+In a dbt project, we can prune our project by refactoring any anti-patterns currently in use in the project's core entities. This would include
+-->
+
+---
+
+<!-- _class: lead -->
+
 # Divide the perennials
 
 <!--
 Dividing the perennials is the notion that we ought to separate your most industrious plants to prevent overcrowding and to allow for specialized treatment of plants in the garden.
+-->
+
+---
+
+![bg](https://www.gardening-guy.com/wp-content/uploads/2012/07/Dividing-hostas-005.jpg)
+
+<!-- _footer: ''  -->
+
+---
+
+# Divide the perennials
+
+<!--
 
 Just like a garden needs to be divided into separate areas for different plants, your dbt project can be modularized into smaller sections. You'll discuss how to identify which models should be grouped together, how to consolidate similar models, and how to leverage groups and access controls to manage dependencies between sections.
 -->
 
 ---
+
+<!-- _class: lead -->
 
 # Keep the weeds under control
 
@@ -102,27 +135,49 @@ Just like a garden needs to be divided into separate areas for different plants,
 Now that we've gotten our garden into a more maintainable state state, it's
 vital that we prevent weeds and other unwanted plants from taking root. In a garden
 this can take a great deal of time and effort. Thankfully, this is where our
-metaphor breaks down in our favor. Instead of manual effort, we can use fantastic
-tools to keep our garden productive. For a while, we've had tools like pre-commit
-and sqlfmt to keep our queries readable and maintainable. As of last year, we've
-also had developments in architectural monitoring tools like dbt-project-evaluator and Whetstone to monitor and report on _what_ we've built as well.
+metaphor breaks down in our favor.
 -->
 
 ---
 
-# <!-- fit --> Take a short break, and grow a bright future
+![bg](https://longislandweekly.com/wp-content/uploads/2015/07/iStock_000013798533Large.jpg)
+
+<!-- _footer: ''  -->
+
+---
+
+# Keep the weeds under control
+
+<!--
+Instead of manual effort, we can use fantastic tools to keep our garden
+productive. For a while, we've had tools like pre-commit and sqlfmt to keep our
+queries readable and maintainable. As of last year, we've also had developments in
+architectural monitoring tools like dbt-project-evaluator and Whetstone to monitor and report on _what_ we've built as well.
+-->
+
+---
+
+<!-- _class: lead -->
+
+# Take a short break
+
+and then grow a bright future
 
 <!--
 We've come a long way! Our project now has fewer unused models, a more efficient
 structure, clearly-delineated responsibilities, and automated guardrails to keep
 new growth in check. We can now take a small break and enjoy our handy work.
 
-When we're ready, we can start to
+When we're ready, we can continue to deliberately cultivate our garden with confidence and clarity.
 --->
 
 ---
 
 <!-- _class: lead -->
+
+# From Overgrown to **Thriving**
+
+#### Scaling Your dbt Project Like a Gardener
 
 Nicholas A. Yager
 yager@nicholasyager.com
