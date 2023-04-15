@@ -16,6 +16,29 @@ Scaling Your dbt Project Like a Gardener
 
 ---
 
+<!-- _class: left -->
+
+<style scoped>
+    small { color: gray; font-weight: thin; margin: 0; }
+
+    section:where(.left) {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+</style>
+
+<h1>Nicholas Yager</h1>
+<small>they/them</small>
+
+Principal Analytics Engineer
+Hubspot
+
+![bg right 75%](assets/profile_pic.png)
+
+---
+
 <!-- footer: 'Coalesce 2023 Pitch'  -->
 
 # Draw a comparison between a complex dbt project and a garden
@@ -116,14 +139,45 @@ Dividing the perennials is the notion that we ought to separate your most indust
 
 <!-- _footer: ''  -->
 
+<!-- This is a picture of hostas being split up! -->
+
 ---
 
-# Divide the perennials
+# Groups and Access
+
+```yml
+groups:
+  - name: go_to_market
+    owner:
+      email: gtm@garden.supplies
+
+models:
+  - name: deals
+    group: go_to_market
+    access: public
+```
+
+![bg right 90% vertical](https://mermaid.ink/svg/pako:eNqFU01vgzAM_SsovbZVtU3VlsNOPW6X7YqE0uC0aIEgx-k0Vf3vS6FAmgHjhO33YT_BmUmTA-NMafMtjwIpeftIq7RK_CO1sHYHKrHGoYREFVrzxXazf37YLhNLaL5gqKXRBvlCKRWxS--gb-TN5uVp_ziQuzokR_Qai5MgeA9UPGxSoi2vKr0SluschLac8_aSoS-dJVMCxrMaTe4kreEEFYXDdmzpkN0gWdZjmkNbgLOAo4Mr0xtnWbfR2CzcKpiPUBBqg9TvYhxJTwxAUQTJavUa7TASxj2qb3dq9-H04CiQMKvBrUEHvn9dYsRk4g0wCHrGcCKm2RVmOYHt_2C2ZF61FEXuf7TztZcyOkIJKeP-NQclnKaUpdXFQ4Uj8_lTScYJHSyZq3P_-e8KcUBRMq78TXD5BcffSEs)
+![bg right 90% vertical](https://mermaid.ink/svg/pako:eNqNlMtugzAQRX8FOVsSRW0VtV50lWW7abdIyJhxgmpj5EeqKMq_1wkYOw4oZYXHZ-6dB-KEqKwBYcS4_KV7okz28VW0RZu5h3Ki9RZYpqVVFDLWcI4Xm3X1-rTJM22U_IFwppJLhReMsSRbOAc-JK_Xby_Vc0j25zg5Se9UcyAGPiMVh81K9Eevos2Rg5OQtaVmKruqqphUcIDWwj9IarWRAlSpLaWg9WzK0I4SqxoI1xjjfpwh7qXSu6Hs1aUmE18Oddhqp0i391wf7SvclUOwLMfseJCBtdr1MDIiXEJb3zkN47l1ci2Upe9t2mTE4lanUS_0oJJ0_EFAQSeVGfuX1lAHzkuOm8mWy_ekoYkd3VJj2Kvd7myEk22EzzN2u9KR771LSgQuMbiC0Wq9YfCZGVOPRZmPYZQjV5sgTe3-I6dLrEBmDwIKhN1rDYxYbgpUtGeHEmvk97GlCBtlIUe2q91HsG2I26tAmLn64PwHdwiO4g)
 
 <!--
+Just like a garden needs to be divided into separate areas for different plants, a dbt project can be modularized into smaller sections. In this section I'll discuss some basic philosophies around how to identify which models should be grouped together, how to consolidate similar models, and how to leverage groups and access controls to manage dependencies between sections.
 
-Just like a garden needs to be divided into separate areas for different plants, your dbt project can be modularized into smaller sections. You'll discuss how to identify which models should be grouped together, how to consolidate similar models, and how to leverage groups and access controls to manage dependencies between sections.
+https://mermaid.live/edit#pako:eNqNlMtuwjAQRX8lMltAqK1Q60VXLNtNu41kOc4YEHYc-UGFEP9el8SxMYloVvH4zL3ziHJGTNWAMOJC_bAd1bb4-Cqbsin8wwQ1ZgO8MMppBgXfC4Fn61X1-rSeF8ZqdYB4ZkoojWec8yxbegfRJ69Wby_Vc0wO5zQ5S2_1_kgtfCYqHpuU6I5BxdiTAC-hasfsWHZVVSm5VcQqIqk-wH9w5oxVEjQxjjEwZjKl70nLZQ1UGIxxN9MYD1L5XV_7Eo7Q2PSyr8NVW03bXeC6aFfhlvRBQobsdJqRdcb3MDAyXkJT3zmlM7q1830QEhocdxqwtN9xNAg9KCffQRTQ0CpthyEoZ5kHpyWH9RSLxXvW0MiibqkhHNRuFzfA2Urih5q6XenE994lJyKXGVzBZL_BMPpMjKnDkszHMJojX5uk-9r_Uc5_sRLZHUgoEfavNXDqhC1R2Vw8Sp1V36eGIWy1gzlybe0_gs2e-r1KhLmvDy6_ykSS5A
+
+https://mermaid.live/edit#pako:eNqNlMtugzAQRX8FOVsSRW0VtV50lWW7abdIyJhxgmpj5EeqKMq_1wkYOw4oZYXHZ-6dB-KEqKwBYcS4_KV7okz28VW0RZu5h3Ki9RZYpqVVFDLWcI4Xm3X1-rTJM22U_IFwppJLhReMsSRbOAc-JK_Xby_Vc0j25zg5Se9UcyAGPiMVh81K9Eevos2Rg5OQtaVmKruqqphUcIDWwj9IarWRAlSpLaWg9WzK0I4SqxoI1xjjfpwh7qXSu6Hs1aUmE18Oddhqp0i391wf7SvclUOwLMfseJCBtdr1MDIiXEJb3zkN47l1ci2Upe9t2mTE4lanUS_0oJJ0_EFAQSeVGfuX1lAHzkuOm8mWy_ekoYkd3VJj2Kvd7myEk22EzzN2u9KR771LSgQuMbiC0Wq9YfCZGVOPRZmPYZQjV5sgTe3-I6dLrEBmDwIKhN1rDYxYbgpUtGeHEmvk97GlCBtlIUe2q91HsG2I26tAmLn64PwHdwiO4g
+
 -->
+
+---
+
+![bg contain 90%](https://mermaid.ink/svg/pako:eNqVVE1vgjAY_iukXtWYuRjWw04mu8zLtiMJKe2LkhVK-qEzxv--IpQWlCyDC337fPVtywVRwQBhlHNxogcidfT-kVRJFdmHcqLUFvJICSMpRHnBOZ5tVln8tJlHSkvxDX5MBRcSz_I8H7FL68A78mr18pytPdmNQ_KIXsviSDTsAhULm5Roh05F6TOH6O1r55iseT05jmM3WJwKpg84Wtc_Q3YtBTNU_1PB8yUcoTLwKHuWZSGSGqVFCTJVhlJQapJyI_UpTbaXpD64oG21ebrCsgmgFca43UgPUHqfdqA07VFhxz3WKBusx5R-Eip2F8V2vGNSWS4ZED62b-puvQ-jOamufX7GBbcKaeqkH2ceQEO3abgTLIdTwSIH6cZbNhSTUAup-xYLo6kFT8kPffqL4BoYLRavo4U_aOUQ1Zed2vBI9ODRIfAXIHS7oQPfe5cxwuNGBjdgcKKcofeZaF0LC5h_g9Ec2WwlKZj9z12aWoL0AUpIELafDHJiuE5QUl0tlBgtPs8VRVhLA3NkamYPyrYgdr9LhHObD66_ple6gQ)
+
+---
+
+<!-- _class: lead -->
+
+#### <!-- fit --> New tooling will be created for this purpose over the next few months.
 
 ---
 
