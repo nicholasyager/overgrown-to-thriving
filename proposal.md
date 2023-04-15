@@ -37,11 +37,31 @@ Hubspot
 
 ![bg right 75%](assets/profile_pic.png)
 
----
-
 <!-- footer: 'Coalesce 2023 Pitch'  -->
 
-# Draw a comparison between a complex dbt project and a garden
+---
+
+![bg](https://www.asergeev.com/pictures/archives/2012/1071/jpeg/11.jpg)
+
+<!-- _footer: ''  -->
+
+---
+
+![bg](assets/graph.png)
+
+<!-- _footer: ''  -->
+
+---
+
+![bg contain](assets/graph.svg)
+
+<!-- _footer: ''  -->
+
+---
+
+<!-- _class: lead -->
+
+# <!--fit--> dbt deployments can be tricky to scale
 
 ---
 
@@ -117,7 +137,13 @@ Gradual removal of unproductive branches to allow a plant to spend its resources
 
 ---
 
-# Renewal pruning
+![bg contain 90%](https://mermaid.ink/svg/pako:eNqNVcGOmzAQ_RXL1aqX7CqwUbrl0EtzbC_tESJkzJDQGhvZZrer1f57DYZgiAPLJR7mvTdvZpDzhqnIAUe4YOKFnonU6MevhCccmYcyotQBCqREIymgomQs-rTfZk_hfoOUluIvjDEVTMghnAlUpgjr-dvt1132OPKHuOfbcMbn8PLTkciCfZEFo8QQ9xI2nEnUsnwmGlyZoihWbVgVpV8ZIPhHqppB6KO7bU_QgQ-dkd2XMGvVLaNjNdlJkvp8KRN_l2AcGxI5lfxkh6hQISTSZ-iXoo6jQl5KoLoUvNshch6LfYztbxocoyiyZx9uN-BCFzdFdmbCuBtni-rimZj1nXapNIiVPqWugWGpS6zQZYULLNsgur__Nq_r7dADDBfddwTb9KJfLw54Pt311bKD-CD4Z43-iJIPm0XmSPpJH6dF1zYdfHDT4Uc3vbxoW3Ns3VvKl54M5u4OUVk95ECYmrnuU7RRWlQgPelairyh-gGegWt11YxBtB9Sj0rTC8wxZDCNAnkr1_KNiTQdDN5IuyanED9RQi2kvlgTjaaG7uCup9N_va4f_5ymwMtrR3M6twt-NqjZGMeyHWFq4LrcHLS0kg7rrGG58o3ZrXlZozn11_F4g41wRcrc_I2-te8SbO7nChIcmWMOBWmYTnDC3w2UNFr8fuUUR1o2sMFNnZs7_lAScx1UOCpMZ_D-HyRHatc)
+
+![bg contain 79%](https://mermaid.ink/svg/pako:eNqNVctymzAU_RWNOplunIyxKXFYdFMv202zDBlGiItNAhKjR9xMJv9eGfMQWJbDSuI87tHRGH9gynPAMS4qfqB7IhT6_TdhCUPmoRWRcgsFklwLCqgoqyr-Fi2zzSpaIKkEf4VxT3nFRb-dGdRmSNXpl8uHMFuP-n7f6U_bswgMDn8skyyIiiwYTfp9Z3LaziwaUb4RBbZNURRfDCLVewUI_pG6qWDlktsHn7ADFzsj4f0q691bjc52gjT7YcjTLwEmLyLoUOYg-hK5QGoPqCZNU7Ld82iQlwKoKjlrrxBZT6v8Ecdxu3BgkQd7MFjfvgO-90g3I-YKhG5vf3YzXMYT2BVsJER-eDPCwPKj2eXag6ctZ98VEvDCS9ZW_UhqQFuiiAQln6ejrpQeeNpZe9tZeZShVxmMB1-7jP2wpQ796vCs1ePy5gZRUd_lQCppYp4-HROIaql4DcIBN4Lnmqo7eAOmbHxgSLVLO1aaDjSrKMPREsQl7Kg3IdK0D3gBtkNOKW6hgIYLNUTjWlEjl_OLsttpm5zmcfc0JQ6vLc9pbwN_VtSsxnFsK5gGOB83J_mupOVa1-CffKG7a1muyaz51_l4gY1xTcrc_Bl-HN8l2Pz2a0hwbJY5FERXKsEJ-zRUohV_fGcUx0poWGDd5OZLvS2J-ZTUOC7MyeDzP4kNRXw)
+
+![bg contain 83%](https://mermaid.ink/svg/pako:eNqFVUtvnDAQ_iuWq6iXTbTsUtJwiFRpj-2lPYYIGXvYpTE2sk3SVZT_XsPyMMQLnDx8jxm-kcw7ppIBjnHO5Rs9EWXQz9-JSASyD-VE6wPkSMtaUUB5wXn8Jdpm33fRBmmj5AuMNZVcqr6cGZS2Ce_02-1DmO1HfV93-ks50wt4--VYZEGUZ8Fo0dedxaWcWVSqeCUGXJs8z1fHuLhoc-aA4B8pKw47n9z97Ak78LEzEt7vst691dTZUZHqNDR5-sEYKgutC3G0FsCZRkQwO59SQE0XqdUU4nm0YUUDFlK0a0TO0_K_xXHcHjxYtIA9WKzfgQe-H6W-puj29rHz8YknsK_5SIhGGARr2NcTDJ4OUnw16K8sBDInQAwqKwJBz0jmiDj187TrSojBQlD7xSR2C8pwURmMGex9xsvwfoTDZXX4KeDmeHODqCrvGBCu7ZiX62AC0VobWYLywJWSrKbmDl5BGBcfGNoc046VpgPNCcpyag3qGtbo7RBp2g94BXaHnFL8QgWVVGYYTdaGWrmeL8pNp01yOo8_pylxeO14TnMb-LOgZjGObVvBdIDP7eakpZW0XGcNy52vZLc2y5rM6b_OxxtsjUtSMPuDe2_eJdheBCUkOLZHBjmpuUlwIj4sldRG_jkLimOjatjgumL2f3EoiL1VShzn9svg4z-bOjw3)
+
+![bg contains 65%](https://mermaid.ink/svg/pako:eNqVlk9vmzAYxr-KxVTtklaBJGzjsMty3C7bMVTImJeEFmxkm3ZV1e8-gyEYx4GFSzD-PY_ffwl59wjLwIu8vGSv5IS5RD9_xzSmSF2kxELsIUeCNZwAyouyjD6F6_RrEK6QkJw9w7gmrGR8WFoGlTqk7PXr9bdtuhn1w7rX66Wlp_D6y7BI_TBP_dFiWPcWemlZ1Lx4wRJMmzzPF8PQLkK-lYDgL67qEgKX3Ex7QvsuOsXbL0HaumtFp2rSI8f16XzM4QcHFbES4WNBj7qIAuWMI3mCvinicXRor6zgQGTBaNdHc0fz24P-TLaPURTpexe3G7jdPBcOXGhyFqkTSLoEEhWBPCaabDXd0znB7lZBaAmG6bHj6uhgdHTWC93ff7cz6J5ptbN2Ds1uQRM6NKFTAzSbDs7F5PiHPaOfJXpiBR3GBBVUMlQC7r-Mt86NP_TZn5-HYOCCeW4zcJv_nRv_1jEI3ALHDBy68bhmqvN39Md3FsABBguZjX2ezecqpivq2p4My90dIrx6yACXwmpOv0UaIVkF3LFdc5Y1RD7AC1ApLnqmiLbaPZUkZ8wISDGNAH5tr9WrIJJkCPDKthnkFHELOdSMy3NorJFEyYU9EWZ1-h6a8bjrNAXPjw3Pad3OvFUoq4zjsZ1gGsDlcTY015KONdowf_KV2i3FsiQzzl_mvZWnjCtcZOp_ynv7LPbUC7CC2IvUbQY5bkoZezH9UChuJPvzRokXSd7AymvqTL1E9wVWP5GVF-UqM_j4BzLN2KY)
 
 <!--
 In a dbt project, we can prune our project by refactoring any anti-patterns currently in use in the project's core entities. This would include
@@ -143,7 +169,7 @@ Dividing the perennials is the notion that we ought to separate your most indust
 
 ---
 
-# Groups and Access
+# <!-- fit -->Groups and Access
 
 ```yml
 groups:
@@ -171,13 +197,17 @@ https://mermaid.live/edit#pako:eNqNlMtugzAQRX8FOVsSRW0VtV50lWW7abdIyJhxgmpj5EeqK
 
 ---
 
-![bg contain 90%](https://mermaid.ink/svg/pako:eNqVVE1vgjAY_iukXtWYuRjWw04mu8zLtiMJKe2LkhVK-qEzxv--IpQWlCyDC337fPVtywVRwQBhlHNxogcidfT-kVRJFdmHcqLUFvJICSMpRHnBOZ5tVln8tJlHSkvxDX5MBRcSz_I8H7FL68A78mr18pytPdmNQ_KIXsviSDTsAhULm5Roh05F6TOH6O1r55iseT05jmM3WJwKpg84Wtc_Q3YtBTNU_1PB8yUcoTLwKHuWZSGSGqVFCTJVhlJQapJyI_UpTbaXpD64oG21ebrCsgmgFca43UgPUHqfdqA07VFhxz3WKBusx5R-Eip2F8V2vGNSWS4ZED62b-puvQ-jOamufX7GBbcKaeqkH2ceQEO3abgTLIdTwSIH6cZbNhSTUAup-xYLo6kFT8kPffqL4BoYLRavo4U_aOUQ1Zed2vBI9ODRIfAXIHS7oQPfe5cxwuNGBjdgcKKcofeZaF0LC5h_g9Ec2WwlKZj9z12aWoL0AUpIELafDHJiuE5QUl0tlBgtPs8VRVhLA3NkamYPyrYgdr9LhHObD66_ple6gQ)
+# Multi-Project Deployments
+
+![bg contain 75%](https://mermaid.ink/svg/pako:eNqVVE1vgjAY_iukXtWYuRjWw04mu8zLtiMJKe2LkhVK-qEzxv--IpQWlCyDC337fPVtywVRwQBhlHNxogcidfT-kVRJFdmHcqLUFvJICSMpRHnBOZ5tVln8tJlHSkvxDX5MBRcSz_I8H7FL68A78mr18pytPdmNQ_KIXsviSDTsAhULm5Roh05F6TOH6O1r55iseT05jmM3WJwKpg84Wtc_Q3YtBTNU_1PB8yUcoTLwKHuWZSGSGqVFCTJVhlJQapJyI_UpTbaXpD64oG21ebrCsgmgFca43UgPUHqfdqA07VFhxz3WKBusx5R-Eip2F8V2vGNSWS4ZED62b-puvQ-jOamufX7GBbcKaeqkH2ceQEO3abgTLIdTwSIH6cZbNhSTUAup-xYLo6kFT8kPffqL4BoYLRavo4U_aOUQ1Zed2vBI9ODRIfAXIHS7oQPfe5cxwuNGBjdgcKKcofeZaF0LC5h_g9Ec2WwlKZj9z12aWoL0AUpIELafDHJiuE5QUl0tlBgtPs8VRVhLA3NkamYPyrYgdr9LhHObD66_ple6gQ)
 
 ---
 
 <!-- _class: lead -->
 
-#### <!-- fit --> New tooling will be created for this purpose over the next few months.
+### New tooling will be created for this
+
+### purpose over the next few months.
 
 ---
 
@@ -200,7 +230,7 @@ metaphor breaks down in our favor.
 
 ---
 
-# Keep the weeds under control
+<!-- _class: lead -->
 
 <!--
 Instead of manual effort, we can use fantastic tools to keep our garden
@@ -208,6 +238,13 @@ productive. For a while, we've had tools like pre-commit and sqlfmt to keep our
 queries readable and maintainable. As of last year, we've also had developments in
 architectural monitoring tools like dbt-project-evaluator and Whetstone to monitor and report on _what_ we've built as well.
 -->
+
+| Surface Area            | Tools                                                                        |
+| :---------------------- | :--------------------------------------------------------------------------- |
+| Coding Conventions      | sqlfluff <br /> sqlfmt                                                       |
+| Documentation & Testing | dbt-checkpoint <br />dbt Core tests and contracts                            |
+| Modeling                | dbt_project_evaluator <br /> Whetstone                                       |
+| Data Quality            | dbt*expectations <br />Great Expectations<br />Data Fold <br /> \_Many* more |
 
 ---
 
