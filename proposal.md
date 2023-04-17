@@ -14,30 +14,7 @@ This video should be 2-5 minutes long. Your pitch does not need to be refined! T
 
 Scaling Your dbt Project Like a Gardener
 
----
-
-<!-- _class: left -->
-
-<style scoped>
-    small { color: gray; font-weight: thin; margin: 0; }
-
-    section:where(.left) {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-    }
-
-</style>
-
-<h1>Nicholas Yager</h1>
-<small>they/them</small>
-
-Principal Analytics Engineer
-Hubspot
-
-![bg right 75%](assets/profile_pic.png)
-
-<!-- footer: 'Coalesce 2023 Pitch'  -->
+<!-- _footer: 'Nicholas Yager - HubSpot'  -->
 
 ---
 
@@ -47,23 +24,9 @@ Hubspot
 
 ---
 
-![bg](assets/graph.png)
-
-<!-- _footer: ''  -->
-
----
-
 ![bg contain](assets/graph.svg)
 
 <!-- _footer: ''  -->
-
----
-
-# <!--fit--> dbt deployments can be tricky to scale
-
-1. Decentralized teams can have inconsistent standards and design principles
-2. Design can be a missing link in the modeling process
-3. It's so easy to add "just one more" model
 
 ---
 
@@ -240,3 +203,42 @@ architectural monitoring tools like dbt-project-evaluator and Whetstone to monit
 
 Nicholas A. Yager
 yager@nicholasyager.com
+
+---
+
+<!-- _class: left -->
+
+<style scoped>
+    small { color: gray; font-weight: thin; margin: 0; }
+
+    section:where(.left) {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+</style>
+
+<h1>Nicholas Yager</h1>
+<small>they/them</small>
+
+Principal Analytics Engineer
+Hubspot
+
+![bg right 75%](assets/profile_pic.png)
+
+---
+
+![bg](assets/graph.png)
+
+<!-- _footer: ''  -->
+
+---
+
+# <!--fit--> dbt deployments can be tricky to scale
+
+1. Decentralized teams can have inconsistent standards and design principles
+2. Design can be a missing link in the modeling process
+3. It's so easy to add "just one more" model
+
+<!-- footer: 'Coalesce 2023 Pitch'  -->
