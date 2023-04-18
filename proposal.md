@@ -18,6 +18,29 @@ Scaling Your dbt Project Like a Gardener
 
 ---
 
+<!-- _class: left -->
+
+<style scoped>
+    small { color: gray; font-weight: thin; margin: 0; }
+
+    section:where(.left) {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+</style>
+
+<h1>Nicholas Yager</h1>
+<small>they/them</small>
+
+Principal Analytics Engineer
+Hubspot
+
+![bg right 75%](assets/profile_pic.png)
+
+---
+
 ![bg](https://www.asergeev.com/pictures/archives/2012/1071/jpeg/11.jpg)
 
 <!-- _footer: ''  -->
@@ -172,12 +195,12 @@ queries readable and maintainable. As of last year, we've also had developments 
 architectural monitoring tools like dbt-project-evaluator and Whetstone to monitor and report on _what_ we've built as well.
 -->
 
-| Surface Area            | Tools                                                                        |
-| :---------------------- | :--------------------------------------------------------------------------- |
-| Coding Conventions      | sqlfluff <br /> sqlfmt                                                       |
-| Documentation & Testing | dbt-checkpoint <br />dbt Core tests and contracts                            |
-| Modeling                | dbt_project_evaluator <br /> Whetstone                                       |
-| Data Quality            | dbt*expectations <br />Great Expectations<br />Data Fold <br /> \_Many* more |
+| Surface Area            | Tools                                             |
+| :---------------------- | :------------------------------------------------ |
+| Coding Conventions      | sqlfluff <br /> sqlfmt                            |
+| Documentation & Testing | dbt-checkpoint <br />dbt Core tests and contracts |
+| Modeling                | dbt_project_evaluator <br /> Whetstone            |
+| Data Quality            | dbt_expectations <br /> dbt_utils <br />Many more |
 
 ---
 
@@ -191,54 +214,9 @@ architectural monitoring tools like dbt-project-evaluator and Whetstone to monit
 
 <!-- _class: lead -->
 
-# This is evergreen content that will become more important as multi-project deployments become mainstream.
-
----
-
-<!-- _class: lead -->
-
 # From Overgrown to **Thriving**
 
 #### Scaling Your dbt Project Like a Gardener
 
 Nicholas A. Yager
 yager@nicholasyager.com
-
----
-
-<!-- _class: left -->
-
-<style scoped>
-    small { color: gray; font-weight: thin; margin: 0; }
-
-    section:where(.left) {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-    }
-
-</style>
-
-<h1>Nicholas Yager</h1>
-<small>they/them</small>
-
-Principal Analytics Engineer
-Hubspot
-
-![bg right 75%](assets/profile_pic.png)
-
----
-
-![bg](assets/graph.png)
-
-<!-- _footer: ''  -->
-
----
-
-# <!--fit--> dbt deployments can be tricky to scale
-
-1. Decentralized teams can have inconsistent standards and design principles
-2. Design can be a missing link in the modeling process
-3. It's so easy to add "just one more" model
-
-<!-- footer: 'Coalesce 2023 Pitch'  -->
