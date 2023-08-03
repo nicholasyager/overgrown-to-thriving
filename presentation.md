@@ -1,6 +1,5 @@
 ---
-theme: gaia
-backgroundColor: #fff
+theme: mdsFest
 marp: true
 ---
 
@@ -13,6 +12,10 @@ This video should be 2-5 minutes long. Your pitch does not need to be refined! T
 # From Overgrown to **Thriving**
 
 Scaling Your dbt Project Like a Gardener
+
+<video autoplay="" playsinline="" loop="" muted="" style="position: absolute; bottom: 5%; right: 5%; width: 5%;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+</video>
 
 ---
 
@@ -31,13 +34,13 @@ Scaling Your dbt Project Like a Gardener
 
 <h1>Nicholas Yager</h1>
 <small>they/them</small>
-
+<p>
 Principal Analytics Engineer
-Hubspot
+<br />
+<small style="color: #D8621D;">HubSpot</small>
+</p>
 
 ![bg right 75%](assets/profile_pic.png)
-
-<!-- footer: 'Coalesce 2023 Pitch'  -->
 
 ---
 
@@ -73,10 +76,18 @@ Hubspot
 
 ---
 
+figure showing how an organization decentralizes data
+
+---
+
+start with one node, and get bigger
+
+---
+
 # <!--fit--> dbt deployments can be tricky to scale
 
 1. Large organizations tend toward decentralization
-2. Decentralization can lead to inconsistent standards and design principles
+2. Decentralization can lead to inconsistent standards and significant overhead
 
 <!--
 Once you're in territory where there are multiple distinct teams forming, storming, norming, and performing, it's common for there to be drift in how the teams operate. This can be something as trivial as leading commas vs trailing commas. It can also, however, become something as important as the definition of a Customer. Perhaps GTM analytics defines a customer as a CRM account with subscription, whereas a finance analytics team may define a customer as a corporate entity. This definition mismatch means that these two analytics teams now have entirely incompatible customer reporting.
@@ -87,10 +98,18 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 # <!--fit--> dbt deployments can be tricky to scale
 
 1. Large organizations tend toward decentralization
-2. Decentralization can lead to inconsistent standards and design principles
+2. Decentralization can lead to inconsistent standards and significant overhead
 3. It's so easy to add "just one more" model
 
 <!-- And now we're in the endgame of how to resolve our differences. Do we put in the effort to have GTM align with Finance or vis versa, or do we make just a few more models that shim together bits of both to workaround the reporting difference? dbt makes it delightfully easy to reference existing models and start pulling in data from somewhere else in the project. -->
+
+---
+
+figure showing what adding "one more model" looks like at first ...
+
+---
+
+And figure showing what it can turn into.
 
 ---
 

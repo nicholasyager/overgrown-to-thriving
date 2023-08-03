@@ -1,0 +1,29 @@
+/* @theme mdsFest */
+
+@import "gaia";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter&display=swap");
+
+section {
+  background-color: #f2f1eb;
+  color: #000;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "EB Garamond", sans-serif;
+  font-weight: 500;
+}
+
+/* 
+MDS Fest Colors
+Community: #e46e59 
+Scale: #ad65a1
+*/
+
+h1 strong {
+  color: #ad65a1;
+  text-decoration: underline;
+}
