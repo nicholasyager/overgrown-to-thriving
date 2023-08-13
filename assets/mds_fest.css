@@ -4,9 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter&display=swap");
 
 section {
-  background-color: #f2f1eb;
+  background-color: #f2f2ebff;
   color: #000;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "EB Garamond", sans-serif;
 }
 
 h1,
@@ -23,7 +24,47 @@ Community: #e46e59
 Scale: #ad65a1
 */
 
-h1 strong {
-  color: #ad65a1;
+h1 strong,
+h2 strong {
+  color: #b861a4;
   text-decoration: underline;
+}
+
+div.footer {
+  font-size: 0.75em;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "EB Garamond", sans-serif;
+
+  position: absolute;
+  width: 90%;
+  height: 2em;
+  bottom: 0;
+  left: 0;
+  margin: 0px 70px;
+
+  border-top: #000 solid 2px;
+  align-items: center;
+}
+
+.footer > div:first-child,
+.footer > div:last-child {
+  flex-grow: 1;
+  flex-basis: 5em;
+}
+
+.footer > div:first-child > video,
+.footer > div:first-child > span {
+  vertical-align: middle;
+}
+
+.footer > div:last-child {
+  text-align: right;
+}
+
+.footer > div:nth-child(2) {
+  text-align: center;
+  flex-grow: 2;
+  font-size: 0.75em;
 }

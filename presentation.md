@@ -13,9 +13,22 @@ This video should be 2-5 minutes long. Your pitch does not need to be refined! T
 
 Scaling Your dbt Project Like a Gardener
 
-<video autoplay="" playsinline="" loop="" muted="" style="position: absolute; bottom: 5%; right: 5%; width: 5%;">
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
     <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
-</video>
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 ---
 
@@ -44,7 +57,10 @@ Principal Analytics Engineer
 
 ---
 
-![bg](https://www.asergeev.com/pictures/archives/2012/1071/jpeg/11.jpg)
+![bg 103%](https://www.publicdomainpictures.net/pictures/200000/velka/verwilderter-hinterhof.jpg)
+
+<!--
+![bg](https://www.asergeev.com/pictures/archives/2012/1071/jpeg/11.jpg) -->
 
 <!-- _footer: ''  -->
 
@@ -56,15 +72,26 @@ Principal Analytics Engineer
 
 ---
 
-![bg contain](assets/graph.svg)
-
-<!-- _footer: ''  -->
-
----
-
 <!-- _class: lead -->
 
 # <!--fit--> dbt deployments can be tricky to scale
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 ---
 
@@ -73,14 +100,6 @@ Principal Analytics Engineer
 1. Large organizations tend toward decentralization
 
 <!-- Suppose you're in an organization of ~ 4,000 employees. Based on dbt Lab's reporting that organizations tend to resource their data teams with 1-2% of headcount, we should expect there to be ~40 - 80 people in the data organization. If we're conservative and estimate that maybe a quarter of those people work within the organization's dbt project, we're looking at 10 - 20 full time dbt contributors. Following the two-pizza rule of team sizes, it would be reasonable to expect there to be 2 to 4 distinct operating teams working within the project. -->
-
----
-
-figure showing how an organization decentralizes data
-
----
-
-start with one node, and get bigger
 
 ---
 
@@ -105,17 +124,57 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 
 ---
 
-figure showing what adding "one more model" looks like at first ...
-
----
-
-And figure showing what it can turn into.
-
----
-
 <!-- _class: lead -->
 
 # This leads to **sprawl**
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+![bg 103%](https://www.publicdomainpictures.net/pictures/200000/velka/verwilderter-hinterhof.jpg)
+
+---
+
+![bg](https://c2.staticflickr.com/4/3092/5809787537_7d926fca26_b.jpg)
+
+---
+
+# Step One: Survey your Garden
+
+<!-- _class: lead -->
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 ---
 
@@ -125,14 +184,50 @@ And figure showing what it can turn into.
 2. What are your exposures?
 3. How are your data consumers using your models?
 4. Are there any obvious architectural issues?
-5. Are there any anti-patterns being used?
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 ---
 
-# Clear out the weeds and trash
+<!-- _class: lead -->
 
+# Step Two: Clear out the weeds and trash
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+<!--
 1. Remove deprecated or otherwise unused models
-2. Consolidate duplicate models
+2. Consolidate duplicate models -->
 
 ---
 
@@ -144,7 +239,24 @@ And figure showing what it can turn into.
 
 <!-- _class: lead -->
 
-# Renewal pruning
+# Step Three: Renewal pruning
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 ---
 
@@ -153,6 +265,22 @@ And figure showing what it can turn into.
 <!--
 Gradual removal of unproductive branches to allow a plant to spend its resources growing healthy branches.
 -->
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 ---
 
@@ -175,28 +303,111 @@ Gradual removal of unproductive branches to allow a plant to spend its resources
 <!--
 In a dbt project, we can prune our project by refactoring any anti-patterns currently in use in the project's core entities. This would include
 -->
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+<!-- It's dangerous to go alone! Take these. -->
+
+![bg](assets/dbt_project_evaluator.png)
+
+---
+
+![bg center](assets/whetstone.png)
 
 ---
 
 <!-- _class: lead -->
 
-# Divide the perennials
+# Step Four: Divide the perennials
 
-<!--
-Dividing the perennials is the notion that we ought to separate your most industrious plants to prevent overcrowding and to allow for specialized treatment of plants in the garden.
--->
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 ---
 
 ![bg](https://www.gardening-guy.com/wp-content/uploads/2012/07/Dividing-hostas-005.jpg)
 
-<!-- _footer: ''  -->
+<!--
+Dividing the perennials is the notion that we ought to separate your most industrious plants to prevent overcrowding and to allow for specialized treatment of plants in the garden.
+-->
 
 <!-- This is a picture of hostas being split up! -->
 
 ---
 
-# <!-- fit -->Groups and Access
+<!-- _class: lead -->
+
+## Groups and Access
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+![bg 90%](https://mermaid.ink/svg/pako:eNqFU01vgzAM_SsovbZVtU3VlsNOPW6X7YqE0uC0aIEgx-k0Vf3vS6FAmgHjhO33YT_BmUmTA-NMafMtjwIpeftIq7RK_CO1sHYHKrHGoYREFVrzxXazf37YLhNLaL5gqKXRBvlCKRWxS--gb-TN5uVp_ziQuzokR_Qai5MgeA9UPGxSoi2vKr0SluschLac8_aSoS-dJVMCxrMaTe4kreEEFYXDdmzpkN0gWdZjmkNbgLOAo4Mr0xtnWbfR2CzcKpiPUBBqg9TvYhxJTwxAUQTJavUa7TASxj2qb3dq9-H04CiQMKvBrUEHvn9dYsRk4g0wCHrGcCKm2RVmOYHt_2C2ZF61FEXuf7TztZcyOkIJKeP-NQclnKaUpdXFQ4Uj8_lTScYJHSyZq3P_-e8KcUBRMq78TXD5BcffSEs)
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
 
 ```yml
 groups:
@@ -204,43 +415,142 @@ groups:
     owner:
       email: gtm@garden.supplies
 
+  - name: customer_success
+    owner:
+      email: customer_success@garden.supplies
+```
+
+```yml
 models:
   - name: deals
     group: go_to_market
     access: public
+
+  - name: report_product_outcomes
+    group: customer_success
+    access: public
 ```
 
-![bg right 90% vertical](https://mermaid.ink/svg/pako:eNqFU01vgzAM_SsovbZVtU3VlsNOPW6X7YqE0uC0aIEgx-k0Vf3vS6FAmgHjhO33YT_BmUmTA-NMafMtjwIpeftIq7RK_CO1sHYHKrHGoYREFVrzxXazf37YLhNLaL5gqKXRBvlCKRWxS--gb-TN5uVp_ziQuzokR_Qai5MgeA9UPGxSoi2vKr0SluschLac8_aSoS-dJVMCxrMaTe4kreEEFYXDdmzpkN0gWdZjmkNbgLOAo4Mr0xtnWbfR2CzcKpiPUBBqg9TvYhxJTwxAUQTJavUa7TASxj2qb3dq9-H04CiQMKvBrUEHvn9dYsRk4g0wCHrGcCKm2RVmOYHt_2C2ZF61FEXuf7TztZcyOkIJKeP-NQclnKaUpdXFQ4Uj8_lTScYJHSyZq3P_-e8KcUBRMq78TXD5BcffSEs)
-![bg right 90% vertical](https://mermaid.ink/svg/pako:eNqNlMtugzAQRX8FOVsSRW0VtV50lWW7abdIyJhxgmpj5EeqKMq_1wkYOw4oZYXHZ-6dB-KEqKwBYcS4_KV7okz28VW0RZu5h3Ki9RZYpqVVFDLWcI4Xm3X1-rTJM22U_IFwppJLhReMsSRbOAc-JK_Xby_Vc0j25zg5Se9UcyAGPiMVh81K9Eevos2Rg5OQtaVmKruqqphUcIDWwj9IarWRAlSpLaWg9WzK0I4SqxoI1xjjfpwh7qXSu6Hs1aUmE18Oddhqp0i391wf7SvclUOwLMfseJCBtdr1MDIiXEJb3zkN47l1ci2Upe9t2mTE4lanUS_0oJJ0_EFAQSeVGfuX1lAHzkuOm8mWy_ekoYkd3VJj2Kvd7myEk22EzzN2u9KR771LSgQuMbiC0Wq9YfCZGVOPRZmPYZQjV5sgTe3-I6dLrEBmDwIKhN1rDYxYbgpUtGeHEmvk97GlCBtlIUe2q91HsG2I26tAmLn64PwHdwiO4g)
+---
+
+![bg 90%](https://mermaid.ink/svg/pako:eNqNlD1vwyAQhv-KRdYkstoqahk6ZWyXdrVkYXwkVsFYfKSKovz3ktgYQuImTOZ47n3vOOQDorIGhBHj8pduiTLZx1fRFm3mFuVE6zWwTEurKGSs4RzPVnn1-rSaZ9oo-QNhTyWXCs8YY0m2cA58SM7zt5fqOST7fZycpHeq2REDn5EKO688n9Tpt15Kmz0HpyNrS82kRFVVMa5gB62FR3FqtZECVKktpaD1_3lDi0osayBcY4z7Kw5xr5eeDV0sT9WZ-HAoxlYbRbqt5_poX-amHIJlOWbHlxtYq10jIyPCIbT1ldNwUZdOroWy9L3dNhmxuNXbqBe6U0k6gyCgoJPKjP1La6gDpyXHyWSLxXvS0I0ZXVJj2KtdzmyEk2mE1xq7nenI99olJQKXGJzBaLTeMPhMXFOPRZn3YTRHrjZBmtr9Ww6nWIHMFgQUCLvPGhix3BSoaI8OJdbI731LETbKwhzZrnaPYN0QN1eBMHP1wfEPyLKVKg)
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 <!--
 Just like a garden needs to be divided into separate areas for different plants, a dbt project can be modularized into smaller sections. In this section I'll discuss some basic philosophies around how to identify which models should be grouped together, how to consolidate similar models, and how to leverage groups and access controls to manage dependencies between sections.
-
-https://mermaid.live/edit#pako:eNqNlMtuwjAQRX8lMltAqK1Q60VXLNtNu41kOc4YEHYc-UGFEP9el8SxMYloVvH4zL3ziHJGTNWAMOJC_bAd1bb4-Cqbsin8wwQ1ZgO8MMppBgXfC4Fn61X1-rSeF8ZqdYB4ZkoojWec8yxbegfRJ69Wby_Vc0wO5zQ5S2_1_kgtfCYqHpuU6I5BxdiTAC-hasfsWHZVVSm5VcQqIqk-wH9w5oxVEjQxjjEwZjKl70nLZQ1UGIxxN9MYD1L5XV_7Eo7Q2PSyr8NVW03bXeC6aFfhlvRBQobsdJqRdcb3MDAyXkJT3zmlM7q1830QEhocdxqwtN9xNAg9KCffQRTQ0CpthyEoZ5kHpyWH9RSLxXvW0MiibqkhHNRuFzfA2Urih5q6XenE994lJyKXGVzBZL_BMPpMjKnDkszHMJojX5uk-9r_Uc5_sRLZHUgoEfavNXDqhC1R2Vw8Sp1V36eGIWy1gzlybe0_gs2e-r1KhLmvDy6_ykSS5A
-
-https://mermaid.live/edit#pako:eNqNlMtugzAQRX8FOVsSRW0VtV50lWW7abdIyJhxgmpj5EeqKMq_1wkYOw4oZYXHZ-6dB-KEqKwBYcS4_KV7okz28VW0RZu5h3Ki9RZYpqVVFDLWcI4Xm3X1-rTJM22U_IFwppJLhReMsSRbOAc-JK_Xby_Vc0j25zg5Se9UcyAGPiMVh81K9Eevos2Rg5OQtaVmKruqqphUcIDWwj9IarWRAlSpLaWg9WzK0I4SqxoI1xjjfpwh7qXSu6Hs1aUmE18Oddhqp0i391wf7SvclUOwLMfseJCBtdr1MDIiXEJb3zkN47l1ci2Upe9t2mTE4lanUS_0oJJ0_EFAQSeVGfuX1lAHzkuOm8mWy_ekoYkd3VJj2Kvd7myEk22EzzN2u9KR771LSgQuMbiC0Wq9YfCZGVOPRZmPYZQjV5sgTe3-I6dLrEBmDwIKhN1rDYxYbgpUtGeHEmvk97GlCBtlIUe2q91HsG2I26tAmLn64PwHdwiO4g
-
 -->
 
 ---
 
-# Multi-Project Deployments
+![bg 90%](https://mermaid.ink/svg/pako:eNqNlEtOwzAQhq8SmW2LIh4VeMGKJWzoNlLkOGMa4cSRH0VV1TOwYcdFOA8X4AqYJn7UfUBW8fib_5_xOFkjKmpAGDEuXumCSJ09PBVd0WX2oZwodQ8sU8JIChlrOMdns7y6uZhNMqWleIGwpoILic8YY0l2ax34mJznt1fVZUh26zg5Se9lsyQaHiMVtn3y_KjOsHRSSq84WB1RG6qPSlRVFeMSltAZ-C9OjdKiBVkqQykodTpvbFG25zUQrjDGwxGHuNNL98Yuzn-r0_HmWIypniXpF44bokOZz-UYLEufHR9uYI2yjXimDZvQ1XtO40HtOtkWytL1dtjEY3Grh1En9Ecl6QyCgIReSO37F0ZTCyaSEeiVFqTvm85qHXX3Q8ym07uk9wPj3KV82KntjtfDyeDCxY7dtnTku--SEoFLDLZgdAucYfA5cqIDFmWehk8UWqCvj_fvz7cCRQr7c3EavOle5tsv8cZ_anA1g-tbR6AJspktaWr7u1v_xgqkF9BCgbB9rYERw3WBim5jUWK0mK86irCWBibI9LW9l_cNsVetRZjZc4DND55Xyqg)
 
-![bg contain 75%](https://mermaid.ink/svg/pako:eNqVVE1vgjAY_iukXtWYuRjWw04mu8zLtiMJKe2LkhVK-qEzxv--IpQWlCyDC337fPVtywVRwQBhlHNxogcidfT-kVRJFdmHcqLUFvJICSMpRHnBOZ5tVln8tJlHSkvxDX5MBRcSz_I8H7FL68A78mr18pytPdmNQ_KIXsviSDTsAhULm5Roh05F6TOH6O1r55iseT05jmM3WJwKpg84Wtc_Q3YtBTNU_1PB8yUcoTLwKHuWZSGSGqVFCTJVhlJQapJyI_UpTbaXpD64oG21ebrCsgmgFca43UgPUHqfdqA07VFhxz3WKBusx5R-Eip2F8V2vGNSWS4ZED62b-puvQ-jOamufX7GBbcKaeqkH2ceQEO3abgTLIdTwSIH6cZbNhSTUAup-xYLo6kFT8kPffqL4BoYLRavo4U_aOUQ1Zed2vBI9ODRIfAXIHS7oQPfe5cxwuNGBjdgcKKcofeZaF0LC5h_g9Ec2WwlKZj9z12aWoL0AUpIELafDHJiuE5QUl0tlBgtPs8VRVhLA3NkamYPyrYgdr9LhHObD66_ple6gQ)
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+<!--
+Just like a garden needs to be divided into separate areas for different plants, a dbt project can be modularized into smaller sections. In this section I'll discuss some basic philosophies around how to identify which models should be grouped together, how to consolidate similar models, and how to leverage groups and access controls to manage dependencies between sections.
+-->
+
+---
+
+## Multi-Project Deployments
+
+⚠️ Caution: Prickly Practice 🌵
+
+<!-- _class: lead -->
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+![bg contain 75%](https://mermaid.ink/svg/pako:eNqVVE1vgyAY_iuGXdvGrEvjOOzUZJf1su1oYhBfqhmK4aNd0_S_j7YiaOuWcZKX54sX8IioKABhxLjY05JIHb29p03aRHZQTpRaA4uUMJJCxCrO8cMqzpPH1SxSWoov8HMquJD4gTE2YtfWgXfkOH5-ypee7OYheURvZbUjGjaBCruMOJ7UuU6dlNIHDtHr52aSniSJm8z3VaFLHC3b7yG_laIwVP9bwytI2EFjYFIhz_MQTo3SogaZKUMpKPU778LsE5t8K0lbutDX6nl0hcU5ilYY4-vZeoDS26wDZVmPCg_BY42y6XpM7RehKW6i2P53TCrrRQGEj-3Pdbfpu9GcVNdIv-KCW4Usc9L3Mw-gods03AnWw6Vgk4N043MbiklohdR9i4XR1IKn5Ic-_dtwDYzm85fRxu-0cojqy05teCV68OgS-McQul3Qge-tyxjhcSODCzC4Uc7Q-0y07goLmH-D0QzZbDWpCvvrO55rKdIl1JAibD8LYMRwnaK0OVkoMVp8HBqKsJYGZsi0hb0o64rY864RZjYfnH4AXLHAAw)
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+<!--
+1. Teams have more flexibility and self-determination
+2. Clear lines of ownership and responsibility for all models.
+3. Public interfaces between projects can be versioned and contracted
+ -->
+
+---
+
+![bg](https://upload.wikimedia.org/wikipedia/commons/3/35/2019-05-08_16_13_52_Blackberry_bushes_blooming_along_Stone_Heather_Drive_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg)
+
+---
+
+![bg](assets/github_discussion.png)
+![bg](assets/multiproject_dbt_cloud.png)
+
+---
+
+![bg](assets/loom.png)
 
 ---
 
 <!-- _class: lead -->
 
-### New tooling will be created for this
-
-### purpose over the next few months.
-
----
-
-<!-- _class: lead -->
-
-# Keep the weeds under control
+# Step Five: Keep the weeds under control
 
 <!--
 Now that we've gotten our garden into a more maintainable state state, it's
@@ -266,12 +576,63 @@ queries readable and maintainable. As of last year, we've also had developments 
 architectural monitoring tools like dbt-project-evaluator and Whetstone to monitor and report on _what_ we've built as well.
 -->
 
-| Surface Area            | Tools                                                                        |
-| :---------------------- | :--------------------------------------------------------------------------- |
-| Coding Conventions      | sqlfluff <br /> sqlfmt                                                       |
-| Documentation & Testing | dbt-checkpoint <br />dbt Core tests and contracts                            |
-| Modeling                | dbt_project_evaluator <br /> Whetstone                                       |
-| Data Quality            | dbt*expectations <br />Great Expectations<br />Data Fold <br /> \_Many* more |
+<h2>
+Your <strong>process</strong> is more
+important than your tools
+</h2>
+
+---
+
+# Ways to keep the weeds under control
+
+1. **Perform code reviews, and make them easy!**
+
+---
+
+# Ways to keep the weeds under control
+
+1. **Perform code reviews for every change, and make reviews easy!**
+   - Show your DAG changes
+   - Use CI/CD and dbt tests
+   - Pick your SQL syntax and enforce it using SQL formatters.
+
+---
+
+# Ways to keep the weeds under control
+
+1. Perform code reviews for every change, and make reviews easy!
+2. **Review your project's architecture often**
+
+---
+
+# Ways to keep the weeds under control
+
+1. Perform code reviews for every change, and make reviews easy!
+2. **Review your project's architecture often**
+   - Use an architecture evaluation tool like dbt_project_evaluator or Whetstone
+   - Look at your DAG. Really!
+
+---
+
+# Ways to keep the weeds under control
+
+1. Perform code reviews for every change, and make reviews easy!
+2. Review your project's architecture often
+3. **Periodically check to see if the execution behavior of your project has changed**
+
+---
+
+# Ways to keep the weeds under control
+
+1. Perform code reviews for every change, and make reviews easy!
+2. Review your project's architecture often
+3. **Periodically check to see if the execution behavior of your project has changed**
+   - Track materialization run times (dbt_artifacts or dbt Cloud) to find bottlenecks in your project
+   - Leverage query usage data to identify unused models
+
+---
+
+![bg](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Jardin_en_permaculture.jpg/1200px-Jardin_en_permaculture.jpg)
 
 ---
 
@@ -293,9 +654,26 @@ When we're ready, we can continue to deliberately cultivate our garden with conf
 
 <!-- _class: lead -->
 
-# From Overgrown to **Thriving**
-
-#### Scaling Your dbt Project Like a Gardener
+<video autoplay="" playsinline="" loop="" muted="" style="margin: 0 auto; width: 5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
 
 Nicholas A. Yager
 yager@nicholasyager.com
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
