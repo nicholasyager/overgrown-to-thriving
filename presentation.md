@@ -99,6 +99,23 @@ Principal Analytics Engineer
 
 1. Large organizations tend toward decentralization
 
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
 <!-- Suppose you're in an organization of ~ 4,000 employees. Based on dbt Lab's reporting that organizations tend to resource their data teams with 1-2% of headcount, we should expect there to be ~40 - 80 people in the data organization. If we're conservative and estimate that maybe a quarter of those people work within the organization's dbt project, we're looking at 10 - 20 full time dbt contributors. Following the two-pizza rule of team sizes, it would be reasonable to expect there to be 2 to 4 distinct operating teams working within the project. -->
 
 ---
@@ -107,6 +124,23 @@ Principal Analytics Engineer
 
 1. Large organizations tend toward decentralization
 2. Decentralization can lead to inconsistent standards and significant overhead
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 <!--
 Once you're in territory where there are multiple distinct teams forming, storming, norming, and performing, it's common for there to be drift in how the teams operate. This can be something as trivial as leading commas vs trailing commas. It can also, however, become something as important as the definition of a Customer. Perhaps GTM analytics defines a customer as a CRM account with subscription, whereas a finance analytics team may define a customer as a corporate entity. This definition mismatch means that these two analytics teams now have entirely incompatible customer reporting.
@@ -119,6 +153,23 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 1. Large organizations tend toward decentralization
 2. Decentralization can lead to inconsistent standards and significant overhead
 3. It's so easy to add "just one more" model
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 <!-- And now we're in the endgame of how to resolve our differences. Do we put in the effort to have GTM align with Finance or vis versa, or do we make just a few more models that shim together bits of both to workaround the reporting difference? dbt makes it delightfully easy to reference existing models and start pulling in data from somewhere else in the project. -->
 
