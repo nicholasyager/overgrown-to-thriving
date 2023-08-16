@@ -16,7 +16,7 @@ Scaling Your dbt Project Like a Gardener
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -74,12 +74,12 @@ Principal Analytics Engineer
 
 <!-- _class: lead -->
 
-# <!--fit--> dbt deployments can be tricky to scale
+# dbt projects can be tricky to scale
 
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -95,7 +95,7 @@ Principal Analytics Engineer
 
 ---
 
-# <!--fit--> dbt deployments can be tricky to scale
+# dbt projects can be tricky to scale
 
 1. Large organizations tend toward decentralization
 
@@ -103,7 +103,7 @@ Principal Analytics Engineer
 
 ---
 
-# <!--fit--> dbt deployments can be tricky to scale
+# dbt projects can be tricky to scale
 
 1. Large organizations tend toward decentralization
 2. Decentralization can lead to inconsistent standards and significant overhead
@@ -114,7 +114,7 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 
 ---
 
-# <!--fit--> dbt deployments can be tricky to scale
+# dbt projects can be tricky to scale
 
 1. Large organizations tend toward decentralization
 2. Decentralization can lead to inconsistent standards and significant overhead
@@ -131,7 +131,7 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -155,14 +155,14 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 
 ---
 
-# Step One: Survey your Garden
+# Step One: Survey your garden
 
 <!-- _class: lead -->
 
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -188,7 +188,7 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -211,7 +211,7 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -244,7 +244,7 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -268,7 +268,7 @@ Gradual removal of unproductive branches to allow a plant to spend its resources
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -306,7 +306,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -324,11 +324,11 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
 
 <!-- It's dangerous to go alone! Take these. -->
 
-![bg](assets/dbt_project_evaluator.png)
+![bg 90%](assets/dbt_project_evaluator.png)
 
 ---
 
-![bg center](assets/whetstone.png)
+![bg center 90%](assets/whetstone.png)
 
 ---
 
@@ -339,7 +339,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -372,7 +372,7 @@ Dividing the perennials is the notion that we ought to separate your most indust
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -393,7 +393,7 @@ Dividing the perennials is the notion that we ought to separate your most indust
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -438,7 +438,7 @@ models:
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -463,7 +463,7 @@ Just like a garden needs to be divided into separate areas for different plants,
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -483,16 +483,16 @@ Just like a garden needs to be divided into separate areas for different plants,
 
 ---
 
-## Multi-Project Deployments
+## Multi-project deployments
 
-⚠️ Caution: Prickly Practice 🌵
+⚠️ Caution: Prickly practice 🌵
 
 <!-- _class: lead -->
 
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -513,7 +513,7 @@ Just like a garden needs to be divided into separate areas for different plants,
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
@@ -535,16 +535,123 @@ Just like a garden needs to be divided into separate areas for different plants,
 
 ---
 
-![bg](https://upload.wikimedia.org/wikipedia/commons/3/35/2019-05-08_16_13_52_Blackberry_bushes_blooming_along_Stone_Heather_Drive_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg)
+![bg 90%](assets/github_discussion.png)
+![bg 90%](assets/multiproject_dbt_cloud_2.png)
 
 ---
 
-![bg](assets/github_discussion.png)
-![bg](assets/multiproject_dbt_cloud.png)
+![bg 90%](https://mermaid.ink/svg/pako:eNqFUl1PwyAU_SsEX6vpWu02Hkz8ejDRuKiJidYYWi4bSqHhQ53L_rvQbk6NHzzA5XDu4dwLC1xrBphgLvVLPaPGobPLUpUKhVFLau0xcFRJWj8hLqQkW7wbaZog64x-ArKVxk2tpTZd_D03pE6N9oqtBTKeQcX5HwLfJFojnqmD8-BU_uFivFvln3Tidi1l3VwCur6YrNJPTg6L7OCLg55qfTU1tJ1F7h2rHDqS2rP7XoUJA7UTWqHrwxVSuQfjlRMN9GxtAF32wD0hZFN8z2-NDsWAo2b-0Eo_FepusoHQeVgYdRRNurOfFJiwtX6GkE9bsXGIDian9l8-2t7e_8HDb946-qcSUSTCSjlOwftj6Ei8tvshkR-bHNcbamCmvYX1aX8LTnADpqGChU-3iFiJ3QwaKDEJIQNOvXQlLtUyUKl3-mquakw4lRYS7NvQHzgWNLxS84G2VGGywK-YDHdGRZGno2yQZaM0G-YJnmMyKAY7Rbo3ynfHRTrOh3vLBL9pHQQGXfJtFzvjYfkOXQYB2g)
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 ---
 
-![bg](assets/loom.png)
+![bg 90%](https://mermaid.ink/svg/pako:eNqNUm1r2zAQ_itC_eoWx16dVB8GbcOg0LGwFUoXj6JIp1itLBm9bMtC8tsr2c5SRgvTB-nu9Dz33J20xcxwwAQLZX6xhlqPbr_WutYoLqaoc3MQaKUoe0ZCKkVORL_yPEPOW_MM5CRPDjPK2N7-lxupa2uC5ocEhShgJcT_Jmgk56BH8tXl_Lr8dKQe_JE9uGP9zm8UoLsvi3e4vVRCurBaW9o1Cbt8MMGiGy0sjbjAfLDwY6iISwvMS6PR3dUYWflHG7SXLSyjja5NBBNCjj0PuM6azkrw1G4eOxXWUi8XxxD6HA9OPUWL_i5lGJo-6DpmfkLk0k4OOsoEji4XN-419g002u_3b6i_V1UPf9UUSkAYu0hbrPopziC12H-J09OP_YDTeU8tNCY4ONwOKjjDLdiWSh5_2TbFauwbaKHGJJocBA3K17jWuwilwZtvG80wEVQ5yHDo4mRgLml8ofZvtKMaky3-jcn0bFZVZT4rJkUxy4tpmeENJpNqclbl57Pyw0WVX5TT812G_xgTE0x68vfeju8LuxfhXv3x)
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+![bg 90%](https://mermaid.ink/svg/pako:eNqNUm1P2zAQ_iuW-RpQmkBa_GESUCEhbaIaSIg1E3Ltc-Ph2JFftnVV-9uxk3RsE0jzh-Tu_Dx3z915i5nhgAkWyvxgDbUeffxc61qjeJiizs1BoJWi7BkJqRQ5Ev3J8ww5b80zkKM8OcwoY3v7X26krq0Jmh8SFKKAlRD_m6CRnIMeyZcX86vy-pV68Ef24I76nd8oQPe3i3e4famEdGG1trRrEnb5aIJFN1pYGnGB-WDh66CISwvMS6PR_eUYWfknG7SXLSyjja5MBBNCXnsecJ01nZXgqd08dSqspV7edrGnu1iLAfoUbzj1FC36u7cycOmY-Q6RTzs51FImcHSxuHEJPwzpsLi_0Gi_37-h4D1l6Pj4w5-NoQSEUUf6LKz5FueQRPbPIuHTkNP_gVpoTHBwuB2q4Ay3YFsqeXxp2xSrsW-ghRqTaHIQNChf41rvIpQGb-42mmEiqHKQ4dDF6cBc0ril9ne0oxqTLf6JyfRkVlVlPismRTHLi2mZ4Q0mk2pyUuVns_L0vMrPy-nZLsO_jIkJJj35S2_HHcPuBdQu_kU)
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+![bg 90%](https://mermaid.ink/svg/pako:eNqNU1FP2zAQ_iuWeQ0oTUda_IAEVEhITK1WJLQlqHKcS-Ph2JFjb-uq_vfZTjrYyND84Nydv-_uvvi8x0yVgAmuhPrOaqoNuv-Uy1wit5igXbeAChWCsmdUcSHISRVWHEeoM1o9AzmJvcOUUDrYf3MddauVleUxQVIlUFTV_yaoeVmCHMjXV4ub6e0L9egP7N4d-u_MTgB6WK7-wQ2lPLKzxVbTtvbY7LOyGt3JSlOHs8xYDU99RyXXwAxXEj1cD5HCbLSVhjeQORvdKAcmhLxo7nGtVq3mYKjebVpht1xmy9ZpWrtaDNBHd1JSQ9EqnI1l6HenA7rsXjEq0K23x6Cq-Ora3HRGabqFbBlctO7dMULJO6a-geuNtrzXIZQt0dXq7k2BEQY6Pb0cUfiq43cRf7b7LvRtPMBf3UL4TzAI89tKK5_eqwgz7PF-Ivz3kWqole3geNpXwRFuQDeUl-5Z7H0sx6aGBnJMnFlCRa0wOc7lwUGpNWq9kwyTiooOImxbd5Ww4NSNVPM72lKJyR7_wGR2Nk_TaTxPJkkyj5PZNMI7TCbp5CyNz-fTDxdpfDGdnR8i_FMpl2ASyF-C7QYSDr8AEEs6uA)
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+![bg 90%](assets/loom.png)
+
+---
+
+![bg contain 75%](https://mermaid.ink/svg/pako:eNqVVE1vgyAY_iuGXdvGrEvjOOzUZJf1su1oYhBfqhmK4aNd0_S_j7YiaOuWcZKX54sX8IioKABhxLjY05JIHb29p03aRHZQTpRaA4uUMJJCxCrO8cMqzpPH1SxSWoov8HMquJD4gTE2YtfWgXfkOH5-ypee7OYheURvZbUjGjaBCruMOJ7UuU6dlNIHDtHr52aSniSJm8z3VaFLHC3b7yG_laIwVP9bwytI2EFjYFIhz_MQTo3SogaZKUMpKPU778LsE5t8K0lbutDX6nl0hcU5ilYY4-vZeoDS26wDZVmPCg_BY42y6XpM7RehKW6i2P53TCrrRQGEj-3Pdbfpu9GcVNdIv-KCW4Usc9L3Mw-gods03AnWw6Vgk4N043MbiklohdR9i4XR1IKn5Ic-_dtwDYzm85fRxu-0cojqy05teCV68OgS-McQul3Qge-tyxjhcSODCzC4Uc7Q-0y07goLmH-D0QzZbDWpCvvrO55rKdIl1JAibD8LYMRwnaK0OVkoMVp8HBqKsJYGZsi0hb0o64rY864RZjYfnH4AXLHAAw)
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+<!--
+1. Teams have more flexibility and self-determination
+2. Clear lines of ownership and responsibility for all models.
+3. Public interfaces between projects can be versioned and contracted
+ -->
 
 ---
 
@@ -558,6 +665,23 @@ vital that we prevent weeds and other unwanted plants from taking root. In a gar
 this can take a great deal of time and effort. Thankfully, this is where our
 metaphor breaks down in our favor.
 -->
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 ---
 
@@ -581,11 +705,45 @@ Your <strong>process</strong> is more
 important than your tools
 </h2>
 
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
 ---
 
 # Ways to keep the weeds under control
 
-1. **Perform code reviews, and make them easy!**
+1. **Perform code reviews for every change, and make reviews easy!**
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 ---
 
@@ -596,12 +754,46 @@ important than your tools
    - Use CI/CD and dbt tests
    - Pick your SQL syntax and enforce it using SQL formatters.
 
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
 ---
 
 # Ways to keep the weeds under control
 
 1. Perform code reviews for every change, and make reviews easy!
 2. **Review your project's architecture often**
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 ---
 
@@ -612,6 +804,23 @@ important than your tools
    - Use an architecture evaluation tool like dbt_project_evaluator or Whetstone
    - Look at your DAG. Really!
 
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
 ---
 
 # Ways to keep the weeds under control
@@ -619,6 +828,23 @@ important than your tools
 1. Perform code reviews for every change, and make reviews easy!
 2. Review your project's architecture often
 3. **Periodically check to see if the execution behavior of your project has changed**
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 ---
 
@@ -629,6 +855,23 @@ important than your tools
 3. **Periodically check to see if the execution behavior of your project has changed**
    - Track materialization run times (dbt_artifacts or dbt Cloud) to find bottlenecks in your project
    - Leverage query usage data to identify unused models
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 ---
 
@@ -641,6 +884,23 @@ important than your tools
 # Take a short break
 
 and then grow a bright future
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
 
 <!--
 We've come a long way! Our project now has fewer unused models, a more efficient
@@ -655,7 +915,7 @@ When we're ready, we can continue to deliberately cultivate our garden with conf
 <!-- _class: lead -->
 
 <video autoplay="" playsinline="" loop="" muted="" style="margin: 0 auto; width: 5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
 
 Nicholas A. Yager
@@ -664,7 +924,7 @@ yager@nicholasyager.com
 <div class="footer">
   <div class="logo">
   <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="https://secoda-public-media-assets.s3.amazonaws.com/mds-wave.mp4" type="video/mp4">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
   </video>
   <span>
   MDS FEST
