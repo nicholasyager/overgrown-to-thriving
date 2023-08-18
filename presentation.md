@@ -55,12 +55,30 @@ Principal Analytics Engineer
 
 ![bg right 75%](assets/profile_pic.png)
 
+<!--
+I'm Nicholas Yager! I'm a Principal Analytics Engineer at HusSpot and
+today I'm going to talk with you about gardens.
+-->
+
 ---
 
 ![bg 103%](https://www.publicdomainpictures.net/pictures/200000/velka/verwilderter-hinterhof.jpg)
 
 <!--
-![bg](https://www.asergeev.com/pictures/archives/2012/1071/jpeg/11.jpg) -->
+Well... not just any type of garden. Specifically, overgrown gardens.
+I LOVE overgrown gardens. They are monuments to nature's ability to
+create life, and for living organism's ability to grow into any niche
+available to them.
+
+The downside to overgrown gardens, is that they are impossible to for
+a gardener to maintain. If we want to start planing productive crops
+and beautiful flowers, we're at the mercy of the verdant life already
+there. We as gardeners implement our deigns on  _this_ garden in its
+current form.
+
+Of course, you're not here to discuss horticulture per se. This is a
+data conference, after all. So, bring dbt DAGs into this.
+ -->
 
 <!-- _footer: ''  -->
 
@@ -68,13 +86,27 @@ Principal Analytics Engineer
 
 ![bg](assets/graph.png)
 
+<!--
+This type of image might look familiar to some folks. Perhaps different
+nodes in different places, but this tangled web of references is likely
+something that you see in your project ... at least after you grab a coffee
+while the dbt docs render for a few minutes.
+
+In a marketing images and trivial guides, dbt project DAGs are always
+neat, tidy structures that are easy to view on one screen. But, I've found
+that once you have people really digging into an organization's data, the
+project can start to take on a life all its own.
+
+Quite simply
+ -->
+
 <!-- _footer: ''  -->
 
 ---
 
 <!-- _class: lead -->
 
-# dbt projects can be tricky to scale
+# dbt projects are be tricky to scale
 
 <div class="footer">
   <div class="logo">
@@ -95,7 +127,28 @@ Principal Analytics Engineer
 
 ---
 
-# dbt projects can be tricky to scale
+# dbt projects are tricky to scale
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+# dbt projects are tricky to scale
 
 1. Large organizations tend toward decentralization
 
@@ -120,7 +173,7 @@ Principal Analytics Engineer
 
 ---
 
-# dbt projects can be tricky to scale
+# dbt projects are tricky to scale
 
 1. Large organizations tend toward decentralization
 2. Decentralization can lead to inconsistent standards and significant overhead
@@ -148,7 +201,7 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 
 ---
 
-# dbt projects can be tricky to scale
+# dbt projects are tricky to scale
 
 1. Large organizations tend toward decentralization
 2. Decentralization can lead to inconsistent standards and significant overhead
@@ -592,48 +645,6 @@ Just like a garden needs to be divided into separate areas for different plants,
 ---
 
 ![bg 90%](https://mermaid.ink/svg/pako:eNqFUl1PwyAU_SsEX6vpWu02Hkz8ejDRuKiJidYYWi4bSqHhQ53L_rvQbk6NHzzA5XDu4dwLC1xrBphgLvVLPaPGobPLUpUKhVFLau0xcFRJWj8hLqQkW7wbaZog64x-ArKVxk2tpTZd_D03pE6N9oqtBTKeQcX5HwLfJFojnqmD8-BU_uFivFvln3Tidi1l3VwCur6YrNJPTg6L7OCLg55qfTU1tJ1F7h2rHDqS2rP7XoUJA7UTWqHrwxVSuQfjlRMN9GxtAF32wD0hZFN8z2-NDsWAo2b-0Eo_FepusoHQeVgYdRRNurOfFJiwtX6GkE9bsXGIDian9l8-2t7e_8HDb946-qcSUSTCSjlOwftj6Ei8tvshkR-bHNcbamCmvYX1aX8LTnADpqGChU-3iFiJ3QwaKDEJIQNOvXQlLtUyUKl3-mquakw4lRYS7NvQHzgWNLxS84G2VGGywK-YDHdGRZGno2yQZaM0G-YJnmMyKAY7Rbo3ynfHRTrOh3vLBL9pHQQGXfJtFzvjYfkOXQYB2g)
-
-<div class="footer">
-  <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
-  <span>
-  MDS FEST
-  </span>
-  </div>
-
-  <div class="small_title">
-  From Overgrown to Thriving
-  </div>
-
-  <div></div>
-</div>
-
----
-
-![bg 90%](https://mermaid.ink/svg/pako:eNqNUm1r2zAQ_itC_eoWx16dVB8GbcOg0LGwFUoXj6JIp1itLBm9bMtC8tsr2c5SRgvTB-nu9Dz33J20xcxwwAQLZX6xhlqPbr_WutYoLqaoc3MQaKUoe0ZCKkVORL_yPEPOW_MM5CRPDjPK2N7-lxupa2uC5ocEhShgJcT_Jmgk56BH8tXl_Lr8dKQe_JE9uGP9zm8UoLsvi3e4vVRCurBaW9o1Cbt8MMGiGy0sjbjAfLDwY6iISwvMS6PR3dUYWflHG7SXLSyjja5NBBNCjj0PuM6azkrw1G4eOxXWUi8XxxD6HA9OPUWL_i5lGJo-6DpmfkLk0k4OOsoEji4XN-419g002u_3b6i_V1UPf9UUSkAYu0hbrPopziC12H-J09OP_YDTeU8tNCY4ONwOKjjDLdiWSh5_2TbFauwbaKHGJJocBA3K17jWuwilwZtvG80wEVQ5yHDo4mRgLml8ofZvtKMaky3-jcn0bFZVZT4rJkUxy4tpmeENJpNqclbl57Pyw0WVX5TT812G_xgTE0x68vfeju8LuxfhXv3x)
-
-<div class="footer">
-  <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
-  <span>
-  MDS FEST
-  </span>
-  </div>
-
-  <div class="small_title">
-  From Overgrown to Thriving
-  </div>
-
-  <div></div>
-</div>
-
----
-
-![bg 90%](https://mermaid.ink/svg/pako:eNqNUm1P2zAQ_iuW-RpQmkBa_GESUCEhbaIaSIg1E3Ltc-Ph2JFftnVV-9uxk3RsE0jzh-Tu_Dx3z915i5nhgAkWyvxgDbUeffxc61qjeJiizs1BoJWi7BkJqRQ5Ev3J8ww5b80zkKM8OcwoY3v7X26krq0Jmh8SFKKAlRD_m6CRnIMeyZcX86vy-pV68Ef24I76nd8oQPe3i3e4famEdGG1trRrEnb5aIJFN1pYGnGB-WDh66CISwvMS6PR_eUYWfknG7SXLSyjja5MBBNCXnsecJ01nZXgqd08dSqspV7edrGnu1iLAfoUbzj1FC36u7cycOmY-Q6RTzs51FImcHSxuHEJPwzpsLi_0Gi_37-h4D1l6Pj4w5-NoQSEUUf6LKz5FueQRPbPIuHTkNP_gVpoTHBwuB2q4Ay3YFsqeXxp2xSrsW-ghRqTaHIQNChf41rvIpQGb-42mmEiqHKQ4dDF6cBc0ril9ne0oxqTLf6JyfRkVlVlPismRTHLi2mZ4Q0mk2pyUuVns_L0vMrPy-nZLsO_jIkJJj35S2_HHcPuBdQu_kU)
 
 <div class="footer">
   <div class="logo">
