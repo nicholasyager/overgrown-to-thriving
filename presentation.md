@@ -3,10 +3,6 @@ theme: mdsFest
 marp: true
 ---
 
-<!--
-This video should be 2-5 minutes long. Your pitch does not need to be refined! Tell us the main idea behind your session, key topics that you plan to cover, and what audience members will learn. Feel free to share your screen if you want to use a doc or slides to run through your session at a high level. We recommend using Loom
---->
-
 <!-- _class: lead -->
 
 # From Overgrown to **Thriving**
@@ -57,7 +53,7 @@ Principal Analytics Engineer
 
 <!--
 I'm Nicholas Yager! I'm a Principal Analytics Engineer at HusSpot and
-today I'm going to talk with you about gardens.
+today I'm going to talk with you about dbt projects and gardens.
 -->
 
 ---
@@ -67,14 +63,13 @@ today I'm going to talk with you about gardens.
 <!--
 Well... not just any type of garden. Specifically, overgrown gardens.
 I LOVE overgrown gardens. They are monuments to nature's ability to
-create life, and for living organism's ability to grow into any niche
-available to them.
+create life, and for living organism's ability to grow into nearly any
+niche available to them.
 
 The downside to overgrown gardens, is that they are impossible to for
 a gardener to maintain. If we want to start planing productive crops
 and beautiful flowers, we're at the mercy of the verdant life already
-there. We as gardeners implement our deigns on  _this_ garden in its
-current form.
+there. We as gardeners implement our designs within _this_ garden as it already exists.
 
 Of course, you're not here to discuss horticulture per se. This is a
 data conference, after all. So, bring dbt DAGs into this.
@@ -87,15 +82,15 @@ data conference, after all. So, bring dbt DAGs into this.
 ![bg](assets/graph.png)
 
 <!--
-This type of image might look familiar to some folks. Perhaps different
-nodes in different places, but this tangled web of references is likely
-something that you see in your project ... at least after you grab a coffee
-while the dbt docs render for a few minutes.
+I'm reasonably confident that you all are familiar with this type of image. A tangled web of references that is nearly inscrutable at first glance, and that's if you're willing to wait for the dbt docs render.
 
-In a marketing images and trivial guides, dbt project DAGs are always
-neat, tidy structures that are easy to view on one screen. But, I've found
-that once you have people really digging into an organization's data, the
-project can start to take on a life all its own.
+Now, marketing images and trivial guides always have dbt projects with are
+neat, tidy DAGs that are easy to view on one screen. But, this is not the reality for most dbt users! Organizations in the real world have more than
+perfect representations for transactions and customers. Business processes
+can be really complex, and this necessitates that your dbt projects be complex
+enough to encapsulate these processes as core entities.
+
+Having that been said, there is a fine line between a project being complex, and being messy. In my opinion, complexity is a byproduct of constraints -- you must work with the data you have, and sometimes this requires extra layers of abstraction and processing. Messiness and clutter, however, happen as an issue of scale.
 
 Quite simply
  -->
@@ -106,27 +101,6 @@ Quite simply
 
 <!-- _class: lead -->
 
-# dbt projects are be tricky to scale
-
-<div class="footer">
-  <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
-  <span>
-  MDS FEST
-  </span>
-  </div>
-
-  <div class="small_title">
-  From Overgrown to Thriving
-  </div>
-
-  <div></div>
-</div>
-
----
-
 # dbt projects are tricky to scale
 
 <div class="footer">
@@ -150,7 +124,28 @@ Quite simply
 
 # dbt projects are tricky to scale
 
-1. Large organizations tend toward decentralization
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+# dbt projects are tricky to scale
+
+1. Large organizations trend towards decentralization as they grow
 
 <div class="footer">
   <div class="logo">
@@ -169,13 +164,13 @@ Quite simply
   <div></div>
 </div>
 
-<!-- Suppose you're in an organization of ~ 4,000 employees. Based on dbt Lab's reporting that organizations tend to resource their data teams with 1-2% of headcount, we should expect there to be ~40 - 80 people in the data organization. If we're conservative and estimate that maybe a quarter of those people work within the organization's dbt project, we're looking at 10 - 20 full time dbt contributors. Following the two-pizza rule of team sizes, it would be reasonable to expect there to be 2 to 4 distinct operating teams working within the project. -->
+<!-- As organizations grow, they trend towards decentralization. It's very easy to keep all of your analytics talent aligned and in one central org while you have 5, 10, heck 20 people, but at a certain point, it is not longer effective to have once central block of AE talent. Many organizations follow a two-pizza rule -- the idea that effective teams are usually those fed by two pizzas -- and as such will decompose teams into specific domains. This decentralization then opens the door to drift.   -->
 
 ---
 
 # dbt projects are tricky to scale
 
-1. Large organizations tend toward decentralization
+1. Large organizations trend towards decentralization as they grow
 2. Decentralization can lead to inconsistent standards and significant overhead
 
 <div class="footer">
@@ -196,14 +191,14 @@ Quite simply
 </div>
 
 <!--
-Once you're in territory where there are multiple distinct teams forming, storming, norming, and performing, it's common for there to be drift in how the teams operate. This can be something as trivial as leading commas vs trailing commas. It can also, however, become something as important as the definition of a Customer. Perhaps GTM analytics defines a customer as a CRM account with subscription, whereas a finance analytics team may define a customer as a corporate entity. This definition mismatch means that these two analytics teams now have entirely incompatible customer reporting.
+Once you're in territory where there are multiple distinct teams operating independently, it's common for there to be drift in how the teams operate. This can be something as trivial as leading commas vs trailing commas. It can also ne something as important as the definition of a Customer. Perhaps Sales analytics defines a customer as a CRM account with subscription, whereas a finance analytics team may define a customer as a corporate entity. This definition mismatch means that these two analytics teams now have entirely incompatible customer reporting. This adds to overhead and makes it difficult for these teams to collaborate.
 -->
 
 ---
 
 # dbt projects are tricky to scale
 
-1. Large organizations tend toward decentralization
+1. Large organizations trend towards decentralization as they grow
 2. Decentralization can lead to inconsistent standards and significant overhead
 3. It's so easy to add "just one more" model
 
@@ -224,7 +219,7 @@ Once you're in territory where there are multiple distinct teams forming, stormi
   <div></div>
 </div>
 
-<!-- And now we're in the endgame of how to resolve our differences. Do we put in the effort to have GTM align with Finance or vis versa, or do we make just a few more models that shim together bits of both to workaround the reporting difference? dbt makes it delightfully easy to reference existing models and start pulling in data from somewhere else in the project. -->
+<!-- And now we're in the endgame. Do we put in the effort to have Sales analytics align with Finance or vis versa, or do we make just a few more models that shim together bits of both to workaround the reporting difference? dbt Core is a wondrous tool. makes it delightfully easy to reference existing models and start pulling in data from somewhere else in the project. This comes at a price, however, in that each new model we add to workaround our differences is one more liability for our team in the future. -->
 
 ---
 
@@ -253,9 +248,25 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 
 ![bg 103%](https://www.publicdomainpictures.net/pictures/200000/velka/verwilderter-hinterhof.jpg)
 
+<!--
+
+This leads to an overgrown garden that, while full of life, is a nightmare to reason about and to maintain.
+
+So, if we want to make our overgrown dbt projects maintainable and ergonomic, it
+stands to reason that we can work like gardeners to rehabilitate them. Thankfully, gardeners have been working on this problem for a _long_ time, and there are five reasonably accepted steps for rehabilitating an overgrown garden.
+-->
+
+<!-- ![bg](https://c2.staticflickr.com/4/3092/5809787537_7d926fca26_b.jpg) -->
+
 ---
 
-![bg](https://c2.staticflickr.com/4/3092/5809787537_7d926fca26_b.jpg)
+# The five steps
+
+1. Survey your garden
+2. Clear out the trash and weeds
+3. Renewal pruning
+4. Divide the perennials
+5. Keep the weeds under control
 
 ---
 
@@ -368,6 +379,9 @@ Once you're in territory where there are multiple distinct teams forming, stormi
 
 <!--
 Gradual removal of unproductive branches to allow a plant to spend its resources growing healthy branches.
+
+Within the context of a dbt project, this is a matter of identifying antip-atterns and other non-productive structures in your DAG, and refactoring them to make them more ergonomic.
+
 -->
 <div class="footer">
   <div class="logo">
@@ -388,21 +402,28 @@ Gradual removal of unproductive branches to allow a plant to spend its resources
 
 ---
 
-![bg contain 90%](https://mermaid.ink/svg/pako:eNqNVcGOmzAQ_RXL1aqX7CqwUbrl0EtzbC_tESJkzJDQGhvZZrer1f57DYZgiAPLJR7mvTdvZpDzhqnIAUe4YOKFnonU6MevhCccmYcyotQBCqREIymgomQs-rTfZk_hfoOUluIvjDEVTMghnAlUpgjr-dvt1132OPKHuOfbcMbn8PLTkciCfZEFo8QQ9xI2nEnUsnwmGlyZoihWbVgVpV8ZIPhHqppB6KO7bU_QgQ-dkd2XMGvVLaNjNdlJkvp8KRN_l2AcGxI5lfxkh6hQISTSZ-iXoo6jQl5KoLoUvNshch6LfYztbxocoyiyZx9uN-BCFzdFdmbCuBtni-rimZj1nXapNIiVPqWugWGpS6zQZYULLNsgur__Nq_r7dADDBfddwTb9KJfLw54Pt311bKD-CD4Z43-iJIPm0XmSPpJH6dF1zYdfHDT4Uc3vbxoW3Ns3VvKl54M5u4OUVk95ECYmrnuU7RRWlQgPelairyh-gGegWt11YxBtB9Sj0rTC8wxZDCNAnkr1_KNiTQdDN5IuyanED9RQi2kvlgTjaaG7uCup9N_va4f_5ymwMtrR3M6twt-NqjZGMeyHWFq4LrcHLS0kg7rrGG58o3ZrXlZozn11_F4g41wRcrc_I2-te8SbO7nChIcmWMOBWmYTnDC3w2UNFr8fuUUR1o2sMFNnZs7_lAScx1UOCpMZ_D-HyRHatc)
+<!--
 
-<!-- https://mermaid.live/edit#pako:eNqNVcGOmzAQ_RXL1aqX7CqwUbrl0EtzbC_tESJkzJDQGhvZZrer1f57DYZgiAPLJR7mvTdvZpDzhqnIAUe4YOKFnonU6MevhCccmYcyotQBCqREIymgomQs-rTfZk_hfoOUluIvjDEVTMghnAlUpgjr-dvt1132OPKHuOfbcMbn8PLTkciCfZEFo8QQ9xI2nEnUsnwmGlyZoihWbVgVpV8ZIPhHqppB6KO7bU_QgQ-dkd2XMGvVLaNjNdlJkvp8KRN_l2AcGxI5lfxkh6hQISTSZ-iXoo6jQl5KoLoUvNshch6LfYztbxocoyiyZx9uN-BCFzdFdmbCuBtni-rimZj1nXapNIiVPqWugWGpS6zQZYULLNsgur__Nq_r7dADDBfddwTb9KJfLw54Pt311bKD-CD4Z43-iJIPm0XmSPpJH6dF1zYdfHDT4Uc3vbxoW3Ns3VvKl54M5u4OUVk95ECYmrnuU7RRWlQgPelairyh-gGegWt11YxBtB9Sj0rTC8wxZDCNAnkr1_KNiTQdDN5IuyanED9RQi2kvlgTjaaG7uCup9N_va4f_5ymwMtrR3M6twt-NqjZGMeyHWFq4LrcHLS0kg7rrGG58o3ZrXlZozn11_F4g41wRcrc_I2-te8SbO7nChIcmWMOBWmYTnDC3w2UNFr8fuUUR1o2sMFNnZs7_lAScx1UOCpMZ_D-HyRHatc -->
+Based on my experience working as a consultant on dozens of dbt projects, there
+are four main anti-patterns that tend to add unnecessary messiness to a project.
 
-![bg contain 79%](https://mermaid.ink/svg/pako:eNqNVctymzAU_RWNOplunIyxKXFYdFMv202zDBlGiItNAhKjR9xMJv9eGfMQWJbDSuI87tHRGH9gynPAMS4qfqB7IhT6_TdhCUPmoRWRcgsFklwLCqgoqyr-Fi2zzSpaIKkEf4VxT3nFRb-dGdRmSNXpl8uHMFuP-n7f6U_bswgMDn8skyyIiiwYTfp9Z3LaziwaUb4RBbZNURRfDCLVewUI_pG6qWDlktsHn7ADFzsj4f0q691bjc52gjT7YcjTLwEmLyLoUOYg-hK5QGoPqCZNU7Ld82iQlwKoKjlrrxBZT6v8Ecdxu3BgkQd7MFjfvgO-90g3I-YKhG5vf3YzXMYT2BVsJER-eDPCwPKj2eXag6ctZ98VEvDCS9ZW_UhqQFuiiAQln6ejrpQeeNpZe9tZeZShVxmMB1-7jP2wpQ796vCs1ePy5gZRUd_lQCppYp4-HROIaql4DcIBN4Lnmqo7eAOmbHxgSLVLO1aaDjSrKMPREsQl7Kg3IdK0D3gBtkNOKW6hgIYLNUTjWlEjl_OLsttpm5zmcfc0JQ6vLc9pbwN_VtSsxnFsK5gGOB83J_mupOVa1-CffKG7a1muyaz51_l4gY1xTcrc_Bl-HN8l2Pz2a0hwbJY5FERXKsEJ-zRUohV_fGcUx0poWGDd5OZLvS2J-ZTUOC7MyeDzP4kNRXw)
+-->
 
-<!-- https://mermaid.live/edit#pako:eNqFVU1vmzAY_iuWp2qXtAoJoymHXZbjemmPpULGvCRsxka2aVZV_e9zCB-GOoaTzfPxPn6skA9MRQ44xgUTJ3okUqPfTwlPODIPZUSpPRRIiUZSQEXJWPwtWme7TbRCSkvxF8Y9FUzIfjszqMwQ1unX64cw2476ft_pL9uZnsPp0bLIgqjIgtGi33cWl-3MopblG9Fg2xRFsRjj4qL0OwME_0hVM9i45PaxJ-zAxc5IeL_JevdW02QHSerjMOTllwSTFxF0KnOQfYVCIn0EVJG6LvnhdTTISwlUl4K3F4isp1X-iOO4XTiwyIM9GKxv3wHfe6S7EXMFQre3P7sZLuMJ7Ao2EiI_vBth4PnZ7Hrtwcte8O8aSfgjSt5W_UwqQHuiiQKtXqejFkoPPO1sve1sPMrQqwzGg29dxn7YUod-dfil1fPy5gZRWd3lQJgyMS8fjglEG6VFBdIB11LkDdV38AZc2_jAUPqQdqw0HWhWUYbTKJDXsLPehEjTPuAV2A45pbiFEmoh9RBNNJoauZpflN1O2-Q0j7unKXF4bXlOexv4s6JmNY5jW8E0wNdxc5LvSlqudQ3-yVe6W8qyJLPmL_PxChvjipS5-Sv8OL9LsPntV5Dg2CxzKEjDdIIT_mmopNHi-Z1THGvZwAo3dW6-1PuSmE9JhePCnAw-_wPVd0Sy -->
+![bg contain 90%](https://mermaid.ink/svg/pako:eNqNVE1zmzAU_Csa9dALyUjCwViHXuJjemlvAY9HgLBpQWKEaOJ4_N8rSxAwpSS68J61u-9jwWeYyoxDCvNSvqRHpjR4-hGLWABz0pI1zZbnoJGtSjnIi7KkXwKUhCTwQKOV_M2HPJWlVH06EahMkbLjI7RZJf7A7_OO79IJX_CX7yOJBAd5ggeJPu8kXDqRqFXxh2k-lsnz_MM2nEqjTyUH_JVVdcnJQDcHoekqZij4v5SErdYkudZxNEttk4Ni9fG9YPSouOndkNihEAe3zgbkUgF95J09zW5QyArFU11IYd0Eo-OwfuSee7yjlLp4DrfqcWSMu0XaZkhkF3tF2Xwi5vre26s9jhp92I8b6O1dYpExiyyw3IDg7u7btO7shDNAsti9JbihF_udxXGR3Xr9j9k42krxVYNfshC9s8CErNv07rboR07jTzpNPuv0stGu5jD6bKm5a7MY6MGKq4oVmfk_Ol-vYmhe74rHkJow4zlrSx3DWFwMlLVa_jyJFFKtWu7Bts7MJ7ItmNlm1f9YMwHpGb5Cur4Pg8BHIcGEhIisfQ-eIMUBvg_QQ-ivNgHa-OuHiwffpDR8bMnPNr5qXf4Cq_CTOw)
 
-![bg contain 83%](https://mermaid.ink/svg/pako:eNqFVUtvnDAQ_iuWq6iXTbTsUtJwiFRpj-2lPYYIGXvYpTE2sk3SVZT_XsPyMMQLnDx8jxm-kcw7ppIBjnHO5Rs9EWXQz9-JSASyD-VE6wPkSMtaUUB5wXn8Jdpm33fRBmmj5AuMNZVcqr6cGZS2Ce_02-1DmO1HfV93-ks50wt4--VYZEGUZ8Fo0dedxaWcWVSqeCUGXJs8z1fHuLhoc-aA4B8pKw47n9z97Ak78LEzEt7vst691dTZUZHqNDR5-sEYKgutC3G0FsCZRkQwO59SQE0XqdUU4nm0YUUDFlK0a0TO0_K_xXHcHjxYtIA9WKzfgQe-H6W-puj29rHz8YknsK_5SIhGGARr2NcTDJ4OUnw16K8sBDInQAwqKwJBz0jmiDj187TrSojBQlD7xSR2C8pwURmMGex9xsvwfoTDZXX4KeDmeHODqCrvGBCu7ZiX62AC0VobWYLywJWSrKbmDl5BGBcfGNoc046VpgPNCcpyag3qGtbo7RBp2g94BXaHnFL8QgWVVGYYTdaGWrmeL8pNp01yOo8_pylxeO14TnMb-LOgZjGObVvBdIDP7eakpZW0XGcNy52vZLc2y5rM6b_OxxtsjUtSMPuDe2_eJdheBCUkOLZHBjmpuUlwIj4sldRG_jkLimOjatjgumL2f3EoiL1VShzn9svg4z-bOjw3)
+<!-- https://mermaid.live/edit#pako:eNqNVE1zmzAU_Csa9dALyUjCwViHXuJjemlvAY9HgLBpQWKEaOJ4_N8rSxAwpSS68J61u-9jwWeYyoxDCvNSvqRHpjR4-hGLWABz0pI1zZbnoJGtSjnIi7KkXwKUhCTwQKOV_M2HPJWlVH06EahMkbLjI7RZJf7A7_OO79IJX_CX7yOJBAd5ggeJPu8kXDqRqFXxh2k-lsnz_MM2nEqjTyUH_JVVdcnJQDcHoekqZij4v5SErdYkudZxNEttk4Ni9fG9YPSouOndkNihEAe3zgbkUgF95J09zW5QyArFU11IYd0Eo-OwfuSee7yjlLp4DrfqcWSMu0XaZkhkF3tF2Xwi5vre26s9jhp92I8b6O1dYpExiyyw3IDg7u7btO7shDNAsti9JbihF_udxXGR3Xr9j9k42krxVYNfshC9s8CErNv07rboR07jTzpNPuv0stGu5jD6bKm5a7MY6MGKq4oVmfk_Ol-vYmhe74rHkJow4zlrSx3DWFwMlLVa_jyJFFKtWu7Bts7MJ7ItmNlm1f9YMwHpGb5Cur4Pg8BHIcGEhIisfQ-eIMUBvg_QQ-ivNgHa-OuHiwffpDR8bMnPNr5qXf4Cq_CTOw -->
 
-<!-- https://mermaid.live/edit#pako:eNqFVUtvnDAQ_iuWq6iXTbTsUtJwiFRpj-2lPYYIGXvYpTE2sk3SVZT_XsPyMMQLnDx8jxm-kcw7ppIBjnHO5Rs9EWXQz9-JSASyD-VE6wPkSMtaUUB5wXn8Jdpm33fRBmmj5AuMNZVcqr6cGZS2Ce_02-1DmO1HfV93-ks50wt4--VYZEGUZ8Fo0dedxaWcWVSqeCUGXJs8z1fHuLhoc-aA4B8pKw47n9z97Ak78LEzEt7vst691dTZUZHqNDR5-sEYKgutC3G0FsCZRkQwO59SQE0XqdUU4nm0YUUDFlK0a0TO0_K_xXHcHjxYtIA9WKzfgQe-H6W-puj29rHz8YknsK_5SIhGGARr2NcTDJ4OUnw16K8sBDInQAwqKwJBz0jmiDj187TrSojBQlD7xSR2C8pwURmMGex9xsvwfoTDZXX4KeDmeHODqCrvGBCu7ZiX62AC0VobWYLywJWSrKbmDl5BGBcfGNoc046VpgPNCcpyag3qGtbo7RBp2g94BXaHnFL8QgWVVGYYTdaGWrmeL8pNp01yOo8_pylxeO14TnMb-LOgZjGObVvBdIDP7eakpZW0XGcNy52vZLc2y5rM6b_OxxtsjUtSMPuDe2_eJdheBCUkOLZHBjmpuUlwIj4sldRG_jkLimOjatjgumL2f3EoiL1VShzn9svg4z-bOjw3 -->
+![bg contain 79%](https://mermaid.ink/svg/pako:eNqNlEFzmzAQhf-KRj30QjIIsMA69FIf20tza8hBwComFRIjRB3X4_9emZjIcYkanbQ8fW-XJ4YDrnUDmGEh9a7ecmPRtx-lKhVyq5Z8GDYg0KBHUwMSrZTsE42rIqERGqzRv8DXtZbazOWVQeeayDMfx-usSj0_12f-pfxnBAW77xcmFaGiIt5krs8mL-WVRW_a39zCpY0Q4oODDHYvAcEz73oJicfdiuPrMBYQ8i5S8SxPqrnPBI7Vo-H99rXd_VcDbnLE0a5twMxxaoPsFlDH-75Vjw_eoGkN1LbVarpMdLEmcsUYmzYLGg1oa6fN97Ag5wG08NrSQOjm5su5x5LxG3lpMH-AhuXCy6Cak9n7sZP7jVafLTLwpFs1RX3HO0AbbvkAdnh42-o_oZNAOmkwnSRAZkGS-BdPl4zD8gWdhensKlUc4Q5Mx9vG_VkOJ7HELr4OSszctgHBR2lLXKqjO8pHq-_2qsbMmhEiPPaN-9g3LXe30WEmuBzc054rzA74GbP8tqA0jYuEJEkRJ3ka4T1mhJJbGq-KNFvTeJ3mq2OE_2jtDMgE_5z2pw7Hv7cib78)
 
-![bg contains 65%](https://mermaid.ink/svg/pako:eNqVlk9vmzAYxr-KxVTtklaBJGzjsMty3C7bMVTImJeEFmxkm3ZV1e8-gyEYx4GFSzD-PY_ffwl59wjLwIu8vGSv5IS5RD9_xzSmSF2kxELsIUeCNZwAyouyjD6F6_RrEK6QkJw9w7gmrGR8WFoGlTqk7PXr9bdtuhn1w7rX66Wlp_D6y7BI_TBP_dFiWPcWemlZ1Lx4wRJMmzzPF8PQLkK-lYDgL67qEgKX3Ex7QvsuOsXbL0HaumtFp2rSI8f16XzM4QcHFbES4WNBj7qIAuWMI3mCvinicXRor6zgQGTBaNdHc0fz24P-TLaPURTpexe3G7jdPBcOXGhyFqkTSLoEEhWBPCaabDXd0znB7lZBaAmG6bHj6uhgdHTWC93ff7cz6J5ptbN2Ds1uQRM6NKFTAzSbDs7F5PiHPaOfJXpiBR3GBBVUMlQC7r-Mt86NP_TZn5-HYOCCeW4zcJv_nRv_1jEI3ALHDBy68bhmqvN39Md3FsABBguZjX2ezecqpivq2p4My90dIrx6yACXwmpOv0UaIVkF3LFdc5Y1RD7AC1ApLnqmiLbaPZUkZ8wISDGNAH5tr9WrIJJkCPDKthnkFHELOdSMy3NorJFEyYU9EWZ1-h6a8bjrNAXPjw3Pad3OvFUoq4zjsZ1gGsDlcTY015KONdowf_KV2i3FsiQzzl_mvZWnjCtcZOp_ynv7LPbUC7CC2IvUbQY5bkoZezH9UChuJPvzRokXSd7AymvqTL1E9wVWP5GVF-UqM_j4BzLN2KY)
+<!-- https://mermaid.live/edit#pako:eNqNlEFzmzAQhf-KRj30QjIIsMA69FIf20tza8hBwComFRIjRB3X4_9emZjIcYkanbQ8fW-XJ4YDrnUDmGEh9a7ecmPRtx-lKhVyq5Z8GDYg0KBHUwMSrZTsE42rIqERGqzRv8DXtZbazOWVQeeayDMfx-usSj0_12f-pfxnBAW77xcmFaGiIt5krs8mL-WVRW_a39zCpY0Q4oODDHYvAcEz73oJicfdiuPrMBYQ8i5S8SxPqrnPBI7Vo-H99rXd_VcDbnLE0a5twMxxaoPsFlDH-75Vjw_eoGkN1LbVarpMdLEmcsUYmzYLGg1oa6fN97Ag5wG08NrSQOjm5su5x5LxG3lpMH-AhuXCy6Cak9n7sZP7jVafLTLwpFs1RX3HO0AbbvkAdnh42-o_oZNAOmkwnSRAZkGS-BdPl4zD8gWdhensKlUc4Q5Mx9vG_VkOJ7HELr4OSszctgHBR2lLXKqjO8pHq-_2qsbMmhEiPPaN-9g3LXe30WEmuBzc054rzA74GbP8tqA0jYuEJEkRJ3ka4T1mhJJbGq-KNFvTeJ3mq2OE_2jtDMgE_5z2pw7Hv7cib78-->
 
-<!-- https://mermaid.live/edit#pako:eNqVlk9vmzAYxr-KxVTtklaBJGzjsMty3C7bMVTImJeEFmxkm3ZV1e8-gyEYx4GFSzD-PY_ffwl59wjLwIu8vGSv5IS5RD9_xzSmSF2kxELsIUeCNZwAyouyjD6F6_RrEK6QkJw9w7gmrGR8WFoGlTqk7PXr9bdtuhn1w7rX66Wlp_D6y7BI_TBP_dFiWPcWemlZ1Lx4wRJMmzzPF8PQLkK-lYDgL67qEgKX3Ex7QvsuOsXbL0HaumtFp2rSI8f16XzM4QcHFbES4WNBj7qIAuWMI3mCvinicXRor6zgQGTBaNdHc0fz24P-TLaPURTpexe3G7jdPBcOXGhyFqkTSLoEEhWBPCaabDXd0znB7lZBaAmG6bHj6uhgdHTWC93ff7cz6J5ptbN2Ds1uQRM6NKFTAzSbDs7F5PiHPaOfJXpiBR3GBBVUMlQC7r-Mt86NP_TZn5-HYOCCeW4zcJv_nRv_1jEI3ALHDBy68bhmqvN39Md3FsABBguZjX2ezecqpivq2p4My90dIrx6yACXwmpOv0UaIVkF3LFdc5Y1RD7AC1ApLnqmiLbaPZUkZ8wISDGNAH5tr9WrIJJkCPDKthnkFHELOdSMy3NorJFEyYU9EWZ1-h6a8bjrNAXPjw3Pad3OvFUoq4zjsZ1gGsDlcTY015KONdowf_KV2i3FsiQzzl_mvZWnjCtcZOp_ynv7LPbUC7CC2IvUbQY5bkoZezH9UChuJPvzRokXSd7AymvqTL1E9wVWP5GVF-UqM_j4BzLN2KY -->
+![bg contain 83%](https://mermaid.ink/svg/pako:eNqFlEFvpCAYhv8KoYe92EbUQYfDJpvMcfeye2vtAQU67CIYxG2nk_nvZRwtU2MtJz7e73k_8hI9wtowDgkUyjzXe2od-Pm71KUGftWKdt2OC9CZ3tYcCKkUucFxVSQ4Ap2z5h8PdW2UsVM5M2j8EDXycbzNqjTwUz3yl3LGa_7868qiQlhUKFhM9WhxKWcWrZX_qePXNkKIL69xcencQXHAX2jTKp4E3K84nkexgKBPkYpmeVJNcwawr54sbffv4x5-MAYa2XVSP3kfrlgHqGb-ptby2o3hekbqx2DD5FmURg8PCq7W0L8hhAybBQ2vaFuvTa-xIOcBXRoKbm-_jz5L8Ad5aXhowEHmmp27P08QPeyM_ubAXyM1cHsOGG89xHV9AEYAelU_fpz6RYhoJah0NYlkhcxWSRQySJeM1-U0yNk6nc0ChhFsuG2oZP5vcTyLJfRZNryExG8ZF7RXroSlPvlW2jvz56BrSJzteQT7lvmPbyepf5gGEkFV509bqiE5whdI8rsC4zQuEpQkRZzkaQQPkCCM7nC8KdJsi-Ntmm9OEXw1xhugAb4f9ucJpzfgQmZ6)
+
+<!-- https://mermaid.live/edit#pako:eNqFlEFvpCAYhv8KoYe92EbUQYfDJpvMcfeye2vtAQU67CIYxG2nk_nvZRwtU2MtJz7e73k_8hI9wtowDgkUyjzXe2od-Pm71KUGftWKdt2OC9CZ3tYcCKkUucFxVSQ4Ap2z5h8PdW2UsVM5M2j8EDXycbzNqjTwUz3yl3LGa_7868qiQlhUKFhM9WhxKWcWrZX_qePXNkKIL69xcencQXHAX2jTKp4E3K84nkexgKBPkYpmeVJNcwawr54sbffv4x5-MAYa2XVSP3kfrlgHqGb-ptby2o3hekbqx2DD5FmURg8PCq7W0L8hhAybBQ2vaFuvTa-xIOcBXRoKbm-_jz5L8Ad5aXhowEHmmp27P08QPeyM_ubAXyM1cHsOGG89xHV9AEYAelU_fpz6RYhoJah0NYlkhcxWSRQySJeM1-U0yNk6nc0ChhFsuG2oZP5vcTyLJfRZNryExG8ZF7RXroSlPvlW2jvz56BrSJzteQT7lvmPbyepf5gGEkFV509bqiE5whdI8rsC4zQuEpQkRZzkaQQPkCCM7nC8KdJsi-Ntmm9OEXw1xhugAb4f9ucJpzfgQmZ6 -->
+
+![bg contains 65%](https://mermaid.ink/svg/pako:eNqVVMGymyAU_RWGLrrxvRFUkrDoplm2m3bX-CaDioktgoPY99JM_r0osaaWJA0buXDOgXvvkSPMVcEhhaVQr_meaQM-fUllKoEduWBtu-YlaFWncw7KSgj6joTZEpMAtEarH3yKcyWUHsOZQG0PEWd-GK7iLJr4Y3zmu3DGl_z184VEhkiZoUlijM8SLpxJNLr6yQy_lCnL8u41nEprDoID_sbqRnA80e0Iw3kpPBR0lZKxeIGz_hxHG6hdttOs2f85cPNRc3t3S2K7Su5cOVtQKg3Mnp_b075MCv0oKs1zUyk5dPRyx-Hjjftu4xdKqZv7cMmIS27jyIgjl7gZ0iWwHRLY2huY3dYhe86weouQPEogM8Loo_m9BjSeFL31Ak9PH-YZDGuO7a2dh5Pc4RAPh3g5XBZ_G-cf56DNWsn3BnxXlRxtAippFBCcnX_LR32Dxj6j237AIw7fxkUjLvpf36BHbYD9BI8HNoM9rom6_D39Qd4CeID4TmZTn2_mcxXmKurbHswCA1hzXbOqsE_-sd9MoX1Bap5CaqcFL1knTApTebJQ1hn19SBzSI3ueAC7prCv0Lpi1mM1pCUTrV1tmIT0CN8gXTwvCYnCJUYYL0O8iAJ4gBQR9EzCZBnFKxKuokVyCuAvpawAGsjfhnl_wuk36L0CLg)
+
+<!-- https://mermaid.live/edit#pako:eNqVVMGymyAU_RWGLrrxvRFUkrDoplm2m3bX-CaDioktgoPY99JM_r0osaaWJA0buXDOgXvvkSPMVcEhhaVQr_meaQM-fUllKoEduWBtu-YlaFWncw7KSgj6joTZEpMAtEarH3yKcyWUHsOZQG0PEWd-GK7iLJr4Y3zmu3DGl_z184VEhkiZoUlijM8SLpxJNLr6yQy_lCnL8u41nEprDoID_sbqRnA80e0Iw3kpPBR0lZKxeIGz_hxHG6hdttOs2f85cPNRc3t3S2K7Su5cOVtQKg3Mnp_b075MCv0oKs1zUyk5dPRyx-Hjjftu4xdKqZv7cMmIS27jyIgjl7gZ0iWwHRLY2huY3dYhe86weouQPEogM8Loo_m9BjSeFL31Ak9PH-YZDGuO7a2dh5Pc4RAPh3g5XBZ_G-cf56DNWsn3BnxXlRxtAippFBCcnX_LR32Dxj6j237AIw7fxkUjLvpf36BHbYD9BI8HNoM9rom6_D39Qd4CeID4TmZTn2_mcxXmKurbHswCA1hzXbOqsE_-sd9MoX1Bap5CaqcFL1knTApTebJQ1hn19SBzSI3ueAC7prCv0Lpi1mM1pCUTrV1tmIT0CN8gXTwvCYnCJUYYL0O8iAJ4gBQR9EzCZBnFKxKuokVyCuAvpawAGsjfhnl_wuk36L0CLg -->
 
 <!--
 In a dbt project, we can prune our project by refactoring any anti-patterns currently in use in the project's core entities. This would include
@@ -426,13 +447,151 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
 
 ---
 
+![bg contain 30%](https://mermaid.ink/svg/pako:eNqNVE1zmzAU_Csa9dALyUjCwViHXuJjemlvAY9HgLBpQWKEaOJ4_N8rSxAwpSS68J61u-9jwWeYyoxDCvNSvqRHpjR4-hGLWABz0pI1zZbnoJGtSjnIi7KkXwKUhCTwQKOV_M2HPJWlVH06EahMkbLjI7RZJf7A7_OO79IJX_CX7yOJBAd5ggeJPu8kXDqRqFXxh2k-lsnz_MM2nEqjTyUH_JVVdcnJQDcHoekqZij4v5SErdYkudZxNEttk4Ni9fG9YPSouOndkNihEAe3zgbkUgF95J09zW5QyArFU11IYd0Eo-OwfuSee7yjlLp4DrfqcWSMu0XaZkhkF3tF2Xwi5vre26s9jhp92I8b6O1dYpExiyyw3IDg7u7btO7shDNAsti9JbihF_udxXGR3Xr9j9k42krxVYNfshC9s8CErNv07rboR07jTzpNPuv0stGu5jD6bKm5a7MY6MGKq4oVmfk_Ol-vYmhe74rHkJow4zlrSx3DWFwMlLVa_jyJFFKtWu7Bts7MJ7ItmNlm1f9YMwHpGb5Cur4Pg8BHIcGEhIisfQ-eIMUBvg_QQ-ivNgHa-OuHiwffpDR8bMnPNr5qXf4Cq_CTOw)
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+![bg contain 30%](https://mermaid.ink/svg/pako:eNqNlEFzmzAQhf-KRj30QjIIsMA69FIf20tza8hBwComFRIjRB3X4_9emZjIcYkanbQ8fW-XJ4YDrnUDmGEh9a7ecmPRtx-lKhVyq5Z8GDYg0KBHUwMSrZTsE42rIqERGqzRv8DXtZbazOWVQeeayDMfx-usSj0_12f-pfxnBAW77xcmFaGiIt5krs8mL-WVRW_a39zCpY0Q4oODDHYvAcEz73oJicfdiuPrMBYQ8i5S8SxPqrnPBI7Vo-H99rXd_VcDbnLE0a5twMxxaoPsFlDH-75Vjw_eoGkN1LbVarpMdLEmcsUYmzYLGg1oa6fN97Ag5wG08NrSQOjm5su5x5LxG3lpMH-AhuXCy6Cak9n7sZP7jVafLTLwpFs1RX3HO0AbbvkAdnh42-o_oZNAOmkwnSRAZkGS-BdPl4zD8gWdhensKlUc4Q5Mx9vG_VkOJ7HELr4OSszctgHBR2lLXKqjO8pHq-_2qsbMmhEiPPaN-9g3LXe30WEmuBzc054rzA74GbP8tqA0jYuEJEkRJ3ka4T1mhJJbGq-KNFvTeJ3mq2OE_2jtDMgE_5z2pw7Hv7cib78)
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+![bg contain 30%](https://mermaid.ink/svg/pako:eNqFlEFvpCAYhv8KoYe92EbUQYfDJpvMcfeye2vtAQU67CIYxG2nk_nvZRwtU2MtJz7e73k_8hI9wtowDgkUyjzXe2od-Pm71KUGftWKdt2OC9CZ3tYcCKkUucFxVSQ4Ap2z5h8PdW2UsVM5M2j8EDXycbzNqjTwUz3yl3LGa_7868qiQlhUKFhM9WhxKWcWrZX_qePXNkKIL69xcencQXHAX2jTKp4E3K84nkexgKBPkYpmeVJNcwawr54sbffv4x5-MAYa2XVSP3kfrlgHqGb-ptby2o3hekbqx2DD5FmURg8PCq7W0L8hhAybBQ2vaFuvTa-xIOcBXRoKbm-_jz5L8Ad5aXhowEHmmp27P08QPeyM_ubAXyM1cHsOGG89xHV9AEYAelU_fpz6RYhoJah0NYlkhcxWSRQySJeM1-U0yNk6nc0ChhFsuG2oZP5vcTyLJfRZNryExG8ZF7RXroSlPvlW2jvz56BrSJzteQT7lvmPbyepf5gGEkFV509bqiE5whdI8rsC4zQuEpQkRZzkaQQPkCCM7nC8KdJsi-Ntmm9OEXw1xhugAb4f9ucJpzfgQmZ6)
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+![bg contains 30%](https://mermaid.ink/svg/pako:eNqVVMGymyAU_RWGLrrxvRFUkrDoplm2m3bX-CaDioktgoPY99JM_r0osaaWJA0buXDOgXvvkSPMVcEhhaVQr_meaQM-fUllKoEduWBtu-YlaFWncw7KSgj6joTZEpMAtEarH3yKcyWUHsOZQG0PEWd-GK7iLJr4Y3zmu3DGl_z184VEhkiZoUlijM8SLpxJNLr6yQy_lCnL8u41nEprDoID_sbqRnA80e0Iw3kpPBR0lZKxeIGz_hxHG6hdttOs2f85cPNRc3t3S2K7Su5cOVtQKg3Mnp_b075MCv0oKs1zUyk5dPRyx-Hjjftu4xdKqZv7cMmIS27jyIgjl7gZ0iWwHRLY2huY3dYhe86weouQPEogM8Loo_m9BjSeFL31Ak9PH-YZDGuO7a2dh5Pc4RAPh3g5XBZ_G-cf56DNWsn3BnxXlRxtAippFBCcnX_LR32Dxj6j237AIw7fxkUjLvpf36BHbYD9BI8HNoM9rom6_D39Qd4CeID4TmZTn2_mcxXmKurbHswCA1hzXbOqsE_-sd9MoX1Bap5CaqcFL1knTApTebJQ1hn19SBzSI3ueAC7prCv0Lpi1mM1pCUTrV1tmIT0CN8gXTwvCYnCJUYYL0O8iAJ4gBQR9EzCZBnFKxKuokVyCuAvpawAGsjfhnl_wuk36L0CLg)
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+<!--
+
+Based on my experience working as a consultant on dozens of dbt projects, there
+are four main anti-patterns that tend to add unnecessary messiness to a project.
+
+-->
+
+![bg contain 90%](https://mermaid.ink/svg/pako:eNqNVE1zmzAU_Csa9dALyUjCwViHXuJjemlvAY9HgLBpQWKEaOJ4_N8rSxAwpSS68J61u-9jwWeYyoxDCvNSvqRHpjR4-hGLWABz0pI1zZbnoJGtSjnIi7KkXwKUhCTwQKOV_M2HPJWlVH06EahMkbLjI7RZJf7A7_OO79IJX_CX7yOJBAd5ggeJPu8kXDqRqFXxh2k-lsnz_MM2nEqjTyUH_JVVdcnJQDcHoekqZij4v5SErdYkudZxNEttk4Ni9fG9YPSouOndkNihEAe3zgbkUgF95J09zW5QyArFU11IYd0Eo-OwfuSee7yjlLp4DrfqcWSMu0XaZkhkF3tF2Xwi5vre26s9jhp92I8b6O1dYpExiyyw3IDg7u7btO7shDNAsti9JbihF_udxXGR3Xr9j9k42krxVYNfshC9s8CErNv07rboR07jTzpNPuv0stGu5jD6bKm5a7MY6MGKq4oVmfk_Ol-vYmhe74rHkJow4zlrSx3DWFwMlLVa_jyJFFKtWu7Bts7MJ7ItmNlm1f9YMwHpGb5Cur4Pg8BHIcGEhIisfQ-eIMUBvg_QQ-ivNgHa-OuHiwffpDR8bMnPNr5qXf4Cq_CTOw)
+
+<!-- https://mermaid.live/edit#pako:eNqNVE1zmzAU_Csa9dALyUjCwViHXuJjemlvAY9HgLBpQWKEaOJ4_N8rSxAwpSS68J61u-9jwWeYyoxDCvNSvqRHpjR4-hGLWABz0pI1zZbnoJGtSjnIi7KkXwKUhCTwQKOV_M2HPJWlVH06EahMkbLjI7RZJf7A7_OO79IJX_CX7yOJBAd5ggeJPu8kXDqRqFXxh2k-lsnz_MM2nEqjTyUH_JVVdcnJQDcHoekqZij4v5SErdYkudZxNEttk4Ni9fG9YPSouOndkNihEAe3zgbkUgF95J09zW5QyArFU11IYd0Eo-OwfuSee7yjlLp4DrfqcWSMu0XaZkhkF3tF2Xwi5vre26s9jhp92I8b6O1dYpExiyyw3IDg7u7btO7shDNAsti9JbihF_udxXGR3Xr9j9k42krxVYNfshC9s8CErNv07rboR07jTzpNPuv0stGu5jD6bKm5a7MY6MGKq4oVmfk_Ol-vYmhe74rHkJow4zlrSx3DWFwMlLVa_jyJFFKtWu7Bts7MJ7ItmNlm1f9YMwHpGb5Cur4Pg8BHIcGEhIisfQ-eIMUBvg_QQ-ivNgHa-OuHiwffpDR8bMnPNr5qXf4Cq_CTOw -->
+
+![bg contain 79%](https://mermaid.ink/svg/pako:eNqNlEFzmzAQhf-KRj30QjIIsMA69FIf20tza8hBwComFRIjRB3X4_9emZjIcYkanbQ8fW-XJ4YDrnUDmGEh9a7ecmPRtx-lKhVyq5Z8GDYg0KBHUwMSrZTsE42rIqERGqzRv8DXtZbazOWVQeeayDMfx-usSj0_12f-pfxnBAW77xcmFaGiIt5krs8mL-WVRW_a39zCpY0Q4oODDHYvAcEz73oJicfdiuPrMBYQ8i5S8SxPqrnPBI7Vo-H99rXd_VcDbnLE0a5twMxxaoPsFlDH-75Vjw_eoGkN1LbVarpMdLEmcsUYmzYLGg1oa6fN97Ag5wG08NrSQOjm5su5x5LxG3lpMH-AhuXCy6Cak9n7sZP7jVafLTLwpFs1RX3HO0AbbvkAdnh42-o_oZNAOmkwnSRAZkGS-BdPl4zD8gWdhensKlUc4Q5Mx9vG_VkOJ7HELr4OSszctgHBR2lLXKqjO8pHq-_2qsbMmhEiPPaN-9g3LXe30WEmuBzc054rzA74GbP8tqA0jYuEJEkRJ3ka4T1mhJJbGq-KNFvTeJ3mq2OE_2jtDMgE_5z2pw7Hv7cib78)
+
+<!-- https://mermaid.live/edit#pako:eNqNlEFzmzAQhf-KRj30QjIIsMA69FIf20tza8hBwComFRIjRB3X4_9emZjIcYkanbQ8fW-XJ4YDrnUDmGEh9a7ecmPRtx-lKhVyq5Z8GDYg0KBHUwMSrZTsE42rIqERGqzRv8DXtZbazOWVQeeayDMfx-usSj0_12f-pfxnBAW77xcmFaGiIt5krs8mL-WVRW_a39zCpY0Q4oODDHYvAcEz73oJicfdiuPrMBYQ8i5S8SxPqrnPBI7Vo-H99rXd_VcDbnLE0a5twMxxaoPsFlDH-75Vjw_eoGkN1LbVarpMdLEmcsUYmzYLGg1oa6fN97Ag5wG08NrSQOjm5su5x5LxG3lpMH-AhuXCy6Cak9n7sZP7jVafLTLwpFs1RX3HO0AbbvkAdnh42-o_oZNAOmkwnSRAZkGS-BdPl4zD8gWdhensKlUc4Q5Mx9vG_VkOJ7HELr4OSszctgHBR2lLXKqjO8pHq-_2qsbMmhEiPPaN-9g3LXe30WEmuBzc054rzA74GbP8tqA0jYuEJEkRJ3ka4T1mhJJbGq-KNFvTeJ3mq2OE_2jtDMgE_5z2pw7Hv7cib78-->
+
+![bg contain 83%](https://mermaid.ink/svg/pako:eNqFlEFvpCAYhv8KoYe92EbUQYfDJpvMcfeye2vtAQU67CIYxG2nk_nvZRwtU2MtJz7e73k_8hI9wtowDgkUyjzXe2od-Pm71KUGftWKdt2OC9CZ3tYcCKkUucFxVSQ4Ap2z5h8PdW2UsVM5M2j8EDXycbzNqjTwUz3yl3LGa_7868qiQlhUKFhM9WhxKWcWrZX_qePXNkKIL69xcencQXHAX2jTKp4E3K84nkexgKBPkYpmeVJNcwawr54sbffv4x5-MAYa2XVSP3kfrlgHqGb-ptby2o3hekbqx2DD5FmURg8PCq7W0L8hhAybBQ2vaFuvTa-xIOcBXRoKbm-_jz5L8Ad5aXhowEHmmp27P08QPeyM_ubAXyM1cHsOGG89xHV9AEYAelU_fpz6RYhoJah0NYlkhcxWSRQySJeM1-U0yNk6nc0ChhFsuG2oZP5vcTyLJfRZNryExG8ZF7RXroSlPvlW2jvz56BrSJzteQT7lvmPbyepf5gGEkFV509bqiE5whdI8rsC4zQuEpQkRZzkaQQPkCCM7nC8KdJsi-Ntmm9OEXw1xhugAb4f9ucJpzfgQmZ6)
+
+<!-- https://mermaid.live/edit#pako:eNqFlEFvpCAYhv8KoYe92EbUQYfDJpvMcfeye2vtAQU67CIYxG2nk_nvZRwtU2MtJz7e73k_8hI9wtowDgkUyjzXe2od-Pm71KUGftWKdt2OC9CZ3tYcCKkUucFxVSQ4Ap2z5h8PdW2UsVM5M2j8EDXycbzNqjTwUz3yl3LGa_7868qiQlhUKFhM9WhxKWcWrZX_qePXNkKIL69xcencQXHAX2jTKp4E3K84nkexgKBPkYpmeVJNcwawr54sbffv4x5-MAYa2XVSP3kfrlgHqGb-ptby2o3hekbqx2DD5FmURg8PCq7W0L8hhAybBQ2vaFuvTa-xIOcBXRoKbm-_jz5L8Ad5aXhowEHmmp27P08QPeyM_ubAXyM1cHsOGG89xHV9AEYAelU_fpz6RYhoJah0NYlkhcxWSRQySJeM1-U0yNk6nc0ChhFsuG2oZP5vcTyLJfRZNryExG8ZF7RXroSlPvlW2jvz56BrSJzteQT7lvmPbyepf5gGEkFV509bqiE5whdI8rsC4zQuEpQkRZzkaQQPkCCM7nC8KdJsi-Ntmm9OEXw1xhugAb4f9ucJpzfgQmZ6 -->
+
+![bg contains 65%](https://mermaid.ink/svg/pako:eNqVVMGymyAU_RWGLrrxvRFUkrDoplm2m3bX-CaDioktgoPY99JM_r0osaaWJA0buXDOgXvvkSPMVcEhhaVQr_meaQM-fUllKoEduWBtu-YlaFWncw7KSgj6joTZEpMAtEarH3yKcyWUHsOZQG0PEWd-GK7iLJr4Y3zmu3DGl_z184VEhkiZoUlijM8SLpxJNLr6yQy_lCnL8u41nEprDoID_sbqRnA80e0Iw3kpPBR0lZKxeIGz_hxHG6hdttOs2f85cPNRc3t3S2K7Su5cOVtQKg3Mnp_b075MCv0oKs1zUyk5dPRyx-Hjjftu4xdKqZv7cMmIS27jyIgjl7gZ0iWwHRLY2huY3dYhe86weouQPEogM8Loo_m9BjSeFL31Ak9PH-YZDGuO7a2dh5Pc4RAPh3g5XBZ_G-cf56DNWsn3BnxXlRxtAippFBCcnX_LR32Dxj6j237AIw7fxkUjLvpf36BHbYD9BI8HNoM9rom6_D39Qd4CeID4TmZTn2_mcxXmKurbHswCA1hzXbOqsE_-sd9MoX1Bap5CaqcFL1knTApTebJQ1hn19SBzSI3ueAC7prCv0Lpi1mM1pCUTrV1tmIT0CN8gXTwvCYnCJUYYL0O8iAJ4gBQR9EzCZBnFKxKuokVyCuAvpawAGsjfhnl_wuk36L0CLg)
+
+<!-- https://mermaid.live/edit#pako:eNqVVMGymyAU_RWGLrrxvRFUkrDoplm2m3bX-CaDioktgoPY99JM_r0osaaWJA0buXDOgXvvkSPMVcEhhaVQr_meaQM-fUllKoEduWBtu-YlaFWncw7KSgj6joTZEpMAtEarH3yKcyWUHsOZQG0PEWd-GK7iLJr4Y3zmu3DGl_z184VEhkiZoUlijM8SLpxJNLr6yQy_lCnL8u41nEprDoID_sbqRnA80e0Iw3kpPBR0lZKxeIGz_hxHG6hdttOs2f85cPNRc3t3S2K7Su5cOVtQKg3Mnp_b075MCv0oKs1zUyk5dPRyx-Hjjftu4xdKqZv7cMmIS27jyIgjl7gZ0iWwHRLY2huY3dYhe86weouQPEogM8Loo_m9BjSeFL31Ak9PH-YZDGuO7a2dh5Pc4RAPh3g5XBZ_G-cf56DNWsn3BnxXlRxtAippFBCcnX_LR32Dxj6j237AIw7fxkUjLvpf36BHbYD9BI8HNoM9rom6_D39Qd4CeID4TmZTn2_mcxXmKurbHswCA1hzXbOqsE_-sd9MoX1Bap5CaqcFL1knTApTebJQ1hn19SBzSI3ueAC7prCv0Lpi1mM1pCUTrV1tmIT0CN8gXTwvCYnCJUYYL0O8iAJ4gBQR9EzCZBnFKxKuokVyCuAvpawAGsjfhnl_wuk36L0CLg -->
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+<!--
+While these are relatively simple patterns to look out for, we're talking about large projects here, so it would behoove us to not perform this type of pruning manually. Thankfully, there are some great open source tools to make this process easier.
+-->
+
+---
+
 <!-- It's dangerous to go alone! Take these. -->
 
 ![bg 90%](assets/dbt_project_evaluator.png)
 
+<!--- First and foremost, there is the dbt-project-evaluator package, which leverages Jinja and other introspection features of dbt macros to dig into the project's DAG.  This means that there are no third-party dependencies, and you can bake architectural auditing into your dbt testing practices. If you want to learn more about this, I recommend watching Grace Goheen's Coalesce 2022 presentation on the dbt-project-evaluator package. --->
+
 ---
 
 ![bg center 90%](assets/whetstone.png)
+
+<!-- There are also third party tools that enable auditing dbt project architecture. One open source third party tool is Whetstone, which provides a handy web UI for inspecting your project's architectural patterns, and it integrates with dbt Cloud webhooks so new analyses can be performed after every dbt run.
+
+This brings us to the beefiest of the steps...
+
+-->
 
 ---
 
@@ -463,15 +622,15 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
 
 <!--
 Dividing the perennials is the notion that we ought to separate your most industrious plants to prevent overcrowding and to allow for specialized treatment of plants in the garden.
--->
 
-<!-- This is a picture of hostas being split up! -->
+Within the context of a dbt project, your perennials are your core entities. Your core entity models _are_ the building blocks for your analytics practice, and as such accrete downstream data consumers. We can to divide our perennials by paritioning the subgraphs of our dbt project that feed into our core entities, and define robust interfaces for these core entities to standardize access patterns and to reduce sprawl in vital sections of our project.
+-->
 
 ---
 
 <!-- _class: lead -->
 
-## Groups and Access
+## Groups, access, and versions
 
 <div class="footer">
   <div class="logo">
@@ -537,7 +696,7 @@ models:
 
 ---
 
-![bg 90%](https://mermaid.ink/svg/pako:eNqNlD1vwyAQhv-KRdYkstoqahk6ZWyXdrVkYXwkVsFYfKSKovz3ktgYQuImTOZ47n3vOOQDorIGhBHj8pduiTLZx1fRFm3mFuVE6zWwTEurKGSs4RzPVnn1-rSaZ9oo-QNhTyWXCs8YY0m2cA58SM7zt5fqOST7fZycpHeq2REDn5EKO688n9Tpt15Kmz0HpyNrS82kRFVVMa5gB62FR3FqtZECVKktpaD1_3lDi0osayBcY4z7Kw5xr5eeDV0sT9WZ-HAoxlYbRbqt5_poX-amHIJlOWbHlxtYq10jIyPCIbT1ldNwUZdOroWy9L3dNhmxuNXbqBe6U0k6gyCgoJPKjP1La6gDpyXHyWSLxXvS0I0ZXVJj2KtdzmyEk2mE1xq7nenI99olJQKXGJzBaLTeMPhMXFOPRZn3YTRHrjZBmtr9Ww6nWIHMFgQUCLvPGhix3BSoaI8OJdbI731LETbKwhzZrnaPYN0QN1eBMHP1wfEPyLKVKg)
+![bg 90%](https://mermaid.ink/svg/pako:eNqNVMtuozAU_RXkbmlEICHEi666nNm0uxESMubSoBqM_GgnE-XfxwEMDg1pWeHr87jH13BClBeAMCoZ_6QHIpT36yVt0sYzD2VEymcoPcm1oOCVFWP4IQ7yJIx9TyrB32FaU864wA9lWc7YtXFgAzkI9ps8msh27ZJn9FZUH0TBb0el7J4gWNTpl1ZKqiMDo8MLTdWiRJ7nLlzABzQafgqnWipeg8ikphSkvM8bIop6VQBhEmPcH_FUt3rzvSHF6tKdcjeHZnT-Jkh7sLi-2rf5lg3FLBvZ7uFOWC1NkBFTT5vQFF-choO6djIRssxmu20ywtyot6FW6JtO5jOYBAS0XKgxP9eKGuBM0gGOSgfStlVjtBbdxyF6j49Ps-w3xnmNGstW7Xq8I3g2uOliu24d2vH96jJHTLiZQQd0boE1nHwWTrSHOcz74LuNLs7C8ljVvL92X18yfl6wiWG7twjkI8OsSVWYX9zpUkuROkANKcLmtYCSaKZSlDZnAyVa8ddjQxFWQoOPdFuYu_hcEXO9aoRLk91UW9IgfEJ_Ed6tkjiOgiRch2EShLvIR0eE1_F6FQfbJNrs42Af7bZnH_3j3AisO_Kf7v3icP4PhALY2Q)
 
 <div class="footer">
   <div class="logo">
@@ -557,12 +716,37 @@ models:
 </div>
 
 <!--
-Just like a garden needs to be divided into separate areas for different plants, a dbt project can be modularized into smaller sections. In this section I'll discuss some basic philosophies around how to identify which models should be grouped together, how to consolidate similar models, and how to leverage groups and access controls to manage dependencies between sections.
--->
+
+I thought it would be cool to talk about this, but it doesn't really help out the narrative. Also!! I think this really balloons model counts, which doesn't
+really help with costs.
+
+```yml
+models:
+  - name: deals
+    group: go_to_market
+    access: public
+
+    columns:
+      - name: deal_id
+        data_type: int
+
+      - name: favorite_color
+        data_type: varchar
+
+    latest_version: 1
+    versions:
+      - v: 1 # Version described above
+        deprecation_date: 2023-08-30 # Deprecation warnings will be returned when referenced
+
+      - v: 2 # The new version in pre-release. Removes favorite_color
+        columns:
+          - include: all
+            exclude: [favorite_color]
+```
 
 ---
 
-![bg 90%](https://mermaid.ink/svg/pako:eNqNlEtOwzAQhq8SmW2LIh4VeMGKJWzoNlLkOGMa4cSRH0VV1TOwYcdFOA8X4AqYJn7UfUBW8fib_5_xOFkjKmpAGDEuXumCSJ09PBVd0WX2oZwodQ8sU8JIChlrOMdns7y6uZhNMqWleIGwpoILic8YY0l2ax34mJznt1fVZUh26zg5Se9lsyQaHiMVtn3y_KjOsHRSSq84WB1RG6qPSlRVFeMSltAZ-C9OjdKiBVkqQykodTpvbFG25zUQrjDGwxGHuNNL98Yuzn-r0_HmWIypniXpF44bokOZz-UYLEufHR9uYI2yjXimDZvQ1XtO40HtOtkWytL1dtjEY3Grh1En9Ecl6QyCgIReSO37F0ZTCyaSEeiVFqTvm85qHXX3Q8ym07uk9wPj3KV82KntjtfDyeDCxY7dtnTku--SEoFLDLZgdAucYfA5cqIDFmWehk8UWqCvj_fvz7cCRQr7c3EavOle5tsv8cZ_anA1g-tbR6AJspktaWr7u1v_xgqkF9BCgbB9rYERw3WBim5jUWK0mK86irCWBibI9LW9l_cNsVetRZjZc4DND55Xyqg)
+![bg 90%](https://mermaid.ink/svg/pako:eNqNlMtuqzAQhl8FuVsacUkJ8aKrLtvN6e4ICRkzNKgGI19yThrl3etwNSRpygLBzDf_3AxHRHkOCKOC8X90R4RyXv8kdVI75qKMSPkChSO5FhScomQMP0ReFgeR60gl-CdM75QzLvBDURSL6MpkYH2w523XWTgFD-928CK8EeWeKHizVIr28rybOt3rICXVgYHR4bmm6qZElmU2LmAPtYbf4lRLxSsQqdSUgpQ_x_UtimqVA2ESY9yNeLIPektf38XqXJ2ynX0xOvsQpNkNXGftyvxIe2OajtH2cCdWS9PIyFSTE-r8IlM_qHkm00KaDr1dTzJidqvX0VYo3fvzYixPcL_M5YImDQENF2ocDteKGlBeJrsQHxfoPD4-L_q-sso5NZoHtflqR3ixtOlQ29laehjGApjnn6B7Ov5vdHrIvl8puo2wTtWQfBBp_Tf2MCOD-6SV5me4w1lZf763n3A8faNkvQmypX-7-OWdFToGucjMpSJlbv6kx7MtQWoHFSQIm8ccCqKZSlBSnwxKtOLvh5oiXJiewEW6yc2ZfymJOanVaG1IjfAR_Ud4s4qjKPTiwA-C2As2oYsOCPuRv4q8pzhcbyNvG26eTi764twI-G3w3_ZZCQ2nb2gW9e8)
 
 <div class="footer">
   <div class="logo">
@@ -581,8 +765,6 @@ Just like a garden needs to be divided into separate areas for different plants,
   <div></div>
 </div>
 
-<!--
-Just like a garden needs to be divided into separate areas for different plants, a dbt project can be modularized into smaller sections. In this section I'll discuss some basic philosophies around how to identify which models should be grouped together, how to consolidate similar models, and how to leverage groups and access controls to manage dependencies between sections.
 -->
 
 ---
