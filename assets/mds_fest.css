@@ -60,6 +60,7 @@ div.footer {
 }
 
 .footer > div:first-child > video,
+.footer > div:first-child > img,
 .footer > div:first-child > span {
   vertical-align: middle;
 }

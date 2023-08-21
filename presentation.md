@@ -11,9 +11,7 @@ Scaling Your dbt Project Like a Gardener
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -105,9 +103,7 @@ Quite simply
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -126,9 +122,7 @@ Quite simply
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -149,9 +143,7 @@ Quite simply
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -175,9 +167,7 @@ Quite simply
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -204,9 +194,7 @@ Once you're in territory where there are multiple distinct teams operating indep
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -229,9 +217,7 @@ Once you're in territory where there are multiple distinct teams operating indep
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -270,9 +256,7 @@ stands to reason that we can work like gardeners to rehabilitate them. Thankfull
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -293,9 +277,7 @@ stands to reason that we can work like gardeners to rehabilitate them. Thankfull
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -319,9 +301,7 @@ stands to reason that we can work like gardeners to rehabilitate them. Thankfull
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -342,9 +322,7 @@ stands to reason that we can work like gardeners to rehabilitate them. Thankfull
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -375,9 +353,7 @@ stands to reason that we can work like gardeners to rehabilitate them. Thankfull
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -402,9 +378,7 @@ Within the context of a dbt project, this is a matter of identifying antip-atter
 -->
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -447,9 +421,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
 -->
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -468,9 +440,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -489,9 +459,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -510,9 +478,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -531,9 +497,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -573,9 +537,7 @@ are four main anti-patterns that tend to add unnecessary messiness to a project.
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -618,9 +580,7 @@ This brings us to the beefiest of the steps...
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -651,9 +611,7 @@ Within the context of a dbt project, your perennials are your core entities. You
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -672,9 +630,7 @@ Within the context of a dbt project, your perennials are your core entities. You
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -717,9 +673,7 @@ models:
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -760,9 +714,7 @@ models:
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -781,9 +733,7 @@ models:
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -824,9 +774,7 @@ models:
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -845,9 +793,7 @@ models:
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -882,9 +828,7 @@ To make it easier for practitioners to apply groups, access, and versions in lar
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -903,9 +847,7 @@ To make it easier for practitioners to apply groups, access, and versions in lar
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -935,9 +877,7 @@ To make it easier for practitioners to apply groups, access, and versions in lar
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -956,9 +896,7 @@ To make it easier for practitioners to apply groups, access, and versions in lar
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -981,9 +919,7 @@ To make it easier for practitioners to apply groups, access, and versions in lar
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -1017,9 +953,7 @@ metaphor breaks down in our favor.
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -1056,9 +990,7 @@ important than your tools
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -1079,9 +1011,7 @@ important than your tools
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -1105,9 +1035,7 @@ important than your tools
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -1129,9 +1057,7 @@ important than your tools
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -1155,9 +1081,7 @@ important than your tools
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -1180,9 +1104,7 @@ important than your tools
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -1207,9 +1129,7 @@ important than your tools
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+   <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -1236,9 +1156,7 @@ and then grow a bright future
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
@@ -1272,9 +1190,7 @@ yager@nicholasyager.com
 
 <div class="footer">
   <div class="logo">
-  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
-    <source src="assets/mds-wave.mp4" type="video/mp4">
-  </video>
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
   <span>
   MDS FEST
   </span>
