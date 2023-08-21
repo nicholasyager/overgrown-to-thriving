@@ -236,3 +236,14 @@ span.hljs-attr {
 .php .xml {
   opacity: 0.5;
 }
+
+.highlighted-line {
+  background-color: #ff0;
+  display: block;
+  margin: 0 -16px;
+  padding: 0 16px;
+}
+
+.highlight {
+  color: red !important;
+}

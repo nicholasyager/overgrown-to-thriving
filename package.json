@@ -6,14 +6,18 @@
   "private": true,
   "scripts": {
     "build": "rimraf public && npm run -s og-image && npm run -s deck",
-    "deck": "marp --theme assets/mds_fest.css --html --no-stdin presentation.md -o public/index.html && ncp assets public/assets",
-    "og-image": "marp --theme assets/mds_fest.css --no-stdin presentation.md -o public/og-image.jpg",
-    "start": "marp --html -ps .",
+    "deck": "marp -c --theme assets/mds_fest.css --html --no-stdin presentation.md -o public/index.html && ncp assets public/assets",
+    "og-image": "marp -c  --theme assets/mds_fest.css --no-stdin presentation.md -o public/og-image.jpg",
+    "start": "marp   --html -ps .",
     "vercel-build": "npm i puppeteer --no-save && MARP_USER=root CHROME_PATH=$(node -e \"console.log(require('puppeteer').executablePath())\") npm run build"
   },
   "devDependencies": {
-    "@marp-team/marp-cli": "^2.4.0",
+    "@marp-team/marp-cli": "^2.5.0",
     "ncp": "^2.0.0",
     "rimraf": "^5.0.0"
+  },
+  "dependencies": {
+    "@marp-team/marp-core": "^3.8.0",
+    "markdown-it-highlight-lines": "^1.0.2"
   }
 }

@@ -268,6 +268,23 @@ stands to reason that we can work like gardeners to rehabilitate them. Thankfull
 4. Divide the perennials
 5. Keep the weeds under control
 
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
 ---
 
 # Step One: Survey your garden
@@ -715,10 +732,7 @@ models:
   <div></div>
 </div>
 
-<!--
-
-I thought it would be cool to talk about this, but it doesn't really help out the narrative. Also!! I think this really balloons model counts, which doesn't
-really help with costs.
+---
 
 ```yml
 models:
@@ -744,9 +758,26 @@ models:
             exclude: [favorite_color]
 ```
 
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
 ---
 
-![bg 90%](https://mermaid.ink/svg/pako:eNqNlMtuqzAQhl8FuVsacUkJ8aKrLtvN6e4ICRkzNKgGI19yThrl3etwNSRpygLBzDf_3AxHRHkOCKOC8X90R4RyXv8kdVI75qKMSPkChSO5FhScomQMP0ReFgeR60gl-CdM75QzLvBDURSL6MpkYH2w523XWTgFD-928CK8EeWeKHizVIr28rybOt3rICXVgYHR4bmm6qZElmU2LmAPtYbf4lRLxSsQqdSUgpQ_x_UtimqVA2ESY9yNeLIPektf38XqXJ2ynX0xOvsQpNkNXGftyvxIe2OajtH2cCdWS9PIyFSTE-r8IlM_qHkm00KaDr1dTzJidqvX0VYo3fvzYixPcL_M5YImDQENF2ocDteKGlBeJrsQHxfoPD4-L_q-sso5NZoHtflqR3ixtOlQ29laehjGApjnn6B7Ov5vdHrIvl8puo2wTtWQfBBp_Tf2MCOD-6SV5me4w1lZf763n3A8faNkvQmypX-7-OWdFToGucjMpSJlbv6kx7MtQWoHFSQIm8ccCqKZSlBSnwxKtOLvh5oiXJiewEW6yc2ZfymJOanVaG1IjfAR_Ud4s4qjKPTiwA-C2As2oYsOCPuRv4q8pzhcbyNvG26eTi764twI-G3w3_ZZCQ2nb2gW9e8)
+![bg 90%](https://mermaid.ink/svg/pako:eNqNlMtuozAUhl8FueqORlxSQrzoqsuZzXQ3pULGmAbVYORLZtIo716HizGENGWB8PF3_nOzOQLMcgIgKCj7h3eIS-fXn6ROakc_mCIhnknhCKY4Jk5RUgrvIi-Lg8h1hOTsg4xrzCjj8K4oipl3pSPQ3tnztussHJ2Hte08c294uUeS_LZUivbxvKs63XKQEvJAidZhucLyqkSWZTbOyZ7UivwUx0pIVhGeCoUxEeJ7v75EXq1ygqiAEHYtHu2D3nyvr2J1zk7am30yKnvnqNkNXGft0nxPe2OaGm-7uSOrhC7EMNW4Ser8IlLfqGkkXUKaDrUtBzGYXeoy2gqle_-1_Xib5mQBwe1s53MaNThpGJemR0xJrEFxGexC3MzReXh4mpW_MNEpZcyD2nTCBp7NbjzbdrSWHpoxA6bxR-iWjv8TnR6y3wtJtx7W4RqCDyLt_pU5dOT9vcn8NmxF-h422rSsP17a-xyPFxatN0G2gGxnv8CzTocBF-gGVajM9Z_1eLYlQO5IRRIA9WdOCqSoTEBSnzSKlGQvhxoDWOjKiAtUk-s78FwifWQrY21QDeAR_Adws4qjKPTiwA-C2As2oQsOAPqRv4q8xzhcbyNvG24eTy74ZEwL-K3z3_ZbckVOX9Af-e4)
 
 <div class="footer">
   <div class="logo">
@@ -765,13 +796,87 @@ models:
   <div></div>
 </div>
 
--->
+---
+
+```yml
+models:
+  - name: deals
+    group: go_to_market
+    access: public
+
+    columns:
+      - name: deal_id
+        data_type: int
+
+      - name: favorite_color
+        data_type: varchar
+
+    latest_version: 2 # Upgrade to the new version!!1!
+    versions:
+      - v: 1
+        deprecation_date: 2023-08-30
+
+      - v: 2
+        columns:
+          - include: all
+            exclude: [favorite_color]
+```
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+![bg 90%](https://mermaid.ink/svg/pako:eNqNlMtuozAUhl8FueqORlxSQrzoqsuZzXQ3pULGmAbVYORLZtIo716HizGENGWB8PF3_nOzOQLMcgIgKCj7h3eIS-fXn6ROakc_mCIhnknhCKY4Jk5RUgrvIi-Lg8h1hOTsg4xrzCjj8K4oipl3pSPQ3tnztussHJ2Hte08c294uUeS_LZUivbxvKs63XKQEvJAidZhucLyqkSWZTbOyZ7UivwUx0pIVhGeCoUxEeJ7v75EXq1ygqiAEHYtHu2D3nyvr2J1zk7am30yKnvnqNkNXGft0nxPe2OaGm-7uSOrhC7EMNW4Ser8IlLfqGkkXUKaDrUtBzGYXeoy2gqle3-ajLUTvLYfb7eznc9plOKkYVyaHjElsQbFZcwLcTNH5-HhaVb-wkSnlDEPatMJG3g2u_Fs29FaeujJDJjGH6FbOv5PdHrIfi8k3XpYh2sIfn9vdFrkyig6eMj8NmlF-h42WdCy_nhp73M8Xli03gTZArKd_QLPOh0GXKAbVKEy13_W49mWALkjFUkA1J85KZCiMgFJfdIoUpK9HGoMYKErIy5QTa7vwHOJ9JGtjLVBNYBH8B_AzSqOotCLAz8IYi_YhC44AOhH_iryHuNwvY28bbh5PLngkzEt4LfOf9tvyRU5fQGiJ_nu)
+
+<div class="footer">
+  <div class="logo">
+  <video autoplay="" playsinline="" loop="" muted="" style="width: 1.5em;">
+    <source src="assets/mds-wave.mp4" type="video/mp4">
+  </video>
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div></div>
+</div>
+
+---
+
+![bg contain 90%](assets/dbt-meshify.png)
+
+<!---
+
+To make it easier for practitioners to apply groups, access, and versions in large projects, I've collaborated with Dave Connors and Grace Goheen from dbt Labs to make the `dbt-meshify` python package. This tool allows you to these model governance tools to dbt projects using selector syntax. For example, imagine adding a `Revenue` group to all models upstream to deals and setting deals to public access using a single command. Expect more from this tool as the dbt community explores how to effectively use these new model governance features.
+
+--->
 
 ---
 
 ## Multi-project deployments
 
 ⚠️ Caution: Prickly practice 🌵
+
+<!-- And now we're really going to push the frontier into multi-project deployments. -->
 
 <!-- _class: lead -->
 
