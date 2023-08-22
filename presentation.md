@@ -600,7 +600,7 @@ This brings us to the beefiest of the steps...
 <!--
 Dividing the perennials is the notion that we ought to separate your most industrious plants to prevent overcrowding and to allow for specialized treatment of plants in the garden.
 
-Within the context of a dbt project, your perennials are your core entities. Your core entity models _are_ the building blocks for your analytics practice, and as such accrete downstream data consumers. We can to divide our perennials by paritioning the subgraphs of our dbt project that feed into our core entities, and define robust interfaces for these core entities to standardize access patterns and to reduce sprawl in vital sections of our project.
+Within the context of a dbt project, your perennials are your core entities. Your core entity models _are_ the building blocks for your analytics practice, and as such accrete downstream data consumers. We can to divide our perennials by partitioning the subgraphs of our dbt project that feed into our core entities, and define robust interfaces for these core entities to standardize access patterns and to reduce sprawl in vital sections of our project.
 -->
 
 ---
@@ -624,6 +624,8 @@ Within the context of a dbt project, your perennials are your core entities. You
   <div></div>
 </div>
 
+<!-- This brings us to model governance features like groups, access, and versions. Groups and access allow dbt users to add permissions around which models can be accessed, and versions allow for creating documented versioned models that can be contracted and deprecated. Together, these tools allow AEs to treat their models like robust interfaces for other teams. Let's look at an example. -->
+
 ---
 
 ![bg 90%](https://mermaid.ink/svg/pako:eNqFU01vgzAM_SsovbZVtU3VlsNOPW6X7YqE0uC0aIEgx-k0Vf3vS6FAmgHjhO33YT_BmUmTA-NMafMtjwIpeftIq7RK_CO1sHYHKrHGoYREFVrzxXazf37YLhNLaL5gqKXRBvlCKRWxS--gb-TN5uVp_ziQuzokR_Qai5MgeA9UPGxSoi2vKr0SluschLac8_aSoS-dJVMCxrMaTe4kreEEFYXDdmzpkN0gWdZjmkNbgLOAo4Mr0xtnWbfR2CzcKpiPUBBqg9TvYhxJTwxAUQTJavUa7TASxj2qb3dq9-H04CiQMKvBrUEHvn9dYsRk4g0wCHrGcCKm2RVmOYHt_2C2ZF61FEXuf7TztZcyOkIJKeP-NQclnKaUpdXFQ4Uj8_lTScYJHSyZq3P_-e8KcUBRMq78TXD5BcffSEs)
@@ -643,11 +645,17 @@ Within the context of a dbt project, your perennials are your core entities. You
   <div></div>
 </div>
 
+<!-- Suppose we have a tiny toy model with CRM data, product data, core entities for deals and user events, and a one-off report model made by a product analyst. Notice that we're breaking an architectural guideline! We're duplicating the same joins. This tells us that `report_product_outcomes` is not using our clean, beautiful entities.
+
+We can enforce use of these entity models by assigning these models to groups, and setting our staging models to private access to prevent models from other groups from accessing them.
+
+-->
+
 ---
 
 ```yml
 groups:
-  - name: go_to_market
+  - name: revenue
     owner:
       email: gtm@garden.supplies
 
@@ -659,13 +667,18 @@ groups:
 ```yml
 models:
   - name: deals
-    group: go_to_market
+    group: revenue
     access: public
 
-  - name: report_product_outcomes
-    group: customer_success
-    access: public
+  - name: stg_crm__customers
+    group: revenue
+    access: private
 ```
+
+<!-- This is quite easy to do for the YAML fans in the audience! We can define a groups via YAMl, like the revenue and customer success groups in the first code block.
+
+Then, we can assign our models to our groups of interest. Not that we are defining deals as a public model and stg_crm__customers as private.
+ -->
 
 ---
 
@@ -686,12 +699,17 @@ models:
   <div></div>
 </div>
 
+<!-- If we were to go though and assign our other models to their corresponding groups, we would have public models for deals and user events, and the report models would be required to use our public models as a common interface! With common interfaces in place, we are able to carve out areas of decreased mess _and_ complexity.
+
+Now, suppose we need to make breaking changes to the `deals` model. We now have hard dependencies downstream that we need to be mindful of. First and foremost, talk with your data consumers, but from a technical perspective, we can leverage versions!
+ -->
+
 ---
 
 ```yml
 models:
   - name: deals
-    group: go_to_market
+    group: revenue
     access: public
 
     columns:
@@ -727,6 +745,12 @@ models:
   <div></div>
 </div>
 
+<!--
+Model versions are a way of dynamically aliasing refs to an appropriate version of your model.  Versions are defined in model property yaml, and each version can have specific column definitions and metadata.  Each version has a specific version-suffixed SQL file definition, but they all share the same model properties.
+
+In our scenario, suppose we're dropping the `favorite_color` field from our deals model. We can create a pre-release of a v2 of the `deals` model that with the appropriate documentation, and set a deprecation date on the v1 of deals.
+ -->
+
 ---
 
 ![bg 90%](https://mermaid.ink/svg/pako:eNqNlMtuozAUhl8FueqORlxSQrzoqsuZzXQ3pULGmAbVYORLZtIo716HizGENGWB8PF3_nOzOQLMcgIgKCj7h3eIS-fXn6ROakc_mCIhnknhCKY4Jk5RUgrvIi-Lg8h1hOTsg4xrzCjj8K4oipl3pSPQ3tnztussHJ2Hte08c294uUeS_LZUivbxvKs63XKQEvJAidZhucLyqkSWZTbOyZ7UivwUx0pIVhGeCoUxEeJ7v75EXq1ygqiAEHYtHu2D3nyvr2J1zk7am30yKnvnqNkNXGft0nxPe2OaGm-7uSOrhC7EMNW4Ser8IlLfqGkkXUKaDrUtBzGYXeoy2gqle_-1_Xib5mQBwe1s53MaNThpGJemR0xJrEFxGexC3MzReXh4mpW_MNEpZcyD2nTCBp7NbjzbdrSWHpoxA6bxR-iWjv8TnR6y3wtJtx7W4RqCDyLt_pU5dOT9vcn8NmxF-h422rSsP17a-xyPFxatN0G2gGxnv8CzTocBF-gGVajM9Z_1eLYlQO5IRRIA9WdOCqSoTEBSnzSKlGQvhxoDWOjKiAtUk-s78FwifWQrY21QDeAR_Adws4qjKPTiwA-C2As2oQsOAPqRv4q8xzhcbyNvG24eTy74ZEwL-K3z3_ZbckVOX9Af-e4)
@@ -745,6 +769,8 @@ models:
 
   <div></div>
 </div>
+
+<!-- Now, when `report_product_outcomes` references deals, dbt will log a warning the `deals_v1` has a deprecation date, and will suggest that the model be updated to use the next version. -->
 
 ---
 
@@ -787,6 +813,11 @@ models:
   <div></div>
 </div>
 
+<!-- When we're ready to cut over to the new version, we only need to update the `latest_version` property, and now all refs to the latest `deals` model will automatically start using the v2 version of the deals model.
+
+Once the transition has completed, it's easy to remove the v1 model of deals and drop the table to clean up the unused model.
+ -->
+
 ---
 
 ![bg 90%](https://mermaid.ink/svg/pako:eNqNlMtuozAUhl8FueqORlxSQrzoqsuZzXQ3pULGmAbVYORLZtIo716HizGENGWB8PF3_nOzOQLMcgIgKCj7h3eIS-fXn6ROakc_mCIhnknhCKY4Jk5RUgrvIi-Lg8h1hOTsg4xrzCjj8K4oipl3pSPQ3tnztussHJ2Hte08c294uUeS_LZUivbxvKs63XKQEvJAidZhucLyqkSWZTbOyZ7UivwUx0pIVhGeCoUxEeJ7v75EXq1ygqiAEHYtHu2D3nyvr2J1zk7am30yKnvnqNkNXGft0nxPe2OaGm-7uSOrhC7EMNW4Ser8IlLfqGkkXUKaDrUtBzGYXeoy2gqle3-ajLUTvLYfb7eznc9plOKkYVyaHjElsQbFZcwLcTNH5-HhaVb-wkSnlDEPatMJG3g2u_Fs29FaeujJDJjGH6FbOv5PdHrIfi8k3XpYh2sIfn9vdFrkyig6eMj8NmlF-h42WdCy_nhp73M8Xli03gTZArKd_QLPOh0GXKAbVKEy13_W49mWALkjFUkA1J85KZCiMgFJfdIoUpK9HGoMYKErIy5QTa7vwHOJ9JGtjLVBNYBH8B_AzSqOotCLAz8IYi_YhC44AOhH_iryHuNwvY28bbh5PLngkzEt4LfOf9tvyRU5fQGiJ_nu)
@@ -812,7 +843,7 @@ models:
 
 <!---
 
-To make it easier for practitioners to apply groups, access, and versions in large projects, I've collaborated with Dave Connors and Grace Goheen from dbt Labs to make the `dbt-meshify` python package. This tool allows you to these model governance tools to dbt projects using selector syntax. For example, imagine adding a `Revenue` group to all models upstream to deals and setting deals to public access using a single command. Expect more from this tool as the dbt community explores how to effectively use these new model governance features.
+To make it easier for practitioners to apply groups, access, and versions in large projects, some community members have made the `dbt-meshify` python package. This tool allows you to these model governance tools to dbt projects using selector syntax. For example, imagine adding a `Revenue` group to all models upstream to deals and setting deals to public access using a single command. Expect more from this tool as the dbt community explores how to effectively use these new model governance features.
 
 --->
 
@@ -822,7 +853,7 @@ To make it easier for practitioners to apply groups, access, and versions in lar
 
 ⚠️ Caution: Prickly practice 🌵
 
-<!-- And now we're really going to push the frontier into multi-project deployments. -->
+<!-- And now we're really going to push the frontier into multi-project deployments. You may familiar with this under the name "multi-project collaboration", or cross-project references, but multi-project deployments is the practice of decomposing large dbt projects into smaller, self-contained dbt projects that have clear robust interfaces, and that can been seen as black-boxes by downstream consumers. -->
 
 <!-- _class: lead -->
 
@@ -861,15 +892,36 @@ To make it easier for practitioners to apply groups, access, and versions in lar
 </div>
 
 <!--
+
+Using our previous toy DAG as an example, we could conceivably split our project into two smaller projects -- one for go-to-market analytics and one for product. This separation adds operational complexity -- you will have different projects to orchestrate and depending on your setup there may be separate repos or other separate parts of the workflow. But, there are three main benefits.
+
+
 1. Teams have more flexibility and self-determination
 2. Clear lines of ownership and responsibility for all models.
-3. Public interfaces between projects can be versioned and contracted
+    - Each project can be treated like a black-box. If we can trust the interfaces between our projects, then we can reduce the amount of organizational overhead
+3. By enforcing the use of public interfaces, we will necessarily promote more robust and less messy architectural practices. We've made undesirable states for our project unrepresentable!
+
+
+Now, let's get into the prickles.
+Currently, there are not many teams who have had a chance to adopt this ergonomically.
+
+For some time now, you could import one dbt project as a package into a downstream dbt project, bringing along all of your existing models. The downside to this approach is that importing the upstream project as a package drags the entire proejct into compilation scope, so your compile times will continue to be large, and your DAG will be full of all of those unneeded models.
+
+I'd be remise if I didn't mention that folks using an asset-aware orchestrator like Dagster, can also get multi-project deployments by constructing a meta-dag that may include models from multiple projects.
  -->
 
 ---
 
 ![bg 90%](assets/github_discussion.png)
 ![bg 90%](assets/multiproject_dbt_cloud_2.png)
+
+<!--
+
+More recently, dbt Labs has enabled multi-project deployments as a capability within dbt Core in dbt 1.6.0 with the introduction of their plugin system, but dbt Labs has decided to restrict this functionality to dbt Cloud enterprise users, and currently there is only a private beta for using this functionality.
+
+But ... the beauty of open source code is that we can look at the code, see the outline of what's missing, and infer how to do it ourselves!
+
+-->
 
 ---
 
@@ -890,6 +942,13 @@ To make it easier for practitioners to apply groups, access, and versions in lar
   <div></div>
 </div>
 
+<!-- Based on the existence of the plugin system and the discussion posts on GitHub, it's reasonable to assume that dbt Labs has created a proprietary python module that leverages the plugin system to fetche metadata from dbt Cloud's API and use this metadata to inject dbt models into your project.
+
+
+Since the plug-in system allows for injecting models into a project...
+
+ -->
+
 ---
 
 ![bg 90%](https://mermaid.ink/svg/pako:eNqNU1FP2zAQ_iuWeQ0oTUda_IAEVEhITK1WJLQlqHKcS-Ph2JFjb-uq_vfZTjrYyND84Nydv-_uvvi8x0yVgAmuhPrOaqoNuv-Uy1wit5igXbeAChWCsmdUcSHISRVWHEeoM1o9AzmJvcOUUDrYf3MddauVleUxQVIlUFTV_yaoeVmCHMjXV4ub6e0L9egP7N4d-u_MTgB6WK7-wQ2lPLKzxVbTtvbY7LOyGt3JSlOHs8xYDU99RyXXwAxXEj1cD5HCbLSVhjeQORvdKAcmhLxo7nGtVq3mYKjebVpht1xmy9ZpWrtaDNBHd1JSQ9EqnI1l6HenA7rsXjEq0K23x6Cq-Ora3HRGabqFbBlctO7dMULJO6a-geuNtrzXIZQt0dXq7k2BEQY6Pb0cUfiq43cRf7b7LvRtPMBf3UL4TzAI89tKK5_eqwgz7PF-Ivz3kWqole3geNpXwRFuQDeUl-5Z7H0sx6aGBnJMnFlCRa0wOc7lwUGpNWq9kwyTiooOImxbd5Ww4NSNVPM72lKJyR7_wGR2Nk_TaTxPJkkyj5PZNMI7TCbp5CyNz-fTDxdpfDGdnR8i_FMpl2ASyF-C7QYSDr8AEEs6uA)
@@ -909,47 +968,26 @@ To make it easier for practitioners to apply groups, access, and versions in lar
   <div></div>
 </div>
 
+<!--
+
+The community can just as well create an open-source python package! This plugin can also load metadata, be it from dbt project artifacts or from dbt Cloud via the API, and injects nodes into the dbt project.
+ -->
+
 ---
 
 ![bg 90%](assets/loom.png)
 
----
+<!-- To that end, I've created the dbt-loom python package, an open source and open-licensed dbt plugin that enables native multi-project deployments. After adding this package as python dependency along side dbt core and creating a config file, this package identifies public models from upstream projects and injects them into your downstream project to enable cross-project references.
 
-![bg contain 75%](https://mermaid.ink/svg/pako:eNqVVE1vgyAY_iuGXdvGrEvjOOzUZJf1su1oYhBfqhmK4aNd0_S_j7YiaOuWcZKX54sX8IioKABhxLjY05JIHb29p03aRHZQTpRaA4uUMJJCxCrO8cMqzpPH1SxSWoov8HMquJD4gTE2YtfWgXfkOH5-ypee7OYheURvZbUjGjaBCruMOJ7UuU6dlNIHDtHr52aSniSJm8z3VaFLHC3b7yG_laIwVP9bwytI2EFjYFIhz_MQTo3SogaZKUMpKPU778LsE5t8K0lbutDX6nl0hcU5ilYY4-vZeoDS26wDZVmPCg_BY42y6XpM7RehKW6i2P53TCrrRQGEj-3Pdbfpu9GcVNdIv-KCW4Usc9L3Mw-gods03AnWw6Vgk4N043MbiklohdR9i4XR1IKn5Ic-_dtwDYzm85fRxu-0cojqy05teCV68OgS-McQul3Qge-tyxjhcSODCzC4Uc7Q-0y07goLmH-D0QzZbDWpCvvrO55rKdIl1JAibD8LYMRwnaK0OVkoMVp8HBqKsJYGZsi0hb0o64rY864RZjYfnH4AXLHAAw)
+If you're interested in having composable, maintainable dbt projects using your preferred orchestration infrastructure, by all means give this a spin.
 
-<div class="footer">
-  <div class="logo">
-  <img src='assets/mds-wave.gif' style="width: 1.5em" />
-  <span>
-  MDS FEST
-  </span>
-  </div>
-
-  <div class="small_title">
-  From Overgrown to Thriving
-  </div>
-
-  <div></div>
-</div>
-
-<!--
-1. Teams have more flexibility and self-determination
-2. Clear lines of ownership and responsibility for all models.
-3. Public interfaces between projects can be versioned and contracted
- -->
+-->
 
 ---
 
 <!-- _class: lead -->
 
 # Step Five: Keep the weeds under control
-
-<!--
-Now that we've gotten our garden into a more maintainable state state, it's
-vital that we prevent weeds and other unwanted plants from taking root. In a garden
-this can take a great deal of time and effort. Thankfully, this is where our
-metaphor breaks down in our favor.
--->
 
 <div class="footer">
   <div class="logo">
@@ -972,16 +1010,13 @@ metaphor breaks down in our favor.
 
 <!-- _footer: ''  -->
 
+<!--
+Now that we've gotten our garden into a more maintainable state state, it's vital that we prevent weeds and other unwanted plants from taking root. In a garden there are myrad tools and techniques for weeding your garden, but the most important factor has nothing to do with your tools.
+-->
+
 ---
 
 <!-- _class: lead -->
-
-<!--
-Instead of manual effort, we can use fantastic tools to keep our garden
-productive. For a while, we've had tools like pre-commit and sqlfmt to keep our
-queries readable and maintainable. As of last year, we've also had developments in
-architectural monitoring tools like dbt-project-evaluator and Whetstone to monitor and report on _what_ we've built as well.
--->
 
 <h2>
 Your <strong>process</strong> is more
@@ -1002,6 +1037,8 @@ important than your tools
 
   <div></div>
 </div>
+
+<!-- It's a matter of deliberate practice. A matter of integrating small amounts of maintenance work into your everyday tasks. -->
 
 ---
 
