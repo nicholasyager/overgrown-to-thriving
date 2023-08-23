@@ -392,7 +392,7 @@ Within the context of a dbt project, this is a matter of identifying anti-patter
   From Overgrown to Thriving
   </div>
 
-  <div>19</div>
+  <div>18</div>
 </div>
 
 ---
@@ -423,141 +423,25 @@ are four main anti-patterns that tend to add unnecessary messiness to a project.
 <!--
 In a dbt project, we can prune our project by refactoring any anti-patterns currently in use in the project's core entities. This would include
 -->
-<div class="footer">
-  <div class="logo">
-  <img src='assets/mds-wave.gif' style="width: 1.5em" />
-  <span>
-  MDS FEST
-  </span>
-  </div>
-
-  <div class="small_title">
-  From Overgrown to Thriving
-  </div>
-
-  <div>20</div>
-</div>
-
----
-
-<!--
-![bg contain 30%](https://mermaid.ink/svg/pako:eNqNVE1zmzAU_Csa9dALyUjCwViHXuJjemlvAY9HgLBpQWKEaOJ4_N8rSxAwpSS68J61u-9jwWeYyoxDCvNSvqRHpjR4-hGLWABz0pI1zZbnoJGtSjnIi7KkXwKUhCTwQKOV_M2HPJWlVH06EahMkbLjI7RZJf7A7_OO79IJX_CX7yOJBAd5ggeJPu8kXDqRqFXxh2k-lsnz_MM2nEqjTyUH_JVVdcnJQDcHoekqZij4v5SErdYkudZxNEttk4Ni9fG9YPSouOndkNihEAe3zgbkUgF95J09zW5QyArFU11IYd0Eo-OwfuSee7yjlLp4DrfqcWSMu0XaZkhkF3tF2Xwi5vre26s9jhp92I8b6O1dYpExiyyw3IDg7u7btO7shDNAsti9JbihF_udxXGR3Xr9j9k42krxVYNfshC9s8CErNv07rboR07jTzpNPuv0stGu5jD6bKm5a7MY6MGKq4oVmfk_Ol-vYmhe74rHkJow4zlrSx3DWFwMlLVa_jyJFFKtWu7Bts7MJ7ItmNlm1f9YMwHpGb5Cur4Pg8BHIcGEhIisfQ-eIMUBvg_QQ-ivNgHa-OuHiwffpDR8bMnPNr5qXf4Cq_CTOw)
-
-<div class="footer">
-  <div class="logo">
-  <img src='assets/mds-wave.gif' style="width: 1.5em" />
-  <span>
-  MDS FEST
-  </span>
-  </div>
-
-  <div class="small_title">
-  From Overgrown to Thriving
-  </div>
-
-  <div>21</div>
-</div>
-
----
-
-![bg contain 30%](https://mermaid.ink/svg/pako:eNqNlEFzmzAQhf-KRj30QjIIsMA69FIf20tza8hBwComFRIjRB3X4_9emZjIcYkanbQ8fW-XJ4YDrnUDmGEh9a7ecmPRtx-lKhVyq5Z8GDYg0KBHUwMSrZTsE42rIqERGqzRv8DXtZbazOWVQeeayDMfx-usSj0_12f-pfxnBAW77xcmFaGiIt5krs8mL-WVRW_a39zCpY0Q4oODDHYvAcEz73oJicfdiuPrMBYQ8i5S8SxPqrnPBI7Vo-H99rXd_VcDbnLE0a5twMxxaoPsFlDH-75Vjw_eoGkN1LbVarpMdLEmcsUYmzYLGg1oa6fN97Ag5wG08NrSQOjm5su5x5LxG3lpMH-AhuXCy6Cak9n7sZP7jVafLTLwpFs1RX3HO0AbbvkAdnh42-o_oZNAOmkwnSRAZkGS-BdPl4zD8gWdhensKlUc4Q5Mx9vG_VkOJ7HELr4OSszctgHBR2lLXKqjO8pHq-_2qsbMmhEiPPaN-9g3LXe30WEmuBzc054rzA74GbP8tqA0jYuEJEkRJ3ka4T1mhJJbGq-KNFvTeJ3mq2OE_2jtDMgE_5z2pw7Hv7cib78)
-
-<div class="footer">
-  <div class="logo">
-  <img src='assets/mds-wave.gif' style="width: 1.5em" />
-  <span>
-  MDS FEST
-  </span>
-  </div>
-
-  <div class="small_title">
-  From Overgrown to Thriving
-  </div>
-
-  <div>22</div>
-</div>
-
----
-
-![bg contain 30%](https://mermaid.ink/svg/pako:eNqFlEFvpCAYhv8KoYe92EbUQYfDJpvMcfeye2vtAQU67CIYxG2nk_nvZRwtU2MtJz7e73k_8hI9wtowDgkUyjzXe2od-Pm71KUGftWKdt2OC9CZ3tYcCKkUucFxVSQ4Ap2z5h8PdW2UsVM5M2j8EDXycbzNqjTwUz3yl3LGa_7868qiQlhUKFhM9WhxKWcWrZX_qePXNkKIL69xcencQXHAX2jTKp4E3K84nkexgKBPkYpmeVJNcwawr54sbffv4x5-MAYa2XVSP3kfrlgHqGb-ptby2o3hekbqx2DD5FmURg8PCq7W0L8hhAybBQ2vaFuvTa-xIOcBXRoKbm-_jz5L8Ad5aXhowEHmmp27P08QPeyM_ubAXyM1cHsOGG89xHV9AEYAelU_fpz6RYhoJah0NYlkhcxWSRQySJeM1-U0yNk6nc0ChhFsuG2oZP5vcTyLJfRZNryExG8ZF7RXroSlPvlW2jvz56BrSJzteQT7lvmPbyepf5gGEkFV509bqiE5whdI8rsC4zQuEpQkRZzkaQQPkCCM7nC8KdJsi-Ntmm9OEXw1xhugAb4f9ucJpzfgQmZ6)
-
-<div class="footer">
-  <div class="logo">
-  <img src='assets/mds-wave.gif' style="width: 1.5em" />
-  <span>
-  MDS FEST
-  </span>
-  </div>
-
-  <div class="small_title">
-  From Overgrown to Thriving
-  </div>
-
-  <div>23</div>
-</div>
-
----
-
-![bg contains 30%](https://mermaid.ink/svg/pako:eNqVVMGymyAU_RWGLrrxvRFUkrDoplm2m3bX-CaDioktgoPY99JM_r0osaaWJA0buXDOgXvvkSPMVcEhhaVQr_meaQM-fUllKoEduWBtu-YlaFWncw7KSgj6joTZEpMAtEarH3yKcyWUHsOZQG0PEWd-GK7iLJr4Y3zmu3DGl_z184VEhkiZoUlijM8SLpxJNLr6yQy_lCnL8u41nEprDoID_sbqRnA80e0Iw3kpPBR0lZKxeIGz_hxHG6hdttOs2f85cPNRc3t3S2K7Su5cOVtQKg3Mnp_b075MCv0oKs1zUyk5dPRyx-Hjjftu4xdKqZv7cMmIS27jyIgjl7gZ0iWwHRLY2huY3dYhe86weouQPEogM8Loo_m9BjSeFL31Ak9PH-YZDGuO7a2dh5Pc4RAPh3g5XBZ_G-cf56DNWsn3BnxXlRxtAippFBCcnX_LR32Dxj6j237AIw7fxkUjLvpf36BHbYD9BI8HNoM9rom6_D39Qd4CeID4TmZTn2_mcxXmKurbHswCA1hzXbOqsE_-sd9MoX1Bap5CaqcFL1knTApTebJQ1hn19SBzSI3ueAC7prCv0Lpi1mM1pCUTrV1tmIT0CN8gXTwvCYnCJUYYL0O8iAJ4gBQR9EzCZBnFKxKuokVyCuAvpawAGsjfhnl_wuk36L0CLg)
-
-<div class="footer">
-  <div class="logo">
-  <img src='assets/mds-wave.gif' style="width: 1.5em" />
-  <span>
-  MDS FEST
-  </span>
-  </div>
-
-  <div class="small_title">
-  From Overgrown to Thriving
-  </div>
-
-  <div>24</div>
-</div>
-
---- -->
-
-<!--
-
-Based on my experience working as a consultant on dozens of dbt projects, there
-are four main anti-patterns that tend to add unnecessary messiness to a project.
-
--->
-
-![bg contain 90%](https://mermaid.ink/svg/pako:eNqNVE1zmzAU_Csa9dALyUjCwViHXuJjemlvAY9HgLBpQWKEaOJ4_N8rSxAwpSS68J61u-9jwWeYyoxDCvNSvqRHpjR4-hGLWABz0pI1zZbnoJGtSjnIi7KkXwKUhCTwQKOV_M2HPJWlVH06EahMkbLjI7RZJf7A7_OO79IJX_CX7yOJBAd5ggeJPu8kXDqRqFXxh2k-lsnz_MM2nEqjTyUH_JVVdcnJQDcHoekqZij4v5SErdYkudZxNEttk4Ni9fG9YPSouOndkNihEAe3zgbkUgF95J09zW5QyArFU11IYd0Eo-OwfuSee7yjlLp4DrfqcWSMu0XaZkhkF3tF2Xwi5vre26s9jhp92I8b6O1dYpExiyyw3IDg7u7btO7shDNAsti9JbihF_udxXGR3Xr9j9k42krxVYNfshC9s8CErNv07rboR07jTzpNPuv0stGu5jD6bKm5a7MY6MGKq4oVmfk_Ol-vYmhe74rHkJow4zlrSx3DWFwMlLVa_jyJFFKtWu7Bts7MJ7ItmNlm1f9YMwHpGb5Cur4Pg8BHIcGEhIisfQ-eIMUBvg_QQ-ivNgHa-OuHiwffpDR8bMnPNr5qXf4Cq_CTOw)
-
-<!-- https://mermaid.live/edit#pako:eNqNVE1zmzAU_Csa9dALyUjCwViHXuJjemlvAY9HgLBpQWKEaOJ4_N8rSxAwpSS68J61u-9jwWeYyoxDCvNSvqRHpjR4-hGLWABz0pI1zZbnoJGtSjnIi7KkXwKUhCTwQKOV_M2HPJWlVH06EahMkbLjI7RZJf7A7_OO79IJX_CX7yOJBAd5ggeJPu8kXDqRqFXxh2k-lsnz_MM2nEqjTyUH_JVVdcnJQDcHoekqZij4v5SErdYkudZxNEttk4Ni9fG9YPSouOndkNihEAe3zgbkUgF95J09zW5QyArFU11IYd0Eo-OwfuSee7yjlLp4DrfqcWSMu0XaZkhkF3tF2Xwi5vre26s9jhp92I8b6O1dYpExiyyw3IDg7u7btO7shDNAsti9JbihF_udxXGR3Xr9j9k42krxVYNfshC9s8CErNv07rboR07jTzpNPuv0stGu5jD6bKm5a7MY6MGKq4oVmfk_Ol-vYmhe74rHkJow4zlrSx3DWFwMlLVa_jyJFFKtWu7Bts7MJ7ItmNlm1f9YMwHpGb5Cur4Pg8BHIcGEhIisfQ-eIMUBvg_QQ-ivNgHa-OuHiwffpDR8bMnPNr5qXf4Cq_CTOw -->
-
-![bg contain 79%](https://mermaid.ink/svg/pako:eNqNlEFzmzAQhf-KRj30QjIIsMA69FIf20tza8hBwComFRIjRB3X4_9emZjIcYkanbQ8fW-XJ4YDrnUDmGEh9a7ecmPRtx-lKhVyq5Z8GDYg0KBHUwMSrZTsE42rIqERGqzRv8DXtZbazOWVQeeayDMfx-usSj0_12f-pfxnBAW77xcmFaGiIt5krs8mL-WVRW_a39zCpY0Q4oODDHYvAcEz73oJicfdiuPrMBYQ8i5S8SxPqrnPBI7Vo-H99rXd_VcDbnLE0a5twMxxaoPsFlDH-75Vjw_eoGkN1LbVarpMdLEmcsUYmzYLGg1oa6fN97Ag5wG08NrSQOjm5su5x5LxG3lpMH-AhuXCy6Cak9n7sZP7jVafLTLwpFs1RX3HO0AbbvkAdnh42-o_oZNAOmkwnSRAZkGS-BdPl4zD8gWdhensKlUc4Q5Mx9vG_VkOJ7HELr4OSszctgHBR2lLXKqjO8pHq-_2qsbMmhEiPPaN-9g3LXe30WEmuBzc054rzA74GbP8tqA0jYuEJEkRJ3ka4T1mhJJbGq-KNFvTeJ3mq2OE_2jtDMgE_5z2pw7Hv7cib78)
-
-<!-- https://mermaid.live/edit#pako:eNqNlEFzmzAQhf-KRj30QjIIsMA69FIf20tza8hBwComFRIjRB3X4_9emZjIcYkanbQ8fW-XJ4YDrnUDmGEh9a7ecmPRtx-lKhVyq5Z8GDYg0KBHUwMSrZTsE42rIqERGqzRv8DXtZbazOWVQeeayDMfx-usSj0_12f-pfxnBAW77xcmFaGiIt5krs8mL-WVRW_a39zCpY0Q4oODDHYvAcEz73oJicfdiuPrMBYQ8i5S8SxPqrnPBI7Vo-H99rXd_VcDbnLE0a5twMxxaoPsFlDH-75Vjw_eoGkN1LbVarpMdLEmcsUYmzYLGg1oa6fN97Ag5wG08NrSQOjm5su5x5LxG3lpMH-AhuXCy6Cak9n7sZP7jVafLTLwpFs1RX3HO0AbbvkAdnh42-o_oZNAOmkwnSRAZkGS-BdPl4zD8gWdhensKlUc4Q5Mx9vG_VkOJ7HELr4OSszctgHBR2lLXKqjO8pHq-_2qsbMmhEiPPaN-9g3LXe30WEmuBzc054rzA74GbP8tqA0jYuEJEkRJ3ka4T1mhJJbGq-KNFvTeJ3mq2OE_2jtDMgE_5z2pw7Hv7cib78-->
-
-![bg contain 83%](https://mermaid.ink/svg/pako:eNqFlEFvpCAYhv8KoYe92EbUQYfDJpvMcfeye2vtAQU67CIYxG2nk_nvZRwtU2MtJz7e73k_8hI9wtowDgkUyjzXe2od-Pm71KUGftWKdt2OC9CZ3tYcCKkUucFxVSQ4Ap2z5h8PdW2UsVM5M2j8EDXycbzNqjTwUz3yl3LGa_7868qiQlhUKFhM9WhxKWcWrZX_qePXNkKIL69xcencQXHAX2jTKp4E3K84nkexgKBPkYpmeVJNcwawr54sbffv4x5-MAYa2XVSP3kfrlgHqGb-ptby2o3hekbqx2DD5FmURg8PCq7W0L8hhAybBQ2vaFuvTa-xIOcBXRoKbm-_jz5L8Ad5aXhowEHmmp27P08QPeyM_ubAXyM1cHsOGG89xHV9AEYAelU_fpz6RYhoJah0NYlkhcxWSRQySJeM1-U0yNk6nc0ChhFsuG2oZP5vcTyLJfRZNryExG8ZF7RXroSlPvlW2jvz56BrSJzteQT7lvmPbyepf5gGEkFV509bqiE5whdI8rsC4zQuEpQkRZzkaQQPkCCM7nC8KdJsi-Ntmm9OEXw1xhugAb4f9ucJpzfgQmZ6)
-
-<!-- https://mermaid.live/edit#pako:eNqFlEFvpCAYhv8KoYe92EbUQYfDJpvMcfeye2vtAQU67CIYxG2nk_nvZRwtU2MtJz7e73k_8hI9wtowDgkUyjzXe2od-Pm71KUGftWKdt2OC9CZ3tYcCKkUucFxVSQ4Ap2z5h8PdW2UsVM5M2j8EDXycbzNqjTwUz3yl3LGa_7868qiQlhUKFhM9WhxKWcWrZX_qePXNkKIL69xcencQXHAX2jTKp4E3K84nkexgKBPkYpmeVJNcwawr54sbffv4x5-MAYa2XVSP3kfrlgHqGb-ptby2o3hekbqx2DD5FmURg8PCq7W0L8hhAybBQ2vaFuvTa-xIOcBXRoKbm-_jz5L8Ad5aXhowEHmmp27P08QPeyM_ubAXyM1cHsOGG89xHV9AEYAelU_fpz6RYhoJah0NYlkhcxWSRQySJeM1-U0yNk6nc0ChhFsuG2oZP5vcTyLJfRZNryExG8ZF7RXroSlPvlW2jvz56BrSJzteQT7lvmPbyepf5gGEkFV509bqiE5whdI8rsC4zQuEpQkRZzkaQQPkCCM7nC8KdJsi-Ntmm9OEXw1xhugAb4f9ucJpzfgQmZ6 -->
-
-![bg contains 65%](https://mermaid.ink/svg/pako:eNqVVMGymyAU_RWGLrrxvRFUkrDoplm2m3bX-CaDioktgoPY99JM_r0osaaWJA0buXDOgXvvkSPMVcEhhaVQr_meaQM-fUllKoEduWBtu-YlaFWncw7KSgj6joTZEpMAtEarH3yKcyWUHsOZQG0PEWd-GK7iLJr4Y3zmu3DGl_z184VEhkiZoUlijM8SLpxJNLr6yQy_lCnL8u41nEprDoID_sbqRnA80e0Iw3kpPBR0lZKxeIGz_hxHG6hdttOs2f85cPNRc3t3S2K7Su5cOVtQKg3Mnp_b075MCv0oKs1zUyk5dPRyx-Hjjftu4xdKqZv7cMmIS27jyIgjl7gZ0iWwHRLY2huY3dYhe86weouQPEogM8Loo_m9BjSeFL31Ak9PH-YZDGuO7a2dh5Pc4RAPh3g5XBZ_G-cf56DNWsn3BnxXlRxtAippFBCcnX_LR32Dxj6j237AIw7fxkUjLvpf36BHbYD9BI8HNoM9rom6_D39Qd4CeID4TmZTn2_mcxXmKurbHswCA1hzXbOqsE_-sd9MoX1Bap5CaqcFL1knTApTebJQ1hn19SBzSI3ueAC7prCv0Lpi1mM1pCUTrV1tmIT0CN8gXTwvCYnCJUYYL0O8iAJ4gBQR9EzCZBnFKxKuokVyCuAvpawAGsjfhnl_wuk36L0CLg)
-
-<!-- https://mermaid.live/edit#pako:eNqVVMGymyAU_RWGLrrxvRFUkrDoplm2m3bX-CaDioktgoPY99JM_r0osaaWJA0buXDOgXvvkSPMVcEhhaVQr_meaQM-fUllKoEduWBtu-YlaFWncw7KSgj6joTZEpMAtEarH3yKcyWUHsOZQG0PEWd-GK7iLJr4Y3zmu3DGl_z184VEhkiZoUlijM8SLpxJNLr6yQy_lCnL8u41nEprDoID_sbqRnA80e0Iw3kpPBR0lZKxeIGz_hxHG6hdttOs2f85cPNRc3t3S2K7Su5cOVtQKg3Mnp_b075MCv0oKs1zUyk5dPRyx-Hjjftu4xdKqZv7cMmIS27jyIgjl7gZ0iWwHRLY2huY3dYhe86weouQPEogM8Loo_m9BjSeFL31Ak9PH-YZDGuO7a2dh5Pc4RAPh3g5XBZ_G-cf56DNWsn3BnxXlRxtAippFBCcnX_LR32Dxj6j237AIw7fxkUjLvpf36BHbYD9BI8HNoM9rom6_D39Qd4CeID4TmZTn2_mcxXmKurbHswCA1hzXbOqsE_-sd9MoX1Bap5CaqcFL1knTApTebJQ1hn19SBzSI3ueAC7prCv0Lpi1mM1pCUTrV1tmIT0CN8gXTwvCYnCJUYYL0O8iAJ4gBQR9EzCZBnFKxKuokVyCuAvpawAGsjfhnl_wuk36L0CLg -->
-
-<div class="footer">
-  <div class="logo">
-  <img src='assets/mds-wave.gif' style="width: 1.5em" />
-  <span>
-  MDS FEST
-  </span>
-  </div>
-
-  <div class="small_title">
-  From Overgrown to Thriving
-  </div>
-
-  <div>25</div>
-</div>
 
 <!--
 While these are relatively simple patterns to look out for, we're talking about large projects here, so it would behoove us to not perform this type of pruning manually. Thankfully, there are some great open source tools to make this process easier.
 -->
+
+<div class="footer">
+  <div class="logo">
+  <img src='assets/mds-wave.gif' style="width: 1.5em" />
+  <span>
+  MDS FEST
+  </span>
+  </div>
+
+  <div class="small_title">
+  From Overgrown to Thriving
+  </div>
+
+  <div>19</div>
+</div>
 
 ---
 
@@ -595,7 +479,7 @@ This brings us to the beefiest of the steps...
   From Overgrown to Thriving
   </div>
 
-  <div>28</div>
+  <div>22</div>
 </div>
 
 ---
@@ -626,7 +510,7 @@ Within the context of a dbt project, your perennials are your core entities. You
   From Overgrown to Thriving
   </div>
 
-  <div>30</div>
+  <div>23</div>
 </div>
 
 <!-- This brings us to model governance features like groups, access, and versions. Groups and access allow dbt users to add permissions around which models can be accessed, and versions allow for creating documented versioned models that can be contracted and deprecated. Together, these tools allow AEs to treat their models like robust interfaces for other teams. Let's look at an example. -->
@@ -647,7 +531,7 @@ Within the context of a dbt project, your perennials are your core entities. You
   From Overgrown to Thriving
   </div>
 
-  <div>31</div>
+  <div>24</div>
 </div>
 
 <!-- Suppose we have a tiny toy model with CRM data, product data, core entities for deals and user events, and a one-off report model made by a product analyst. Notice that we're breaking an architectural guideline! We're duplicating the same joins. This tells us that `report_product_outcomes` is not using our clean, beautiful entities.
@@ -701,7 +585,7 @@ Then, we can assign our models to our groups of interest. Not that we are defini
   From Overgrown to Thriving
   </div>
 
-  <div>33</div>
+  <div>26</div>
 </div>
 
 <!-- If we were to go though and assign our other models to their corresponding groups, we would have public models for deals and user events, and the report models would be required to use our public models as a common interface! With common interfaces in place, we are able to carve out areas of decreased mess _and_ complexity.
@@ -747,7 +631,7 @@ models:
   From Overgrown to Thriving
   </div>
 
-  <div>34</div>
+  <div>27</div>
 </div>
 
 <!--
@@ -772,7 +656,7 @@ In our scenario, suppose we're dropping the `favorite_color` field from our deal
   From Overgrown to Thriving
   </div>
 
-  <div>35</div>
+  <div>28</div>
 </div>
 
 <!-- Now, when `report_product_outcomes` references deals, dbt will log a warning the `deals_v1` has a deprecation date, and will suggest that the model be updated to use the next version. -->
@@ -815,7 +699,7 @@ models:
   From Overgrown to Thriving
   </div>
 
-  <div>36</div>
+  <div>29</div>
 </div>
 
 <!-- When we're ready to cut over to the new version, we only need to update the `latest_version` property, and now all refs to the latest `deals` model will automatically start using the v2 version of the deals model.
@@ -839,7 +723,7 @@ Once the transition has completed, it's easy to remove the v1 model of deals and
   From Overgrown to Thriving
   </div>
 
-  <div>37</div>
+  <div>30</div>
 </div>
 
 ---
@@ -874,7 +758,7 @@ To make it easier for practitioners to apply groups, access, and versions in lar
   From Overgrown to Thriving
   </div>
 
-  <div>39</div>
+  <div>32</div>
 </div>
 
 ---
@@ -893,7 +777,7 @@ To make it easier for practitioners to apply groups, access, and versions in lar
   From Overgrown to Thriving
   </div>
 
-  <div>40</div>
+  <div>33</div>
 </div>
 
 <!--
@@ -944,7 +828,7 @@ But ... the beauty of open source code is that we can look at the code, see the 
   From Overgrown to Thriving
   </div>
 
-  <div>42</div>
+  <div>35</div>
 </div>
 
 <!-- Based on the existence of the plugin system and the discussion posts on GitHub, it's reasonable to assume that dbt Labs has created a proprietary python module that leverages the plugin system to fetche metadata from dbt Cloud's API and use this metadata to inject dbt models into your project.
@@ -963,7 +847,7 @@ The community can just as well create an open-source python package!
 
 To that end, I've created the dbt-loom python package, an open source and open-licensed dbt plugin that enables native multi-project deployments. After adding this package as python dependency along side dbt core and creating a config file, this package identifies public models from upstream projects and injects them into your downstream project to enable cross-project references.
 
-If you're interested in having composable, maintainable dbt projects using your preferred orchestration infrastructure, by all means give this a spin.
+Once again, mutli-project deployments are in their early days, but I suspect that this technique will become much more common as the dbt community starts embracing smaller, more manageable projects with clean interfaces as a way to escape maintaining massive monolith projects.
 
 -->
 
@@ -985,7 +869,7 @@ If you're interested in having composable, maintainable dbt projects using your 
   From Overgrown to Thriving
   </div>
 
-  <div>45</div>
+  <div>37</div>
 </div>
 
 ---
@@ -1019,7 +903,7 @@ important than your tools
   From Overgrown to Thriving
   </div>
 
-  <div>47</div>
+  <div>38</div>
 </div>
 
 <!-- When it comes to ongoing maintained, I am of the opinion that your _process_ is more important than your tools. It's a matter of deliberate practice. A matter of interspersing small amounts of maintenance work into your everyday tasks. With this in mind, I have three main recommendations:-->
@@ -1042,7 +926,7 @@ important than your tools
   From Overgrown to Thriving
   </div>
 
-  <div>48</div>
+  <div>39</div>
 </div>
 
 ---
@@ -1066,7 +950,7 @@ important than your tools
   From Overgrown to Thriving
   </div>
 
-  <div>49</div>
+  <div>40</div>
 </div>
 
 <!--
@@ -1099,7 +983,7 @@ Lastly, use TESTS! Mistakes happen, and enforcing even minimal testing can go a 
   From Overgrown to Thriving
   </div>
 
-  <div>50</div>
+  <div>41</div>
 </div>
 
 ---
@@ -1124,7 +1008,7 @@ Lastly, use TESTS! Mistakes happen, and enforcing even minimal testing can go a 
   From Overgrown to Thriving
   </div>
 
-  <div>51</div>
+  <div>42</div>
 </div>
 
 ---
@@ -1147,7 +1031,7 @@ Lastly, use TESTS! Mistakes happen, and enforcing even minimal testing can go a 
   From Overgrown to Thriving
   </div>
 
-  <div>52</div>
+  <div>43</div>
 </div>
 
 ---
@@ -1172,7 +1056,7 @@ Lastly, use TESTS! Mistakes happen, and enforcing even minimal testing can go a 
   From Overgrown to Thriving
   </div>
 
-  <div>53</div>
+  <div>44</div>
 </div>
 
 ---
@@ -1205,7 +1089,7 @@ and then grow an even better future
   From Overgrown to Thriving
   </div>
 
-  <div>55</div>
+  <div>45</div>
 </div>
 
 <!--
@@ -1243,5 +1127,5 @@ LinkedIn: <a href='https://linkedin.com/in/nicholasyager'>nicholasyager</a>
   From Overgrown to Thriving
   </div>
 
-  <div>60</div>
+  <div>46</div>
 </div>
