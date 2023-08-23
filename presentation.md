@@ -21,7 +21,9 @@ Scaling Your dbt Project Like a Gardener
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div class="page">
+    1
+  </div>
 </div>
 
 ---
@@ -113,7 +115,9 @@ Quite simply
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>
+    5
+  </div>
 </div>
 
 ---
@@ -132,7 +136,7 @@ Quite simply
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>6</div>
 </div>
 
 ---
@@ -153,7 +157,7 @@ Quite simply
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>7</div>
 </div>
 
 <!-- As organizations grow, they trend towards decentralization. It's very easy to keep all of your analytics talent aligned and in one central org while you have 5, 10, heck 20 people, but at a certain point, it is not longer effective to have once central block of AE talent. Many organizations follow a two-pizza rule -- the idea that effective teams are usually those fed by two pizzas -- and as such will decompose teams into specific domains. This decentralization then opens the door to drift.   -->
@@ -177,7 +181,7 @@ Quite simply
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>8</div>
 </div>
 
 <!--
@@ -204,7 +208,7 @@ Once you're in territory where there are multiple distinct teams operating indep
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>9</div>
 </div>
 
 <!-- And now we're in the endgame. Do we put in the effort to have Sales analytics align with Finance or vis versa, or do we make just a few more models that shim together bits of both to workaround the reporting difference? dbt Core is a wondrous tool. makes it delightfully easy to reference existing models and start pulling in data from somewhere else in the project. This comes at a price, however, in that each new model we add to workaround our differences is one more liability for our team in the future. -->
@@ -227,7 +231,7 @@ Once you're in territory where there are multiple distinct teams operating indep
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>10</div>
 </div>
 
 ---
@@ -266,7 +270,7 @@ stands to reason that we can work like gardeners to rehabilitate them. Thankfull
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>12</div>
 </div>
 
 ---
@@ -287,7 +291,7 @@ stands to reason that we can work like gardeners to rehabilitate them. Thankfull
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>13</div>
 </div>
 
 ---
@@ -311,7 +315,7 @@ stands to reason that we can work like gardeners to rehabilitate them. Thankfull
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>14</div>
 </div>
 
 ---
@@ -332,7 +336,7 @@ stands to reason that we can work like gardeners to rehabilitate them. Thankfull
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>15</div>
 </div>
 
 <!--
@@ -363,7 +367,7 @@ stands to reason that we can work like gardeners to rehabilitate them. Thankfull
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>17</div>
 </div>
 
 ---
@@ -373,7 +377,7 @@ stands to reason that we can work like gardeners to rehabilitate them. Thankfull
 <!--
 Gradual removal of unproductive branches to allow a plant to spend its resources growing healthy branches.
 
-Within the context of a dbt project, this is a matter of identifying antip-atterns and other non-productive structures in your DAG, and refactoring them to make them more ergonomic.
+Within the context of a dbt project, this is a matter of identifying anti-patterns and other non-productive structures in your DAG, and refactoring them to make them more ergonomic.
 
 -->
 <div class="footer">
@@ -388,7 +392,7 @@ Within the context of a dbt project, this is a matter of identifying antip-atter
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>19</div>
 </div>
 
 ---
@@ -431,7 +435,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>20</div>
 </div>
 
 ---
@@ -450,7 +454,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>21</div>
 </div>
 
 ---
@@ -469,7 +473,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>22</div>
 </div>
 
 ---
@@ -488,7 +492,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>23</div>
 </div>
 
 ---
@@ -507,7 +511,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>24</div>
 </div>
 
 ---
@@ -547,7 +551,7 @@ are four main anti-patterns that tend to add unnecessary messiness to a project.
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>25</div>
 </div>
 
 <!--
@@ -590,7 +594,7 @@ This brings us to the beefiest of the steps...
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>28</div>
 </div>
 
 ---
@@ -621,7 +625,7 @@ Within the context of a dbt project, your perennials are your core entities. You
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>30</div>
 </div>
 
 <!-- This brings us to model governance features like groups, access, and versions. Groups and access allow dbt users to add permissions around which models can be accessed, and versions allow for creating documented versioned models that can be contracted and deprecated. Together, these tools allow AEs to treat their models like robust interfaces for other teams. Let's look at an example. -->
@@ -642,7 +646,7 @@ Within the context of a dbt project, your perennials are your core entities. You
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>31</div>
 </div>
 
 <!-- Suppose we have a tiny toy model with CRM data, product data, core entities for deals and user events, and a one-off report model made by a product analyst. Notice that we're breaking an architectural guideline! We're duplicating the same joins. This tells us that `report_product_outcomes` is not using our clean, beautiful entities.
@@ -696,7 +700,7 @@ Then, we can assign our models to our groups of interest. Not that we are defini
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>33</div>
 </div>
 
 <!-- If we were to go though and assign our other models to their corresponding groups, we would have public models for deals and user events, and the report models would be required to use our public models as a common interface! With common interfaces in place, we are able to carve out areas of decreased mess _and_ complexity.
@@ -742,7 +746,7 @@ models:
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>34</div>
 </div>
 
 <!--
@@ -767,7 +771,7 @@ In our scenario, suppose we're dropping the `favorite_color` field from our deal
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>35</div>
 </div>
 
 <!-- Now, when `report_product_outcomes` references deals, dbt will log a warning the `deals_v1` has a deprecation date, and will suggest that the model be updated to use the next version. -->
@@ -810,7 +814,7 @@ models:
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>36</div>
 </div>
 
 <!-- When we're ready to cut over to the new version, we only need to update the `latest_version` property, and now all refs to the latest `deals` model will automatically start using the v2 version of the deals model.
@@ -834,7 +838,7 @@ Once the transition has completed, it's easy to remove the v1 model of deals and
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>37</div>
 </div>
 
 ---
@@ -869,7 +873,7 @@ To make it easier for practitioners to apply groups, access, and versions in lar
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>39</div>
 </div>
 
 ---
@@ -888,7 +892,7 @@ To make it easier for practitioners to apply groups, access, and versions in lar
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>40</div>
 </div>
 
 <!--
@@ -939,7 +943,7 @@ But ... the beauty of open source code is that we can look at the code, see the 
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>42</div>
 </div>
 
 <!-- Based on the existence of the plugin system and the discussion posts on GitHub, it's reasonable to assume that dbt Labs has created a proprietary python module that leverages the plugin system to fetche metadata from dbt Cloud's API and use this metadata to inject dbt models into your project.
@@ -965,7 +969,7 @@ Since the plug-in system allows for injecting models into a project...
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>43</div>
 </div>
 
 <!--
@@ -1001,7 +1005,7 @@ If you're interested in having composable, maintainable dbt projects using your 
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>45</div>
 </div>
 
 ---
@@ -1011,7 +1015,7 @@ If you're interested in having composable, maintainable dbt projects using your 
 <!-- _footer: ''  -->
 
 <!--
-Now that we've gotten our garden into a more maintainable state state, it's vital that we prevent weeds and other unwanted plants from taking root. In a garden there are myrad tools and techniques for weeding your garden, but the most important factor has nothing to do with your tools.
+Now that we've gotten our garden into a more maintainable state state, it's vital that we prevent weeds and other unwanted plants from taking root. In a garden there are myriad tools and techniques for weeding your garden, but the most important factor has nothing to do with your tools.
 -->
 
 ---
@@ -1035,10 +1039,10 @@ important than your tools
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>47</div>
 </div>
 
-<!-- It's a matter of deliberate practice. A matter of integrating small amounts of maintenance work into your everyday tasks. -->
+<!-- When it comes to ongoing maintained, I am of the opinion that your _process_ is more important than your tools. It's a matter of deliberate practice. A matter of interspersing small amounts of maintenance work into your everyday tasks. With this in mind, I have three main recommendations:-->
 
 ---
 
@@ -1058,7 +1062,7 @@ important than your tools
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>48</div>
 </div>
 
 ---
@@ -1066,9 +1070,9 @@ important than your tools
 # Ways to keep the weeds under control
 
 1. **Perform code reviews for every change, and make reviews easy!**
-   - Show your DAG changes
+   - Show how your DAG changes in each PR
+   - Pick your SQL coding conventions and enforce it using SQL formatters
    - Use CI/CD and dbt tests
-   - Pick your SQL syntax and enforce it using SQL formatters.
 
 <div class="footer">
   <div class="logo">
@@ -1082,8 +1086,19 @@ important than your tools
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>49</div>
 </div>
+
+<!--
+
+Showing DAG changes makes it easy to contextualize what changes are being made.
+The human brain is an amazingly powerful prediction machine that takes visual input and simulates a universe. We can leverage this ability to pattern match and predict by looking at how your DAG changes structurally.
+
+Similarly, stick to a consistent SQL formatting convention. When your project is standardized in its format, it becomes very easy to instinctively recognize non-performant code -- it will literally look a little funny once your team has become accustomed to what good looks like.
+
+Lastly, use TESTS! Mistakes happen, and enforcing even minimal testing can go a long way.
+
+-->
 
 ---
 
@@ -1104,7 +1119,7 @@ important than your tools
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>50</div>
 </div>
 
 ---
@@ -1113,8 +1128,9 @@ important than your tools
 
 1. Perform code reviews for every change, and make reviews easy!
 2. **Review your project's architecture often**
-   - Use an architecture evaluation tool like dbt_project_evaluator or Whetstone
-   - Look at your DAG. Really!
+   - Use an architecture evaluation tool like dbt Project Evaluator or Whetstone
+   - Check for undervalued core entities
+   - Be on the lookout for commonly joined models
 
 <div class="footer">
   <div class="logo">
@@ -1128,7 +1144,7 @@ important than your tools
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>51</div>
 </div>
 
 ---
@@ -1151,7 +1167,7 @@ important than your tools
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>52</div>
 </div>
 
 ---
@@ -1176,7 +1192,7 @@ important than your tools
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>53</div>
 </div>
 
 ---
@@ -1203,7 +1219,7 @@ and then grow a bright future
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>55</div>
 </div>
 
 <!--
@@ -1237,5 +1253,5 @@ yager@nicholasyager.com
   From Overgrown to Thriving
   </div>
 
-  <div></div>
+  <div>60</div>
 </div>
