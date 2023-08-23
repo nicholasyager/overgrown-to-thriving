@@ -440,6 +440,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
 
 ---
 
+<!--
 ![bg contain 30%](https://mermaid.ink/svg/pako:eNqNVE1zmzAU_Csa9dALyUjCwViHXuJjemlvAY9HgLBpQWKEaOJ4_N8rSxAwpSS68J61u-9jwWeYyoxDCvNSvqRHpjR4-hGLWABz0pI1zZbnoJGtSjnIi7KkXwKUhCTwQKOV_M2HPJWlVH06EahMkbLjI7RZJf7A7_OO79IJX_CX7yOJBAd5ggeJPu8kXDqRqFXxh2k-lsnz_MM2nEqjTyUH_JVVdcnJQDcHoekqZij4v5SErdYkudZxNEttk4Ni9fG9YPSouOndkNihEAe3zgbkUgF95J09zW5QyArFU11IYd0Eo-OwfuSee7yjlLp4DrfqcWSMu0XaZkhkF3tF2Xwi5vre26s9jhp92I8b6O1dYpExiyyw3IDg7u7btO7shDNAsti9JbihF_udxXGR3Xr9j9k42krxVYNfshC9s8CErNv07rboR07jTzpNPuv0stGu5jD6bKm5a7MY6MGKq4oVmfk_Ol-vYmhe74rHkJow4zlrSx3DWFwMlLVa_jyJFFKtWu7Bts7MJ7ItmNlm1f9YMwHpGb5Cur4Pg8BHIcGEhIisfQ-eIMUBvg_QQ-ivNgHa-OuHiwffpDR8bMnPNr5qXf4Cq_CTOw)
 
 <div class="footer">
@@ -514,7 +515,7 @@ In a dbt project, we can prune our project by refactoring any anti-patterns curr
   <div>24</div>
 </div>
 
----
+--- -->
 
 <!--
 
@@ -847,7 +848,7 @@ Once the transition has completed, it's easy to remove the v1 model of deals and
 
 <!---
 
-To make it easier for practitioners to apply groups, access, and versions in large projects, some community members have made the `dbt-meshify` python package. This tool allows you to these model governance tools to dbt projects using selector syntax. For example, imagine adding a `Revenue` group to all models upstream to deals and setting deals to public access using a single command. Expect more from this tool as the dbt community explores how to effectively use these new model governance features.
+To make it easier for practitioners to apply groups, access, and versions in large projects, a handful of dbt community members have made the `dbt-meshify` python package. This tool allows you to these model governance tools to dbt projects using selector syntax. For example, imagine adding a `Revenue` group to all models upstream to deals and setting deals to public access using a single command. Expect more from this tool as the dbt community explores how to effectively use these new model governance features.
 
 --->
 
@@ -906,13 +907,12 @@ Using our previous toy DAG as an example, we could conceivably split our project
 3. By enforcing the use of public interfaces, we will necessarily promote more robust and less messy architectural practices. We've made undesirable states for our project unrepresentable!
 
 
-Now, let's get into the prickles.
-Currently, there are not many teams who have had a chance to adopt this ergonomically.
+Now, let's get into the prickles. Multi-project deployments are on the bleeding edge of dbt practice.
 
-For some time now, you could import one dbt project as a package into a downstream dbt project, bringing along all of your existing models. The downside to this approach is that importing the upstream project as a package drags the entire proejct into compilation scope, so your compile times will continue to be large, and your DAG will be full of all of those unneeded models.
+Official support of multi-project deployments is very new, with the underlying capability within dbt Core having only been introduced in dbt 1.6.0 with the introduction of their plugin system.
 
-I'd be remise if I didn't mention that folks using an asset-aware orchestrator like Dagster, can also get multi-project deployments by constructing a meta-dag that may include models from multiple projects.
- -->
+
+-->
 
 ---
 
@@ -921,9 +921,10 @@ I'd be remise if I didn't mention that folks using an asset-aware orchestrator l
 
 <!--
 
-More recently, dbt Labs has enabled multi-project deployments as a capability within dbt Core in dbt 1.6.0 with the introduction of their plugin system, but dbt Labs has decided to restrict this functionality to dbt Cloud enterprise users, and currently there is only a private beta for using this functionality.
 
-But ... the beauty of open source code is that we can look at the code, see the outline of what's missing, and infer how to do it ourselves!
+ADditionally, dbt Labs has decided to restrict this functionality to dbt Cloud enterprise users using either the cloud IDE or the in-beta cloud CLI. And on top of that use of multi-project deployments is being limited to a closed beta program of customers.
+
+But ... the beauty of open source code is that we can look at the code, see the outline of what's missing, and infer how it works!
 
 -->
 
@@ -950,38 +951,17 @@ But ... the beauty of open source code is that we can look at the code, see the 
 
 
 Since the plug-in system allows for injecting models into a project...
-
- -->
-
----
-
-![bg 90%](https://mermaid.ink/svg/pako:eNqNU1FP2zAQ_iuWeQ0oTUda_IAEVEhITK1WJLQlqHKcS-Ph2JFjb-uq_vfZTjrYyND84Nydv-_uvvi8x0yVgAmuhPrOaqoNuv-Uy1wit5igXbeAChWCsmdUcSHISRVWHEeoM1o9AzmJvcOUUDrYf3MddauVleUxQVIlUFTV_yaoeVmCHMjXV4ub6e0L9egP7N4d-u_MTgB6WK7-wQ2lPLKzxVbTtvbY7LOyGt3JSlOHs8xYDU99RyXXwAxXEj1cD5HCbLSVhjeQORvdKAcmhLxo7nGtVq3mYKjebVpht1xmy9ZpWrtaDNBHd1JSQ9EqnI1l6HenA7rsXjEq0K23x6Cq-Ora3HRGabqFbBlctO7dMULJO6a-geuNtrzXIZQt0dXq7k2BEQY6Pb0cUfiq43cRf7b7LvRtPMBf3UL4TzAI89tKK5_eqwgz7PF-Ivz3kWqole3geNpXwRFuQDeUl-5Z7H0sx6aGBnJMnFlCRa0wOc7lwUGpNWq9kwyTiooOImxbd5Ww4NSNVPM72lKJyR7_wGR2Nk_TaTxPJkkyj5PZNMI7TCbp5CyNz-fTDxdpfDGdnR8i_FMpl2ASyF-C7QYSDr8AEEs6uA)
-
-<div class="footer">
-  <div class="logo">
-  <img src='assets/mds-wave.gif' style="width: 1.5em" />
-  <span>
-  MDS FEST
-  </span>
-  </div>
-
-  <div class="small_title">
-  From Overgrown to Thriving
-  </div>
-
-  <div>43</div>
-</div>
-
-<!--
-
-The community can just as well create an open-source python package! This plugin can also load metadata, be it from dbt project artifacts or from dbt Cloud via the API, and injects nodes into the dbt project.
- -->
+-->
 
 ---
 
 ![bg 90%](assets/loom.png)
 
-<!-- To that end, I've created the dbt-loom python package, an open source and open-licensed dbt plugin that enables native multi-project deployments. After adding this package as python dependency along side dbt core and creating a config file, this package identifies public models from upstream projects and injects them into your downstream project to enable cross-project references.
+<!--
+
+The community can just as well create an open-source python package!
+
+To that end, I've created the dbt-loom python package, an open source and open-licensed dbt plugin that enables native multi-project deployments. After adding this package as python dependency along side dbt core and creating a config file, this package identifies public models from upstream projects and injects them into your downstream project to enable cross-project references.
 
 If you're interested in having composable, maintainable dbt projects using your preferred orchestration infrastructure, by all means give this a spin.
 
@@ -1199,13 +1179,19 @@ Lastly, use TESTS! Mistakes happen, and enforcing even minimal testing can go a 
 
 ![bg](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Jardin_en_permaculture.jpg/1200px-Jardin_en_permaculture.jpg)
 
+<!--
+We've come a long way! Our project now has fewer unused models, a more efficient
+structure, clearly-delineated responsibilities, and automated guardrails to keep
+new growth in check. We have taken an overgrown project, and turned it into a robust, maintainable platform for future development.
+-->
+
 ---
 
 <!-- _class: lead -->
 
 # Take a short break
 
-and then grow a bright future
+and then grow an even better future
 
 <div class="footer">
   <div class="logo">
@@ -1223,11 +1209,8 @@ and then grow a bright future
 </div>
 
 <!--
-We've come a long way! Our project now has fewer unused models, a more efficient
-structure, clearly-delineated responsibilities, and automated guardrails to keep
-new growth in check. We can now take a small break and enjoy our handy work.
-
-When we're ready, we can continue to deliberately cultivate our garden with confidence and clarity.
+So, we can now take a small break. Take a breath. Enjoy our handy work.
+and when we're ready, we can grow an even better future.
 --->
 
 ---
@@ -1239,7 +1222,14 @@ When we're ready, we can continue to deliberately cultivate our garden with conf
   </video>
 
 Nicholas A. Yager
-yager@nicholasyager.com
+
+<p>
+<small>
+Personal: <a href='https://nicholasyager.com'>nicholasyager.com</a> <br />
+dbt Slack: <a href='https://getdbt.slack.com/team/U01APMRM9BN'>@Nicholas Yager</a> <br />
+LinkedIn: <a href='https://linkedin.com/in/nicholasyager'>nicholasyager</a>
+</small>
+</p>
 
 <div class="footer">
   <div class="logo">
