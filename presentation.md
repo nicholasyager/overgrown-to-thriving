@@ -1086,9 +1086,8 @@ Nicholas A. Yager
 
 <p>
 <small>
-Personal: <a href='https://nicholasyager.com'>nicholasyager.com</a> <br />
-dbt Slack: <a href='https://getdbt.slack.com/team/U01APMRM9BN'>@Nicholas Yager</a> <br />
-LinkedIn: <a href='https://linkedin.com/in/nicholasyager'>nicholasyager</a>
+<a href='https://nicholasyager.com'>nicholasyager.com</a> <br />
+<a href='https://github.com/nicholasyager'>github.com/nicholasyager</a>
 </small>
 </p>
 
