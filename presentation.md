@@ -791,36 +791,9 @@ But ... the beauty of open source code is that we can look at the code, see the 
 
 ---
 
-![bg 90%](https://mermaid.ink/svg/pako:eNqFUl1PwyAU_SsEX6vpWu02Hkz8ejDRuKiJidYYWi4bSqHhQ53L_rvQbk6NHzzA5XDu4dwLC1xrBphgLvVLPaPGobPLUpUKhVFLau0xcFRJWj8hLqQkW7wbaZog64x-ArKVxk2tpTZd_D03pE6N9oqtBTKeQcX5HwLfJFojnqmD8-BU_uFivFvln3Tidi1l3VwCur6YrNJPTg6L7OCLg55qfTU1tJ1F7h2rHDqS2rP7XoUJA7UTWqHrwxVSuQfjlRMN9GxtAF32wD0hZFN8z2-NDsWAo2b-0Eo_FepusoHQeVgYdRRNurOfFJiwtX6GkE9bsXGIDian9l8-2t7e_8HDb946-qcSUSTCSjlOwftj6Ei8tvshkR-bHNcbamCmvYX1aX8LTnADpqGChU-3iFiJ3QwaKDEJIQNOvXQlLtUyUKl3-mquakw4lRYS7NvQHzgWNLxS84G2VGGywK-YDHdGRZGno2yQZaM0G-YJnmMyKAY7Rbo3ynfHRTrOh3vLBL9pHQQGXfJtFzvjYfkOXQYB2g)
-
-<div class="footer">
-  <div class="logo">
-  <img src='assets/mds-wave.gif' style="width: 1.5em" />
-  <span>
-  MDS FEST
-  </span>
-  </div>
-
-  <div class="small_title">
-  From Overgrown to Thriving
-  </div>
-
-  <div>35</div>
-</div>
-
-<!-- Based on the existence of the plugin system and the discussion posts on GitHub, it's reasonable to assume that dbt Labs has created a proprietary python module that leverages the plugin system to fetche metadata from dbt Cloud's API and use this metadata to inject dbt models into your project.
-
-
-Since the plug-in system allows for injecting models into a project...
--->
-
----
-
 ![bg 90%](assets/loom.png)
 
 <!--
-
-The community can just as well create an open-source python package!
 
 To that end, I've created the dbt-loom python package, an open source and open-licensed dbt plugin that enables native multi-project deployments. After adding this package as python dependency along side dbt core and creating a config file, this package identifies public models from upstream projects and injects them into your downstream project to enable cross-project references.
 
