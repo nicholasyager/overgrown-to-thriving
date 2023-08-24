@@ -11,6 +11,17 @@ A recording of the MDS Fest 2023 session can be founding here: [TODO]
 
 A live version of the slides can be found at https://nicholasyager.github.io/overgrown-to-thriving/#1
 
+## Referenced Tools
+
+Here are links to all of the tools referenced in this presentation:
+
+- [dbt_project_evaluator](https://github.com/dbt-labs/dbt-project-evaluator): dbt package for testing project architectural practices.
+- [Whetstone](https://whetstone.nicholasyager.com/): An open-source web app for analyzing project architecture.
+- [dbt-meshify](https://github.com/dbt-labs/dbt-meshify): A CLI for apply dbt model governance features
+- [dbt-loom](https://github.com/nicholasyager/dbt-loom): An open source dbt Core plugin that enables multi-project deployments.
+- [SQLFluff](https://sqlfluff.com/): An open source, dialect-flexible and configurable SQL linter.
+- [sqlfmt](https://github.com/tconbeer/sqlfmt): An opinionated formatter for dbt SQL.
+
 ---
 
 I hope you find the presentation enlightening and valuable for maintaining and enhancing your dbt projects. Happy gardening!
