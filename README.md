@@ -7,7 +7,7 @@ Presentation Description
 
 ## Session Recording and Slides
 
-A recording of the MDS Fest 2023 session can be founding here: [TODO]
+A recording of the MDS Fest 2023 session can be founding here: https://www.youtube.com/watch?v=bV7aLRocQdw
 
 A live version of the slides can be found at https://nicholasyager.github.io/overgrown-to-thriving/#1
 
